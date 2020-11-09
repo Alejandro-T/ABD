@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,12 +34,12 @@ namespace CreditosGallegos
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            textBoxUser.Text = "";
+           
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            textBoxPassword.Text = "";
+            
         }
         int posx = 0;
         int posy = 0;
@@ -55,10 +56,47 @@ namespace CreditosGallegos
                 Top = Top + (e.Y - posy);
             }
         }
-
+        public byte intento = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
+            string comp = "Select id_tec from tecsnm where id_tec='" + this.textBoxUser.Text + "'";
+            
+         
+            OracleCommand cpe = new OracleCommand(comp, Conexion.conectar());
+            OracleDataReader dre = cpe.ExecuteReader();
+            if (dre.Read())
+            {
+                
+                string comprobacion2 = "Select * from tecsnm where nombre='" + this.textBoxPassword.Text + "'";
+                
+               
+                cpe = new OracleCommand(comprobacion2, Conexion.conectar());
+                dre = cpe.ExecuteReader();
+                if (dre.Read())
+                {
+                    MessageBox.Show("BIENVENIDO "+textBoxPassword.Text, "aviso", MessageBoxButtons.OK);
+                    Form1 f = new Form1();
+                    f.Hide();
+                    Main m = new Main();
+                    m.Show();
+                    
+                }
+                else
+                {
+                    intento += 1;
+                }
+            }
+            else
+            {
+                intento += 1;
+                if (intento == 3)
+                {
+                    MessageBox.Show("Adios", "aviso", MessageBoxButtons.OK);
+                    Application.Exit();
+                }
+                MessageBox.Show("Error no existe", "aviso", MessageBoxButtons.OK);
+            }
         }
 
         private void linkLabel1_Click(object sender, EventArgs e)

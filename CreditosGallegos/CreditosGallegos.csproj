@@ -52,12 +52,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="generos\AgregaGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\AgregaGeneros.Designer.cs">
+      <DependentUpon>AgregaGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generos\ActualizaGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\ActualizaGeneros.Designer.cs">
+      <DependentUpon>ActualizaGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generos\BorraGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\BorraGeneros.Designer.cs">
+      <DependentUpon>BorraGeneros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generos\Generos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\Generos.Designer.cs">
+      <DependentUpon>Generos.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -67,8 +91,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="generos\SeleccionaGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\SeleccionaGeneros.Designer.cs">
+      <DependentUpon>SeleccionaGeneros.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="generos\AgregaGeneros.resx">
+      <DependentUpon>AgregaGeneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generos\ActualizaGeneros.resx">
+      <DependentUpon>ActualizaGeneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generos\BorraGeneros.resx">
+      <DependentUpon>BorraGeneros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generos\Generos.resx">
+      <DependentUpon>Generos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -81,7 +123,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="generos\SeleccionaGeneros.resx">
+      <DependentUpon>SeleccionaGeneros.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +140,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons8-borrar-para-siempre-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons8-de-acuerdo-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons8_checkmark_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons8_delete_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

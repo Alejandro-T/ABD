@@ -15,7 +15,7 @@ namespace CreditosGallegos
             cn.Open();*/
 
             OracleConnection cn =
-                new OracleConnection("DATA SOURCE = xe; PASSWORD=patito; USER ID = creditos");
+                new OracleConnection("DATA SOURCE = xe; PASSWORD=patito; USER ID = gallegos");
             cn.Open();
             return cn;
         }

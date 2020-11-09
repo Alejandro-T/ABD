@@ -12,3 +12,8 @@ C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\bin\Debug\Microsof
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.csproj.CopyComplete
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\bin\Debug\Oracle.DataAccess.dll
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Main.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Generos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.SeleccionaGeneros.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.BorraGeneros.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.generos.ActualizaGeneros.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.AgregaGeneros.resources

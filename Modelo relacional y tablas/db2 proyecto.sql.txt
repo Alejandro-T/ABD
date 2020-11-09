@@ -1,3 +1,4 @@
+create database gallegos
 CREATE TABLE Generos (id_genero NUMERIC(1) NOT NULL,descripcion VARCHAR(20),constraint pk_genero primary key(id_genero))
 
 CREATE TABLE TecsNM (id_tec NUMERIC(2) not null,nombre VARCHAR(60),constraint pk_tecsNm primary key(id_tec))
