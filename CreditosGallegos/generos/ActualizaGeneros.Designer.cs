@@ -31,7 +31,7 @@
             this.textBoxAidGnero = new System.Windows.Forms.TextBox();
             this.dataGridViewAGeneros = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxActualizaNombre = new System.Windows.Forms.TextBox();
+            this.textBoxActualizaGenero = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -56,6 +56,7 @@
             this.dataGridViewAGeneros.Name = "dataGridViewAGeneros";
             this.dataGridViewAGeneros.Size = new System.Drawing.Size(389, 150);
             this.dataGridViewAGeneros.TabIndex = 17;
+            this.dataGridViewAGeneros.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAGeneros_CellContentClick);
             // 
             // label1
             // 
@@ -66,14 +67,14 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Id_Genero";
             // 
-            // textBoxActualizaNombre
+            // textBoxActualizaGenero
             // 
-            this.textBoxActualizaNombre.BackColor = System.Drawing.Color.White;
-            this.textBoxActualizaNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxActualizaNombre.Location = new System.Drawing.Point(201, 122);
-            this.textBoxActualizaNombre.Name = "textBoxActualizaNombre";
-            this.textBoxActualizaNombre.Size = new System.Drawing.Size(100, 13);
-            this.textBoxActualizaNombre.TabIndex = 20;
+            this.textBoxActualizaGenero.BackColor = System.Drawing.Color.White;
+            this.textBoxActualizaGenero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxActualizaGenero.Location = new System.Drawing.Point(201, 122);
+            this.textBoxActualizaGenero.Name = "textBoxActualizaGenero";
+            this.textBoxActualizaGenero.Size = new System.Drawing.Size(100, 13);
+            this.textBoxActualizaGenero.TabIndex = 20;
             // 
             // label2
             // 
@@ -113,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(509, 385);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxActualizaNombre);
+            this.Controls.Add(this.textBoxActualizaGenero);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewAGeneros);
@@ -139,7 +140,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridViewAGeneros;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxActualizaNombre;
+        private System.Windows.Forms.TextBox textBoxActualizaGenero;
         private System.Windows.Forms.Label label2;
     }
 }

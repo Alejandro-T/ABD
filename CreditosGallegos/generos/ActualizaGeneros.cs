@@ -19,21 +19,29 @@ namespace CreditosGallegos.generos
         }
         public void cargarGeneros(DataGridView dvg)
         {
-            DataTable dtsgenero = new DataTable();
-            string comprobacion = "Select * from generos where id_genero='" + this.textBoxAidGnero.Text + "'";
-            OracleDataAdapter da = new OracleDataAdapter
-                (comprobacion, Conexion.conectar());
-            OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
-            OracleDataReader dr = cp.ExecuteReader();
-            if (dr.Read())
+            try
             {
-                da.Fill(dtsgenero);
-                dvg.DataSource = dtsgenero;
-                textBoxActualizaNombre.Enabled = true;
+                DataTable dtsgenero = new DataTable();
+                string comprobacion = "Select * from generos where id_genero='" + this.textBoxAidGnero.Text + "'";
+                OracleDataAdapter da = new OracleDataAdapter
+                    (comprobacion, Conexion.conectar());
+                OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
+                OracleDataReader dr = cp.ExecuteReader();
+                if (dr.Read())
+                {
+                    da.Fill(dtsgenero);
+                    dvg.DataSource = dtsgenero;
+                    textBoxActualizaGenero.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("El Genero no existe", "aviso", MessageBoxButtons.OK);
+                }
             }
-            else
+
+            catch (Oracle.DataAccess.Client.OracleException)
             {
-                MessageBox.Show("El Genero no existe", "aviso", MessageBoxButtons.OK);
+                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
 
         }
@@ -44,7 +52,7 @@ namespace CreditosGallegos.generos
 
         private void ActualizaGeneros_Load(object sender, EventArgs e)
         {
-            textBoxActualizaNombre.Enabled = false;
+            textBoxActualizaGenero.Enabled = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -63,15 +71,28 @@ namespace CreditosGallegos.generos
             if (dr.Read())
             {
                 OracleCommand comando = new OracleCommand(query, Conexion.conectar());
-                comando.Parameters.Add("@descripcion", OracleDbType.Varchar2).Value = this.textBoxActualizaNombre.Text;
+                comando.Parameters.Add("@descripcion", OracleDbType.Varchar2).Value = this.textBoxActualizaGenero.Text;
                 comando.Parameters.Add("@genero", OracleDbType.Int16).Value = this.textBoxAidGnero.Text;
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Actualizado", "aviso", MessageBoxButtons.OK);
                 this.cargarGeneros(this.dataGridViewAGeneros);
+                //limpiar los cuadros de texto
+                this.textBoxAidGnero.Clear();
+                this.textBoxActualizaGenero.Clear();
             }
             else
             {
                 MessageBox.Show("El Genero no existe", "aviso", MessageBoxButtons.OK);
+            }
+        }
+
+        private void dataGridViewAGeneros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewAGeneros.Rows[e.RowIndex];
+                this.textBoxActualizaGenero.Text = row.Cells["descripcion"].Value.ToString();
+                this.textBoxAidGnero.Text = row.Cells["id_genero"].Value.ToString();
             }
         }
     }

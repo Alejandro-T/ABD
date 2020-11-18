@@ -1,4 +1,4 @@
-﻿using CreditosGallegos.generos;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace CreditosGallegos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new InsertarCarreras());
         }
     }
 }

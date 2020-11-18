@@ -13,11 +13,13 @@ namespace CreditosGallegos
 {
     public partial class Form1 : Form
     {
+        public static int id=0;
         public Form1()
         {
             InitializeComponent();
         }
-
+        public int id_tec = 0;
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -76,11 +78,16 @@ namespace CreditosGallegos
                 if (dre.Read())
                 {
                     MessageBox.Show("BIENVENIDO "+textBoxPassword.Text, "aviso", MessageBoxButtons.OK);
-                    Form1 f = new Form1();
-                    f.Hide();
-                    Main m = new Main();
-                    m.Show();
+
+                    //Mostar menu
                     
+                    InsertarCarreras m = new InsertarCarreras();
+                    m.ShowDialog();
+                    this.Close();
+
+
+
+
                 }
                 else
                 {
@@ -111,6 +118,11 @@ namespace CreditosGallegos
             {
 
             }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

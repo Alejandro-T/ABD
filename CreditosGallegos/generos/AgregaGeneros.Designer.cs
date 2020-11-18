@@ -29,32 +29,25 @@
         private void InitializeComponent()
         {
             this.textBoxdescrpcGenero = new System.Windows.Forms.TextBox();
-            this.textBoxidGnero = new System.Windows.Forms.TextBox();
             this.btnAgreagrGenero = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxdescrpcGenero
             // 
             this.textBoxdescrpcGenero.BackColor = System.Drawing.Color.White;
             this.textBoxdescrpcGenero.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxdescrpcGenero.Location = new System.Drawing.Point(172, 145);
+            this.textBoxdescrpcGenero.Location = new System.Drawing.Point(164, 73);
             this.textBoxdescrpcGenero.Name = "textBoxdescrpcGenero";
             this.textBoxdescrpcGenero.Size = new System.Drawing.Size(100, 13);
             this.textBoxdescrpcGenero.TabIndex = 6;
-            // 
-            // textBoxidGnero
-            // 
-            this.textBoxidGnero.BackColor = System.Drawing.Color.White;
-            this.textBoxidGnero.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxidGnero.Location = new System.Drawing.Point(172, 97);
-            this.textBoxidGnero.Name = "textBoxidGnero";
-            this.textBoxidGnero.Size = new System.Drawing.Size(100, 13);
-            this.textBoxidGnero.TabIndex = 5;
+            this.textBoxdescrpcGenero.TextChanged += new System.EventHandler(this.textBoxdescrpcGenero_TextChanged);
             // 
             // btnAgreagrGenero
             // 
-            this.btnAgreagrGenero.Location = new System.Drawing.Point(183, 189);
+            this.btnAgreagrGenero.Location = new System.Drawing.Point(175, 117);
             this.btnAgreagrGenero.Name = "btnAgreagrGenero";
             this.btnAgreagrGenero.Size = new System.Drawing.Size(75, 23);
             this.btnAgreagrGenero.TabIndex = 7;
@@ -65,26 +58,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(294, 145);
+            this.label1.Location = new System.Drawing.Point(286, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre del genero";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // ActualizarGeneros
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(70, 160);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(357, 151);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // AgregaGeneros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 346);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAgreagrGenero);
             this.Controls.Add(this.textBoxdescrpcGenero);
-            this.Controls.Add(this.textBoxidGnero);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ActualizarGeneros";
+            this.Name = "AgregaGeneros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregaGeneros";
             this.Load += new System.EventHandler(this.AgregaGeneros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,8 +97,8 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBoxdescrpcGenero;
-        private System.Windows.Forms.TextBox textBoxidGnero;
         private System.Windows.Forms.Button btnAgreagrGenero;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -52,6 +52,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="carreras\ActualizaCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\ActualizaCarreras.Designer.cs">
+      <DependentUpon>ActualizaCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carreras\BorrarCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\BorrarCarreras.Designer.cs">
+      <DependentUpon>BorrarCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carreras\Carreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\Carreras.Designer.cs">
+      <DependentUpon>Carreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carreras\InsertaCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\InsertaCarreras.Designer.cs">
+      <DependentUpon>InsertaCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carreras\SeleccionaCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\SeleccionaCarreras.Designer.cs">
+      <DependentUpon>SeleccionaCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\BorraDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\BorraDepartamentos.Designer.cs">
+      <DependentUpon>BorraDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\Depto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\Depto.Designer.cs">
+      <DependentUpon>Depto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\InsertaDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\InsertaDepartamentos.Designer.cs">
+      <DependentUpon>InsertaDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\SeleccionaDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\SeleccionaDepto.Designer.cs">
+      <DependentUpon>SeleccionaDepto.cs</DependentUpon>
+    </Compile>
     <Compile Include="generos\AgregaGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +151,34 @@
     <Compile Include="generos\SeleccionaGeneros.Designer.cs">
       <DependentUpon>SeleccionaGeneros.cs</DependentUpon>
     </Compile>
+    <Compile Include="publicas.cs" />
+    <EmbeddedResource Include="carreras\ActualizaCarreras.resx">
+      <DependentUpon>ActualizaCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carreras\BorrarCarreras.resx">
+      <DependentUpon>BorrarCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carreras\Carreras.resx">
+      <DependentUpon>Carreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carreras\InsertaCarreras.resx">
+      <DependentUpon>InsertaCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carreras\SeleccionaCarreras.resx">
+      <DependentUpon>SeleccionaCarreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\BorraDepartamentos.resx">
+      <DependentUpon>BorraDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\Depto.resx">
+      <DependentUpon>Depto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\InsertaDepartamentos.resx">
+      <DependentUpon>InsertaDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\SeleccionaDepto.resx">
+      <DependentUpon>SeleccionaDepto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="generos\AgregaGeneros.resx">
       <DependentUpon>AgregaGeneros.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +234,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\icons8_delete_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons8_close_window_96px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
