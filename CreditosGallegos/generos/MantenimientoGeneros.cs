@@ -121,10 +121,30 @@ namespace CreditosGallegos.generos
                     MessageBox.Show("El Genero no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
-
-            catch (OracleException)
+            ///<summary>
+            ///<exception cref="FormatException">
+            ///Error cuando se mete un numero incorrecto en un textbox o combobox
+            /// </exception>
+            ///<exception cref="OracleException">
+            ///Intentar eliminar un dato padre que ha sido insertado en una tabla hijo previamente
+            ///</exception>
+            ///</summary>
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
+               
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
+                
             }
         }
     }

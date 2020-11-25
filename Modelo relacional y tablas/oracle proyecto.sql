@@ -164,6 +164,36 @@ end insertar_depto;
 
 
 
+CREATE SEQUENCE seq_entrena_id_entrena
+START WITH 1
+INCREMENT BY 1 
+NOMAXVALUE; 
+
+create or replace trigger entrena_triger_auto
+	before insert on entrenadores
+	for each row 
+	begin 
+	select seq_entrena_id_entrena.nextval
+	into:new.id_entrenador
+	from dual;
+end;
+/
+
+
+create or replace procedure insertar_entrena
+(entrena_id_genero numeric,entrena_id_tec numeric,entrena_id_depto numeric,entrena_nombre varchar2,entrena_paterno varchar2,entrena_materno varchar2)
+as
+begin
+      insert into entrenadores(id_genero,id_tec,id_departamento,nombre,paterno,materno) 
+      values(entrena_id_genero,entrena_id_tec,entrena_id_depto,entrena_nombre,entrena_paterno,entrena_materno);
+end insertar_entrena;
+/
+
+
+
+
+
+
 
 CREATE OR REPLACE PROCEDURE  ACTUALIZACARRERAS (id_carrerain numeric,id_tecin numeric,nombrein varchar2)
 as
@@ -184,4 +214,15 @@ begin
 update departamentos set descripcion = nombrein,id_departamento=id_deptoin
 where(id_departamento)=id_deptoin;
 end ACTUALIZADEPTO;
+/
+
+
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZAENTRENA (ID_ENTRENADORIN numeric,ID_GENEROIN numeric,ID_TECIN numeric,ID_DEPARTAMENTOIN numeric,NOMBREIN varchar2,PATERNOIN varchar2,MATERNOIN varchar2)
+as
+begin
+update ENTRENADORES set id_genero = ID_GENEROIN,id_departamento=ID_DEPARTAMENTOIN,nombre = nombrein,paterno=PATERNOIN,MATERNO=MATERNOIN
+where(id_ENTRENADOR)=ID_ENTRENADORIN;
+end ACTUALIZAENTRENA;
 /

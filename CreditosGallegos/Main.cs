@@ -95,5 +95,16 @@ namespace CreditosGallegos
                 Application.Exit();
             }
         }
+
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)
+        {
+            Backup bk = new Backup();
+            bk.Show();
+        }
+
+        private void buttonEntrenador_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Entrenadores.Entrenadores());
+        }
     }
 }

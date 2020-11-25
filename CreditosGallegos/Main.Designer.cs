@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InsertarCarreras));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonParticipa = new System.Windows.Forms.Button();
             this.buttonEqDepor = new System.Windows.Forms.Button();
             this.buttonDepartamentos = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(30)))), ((int)(((byte)(52)))));
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.buttonParticipa);
             this.panel1.Controls.Add(this.buttonEqDepor);
             this.panel1.Controls.Add(this.buttonDepartamentos);
@@ -64,8 +67,19 @@
             this.panel1.Controls.Add(this.shapeContainer1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 550);
+            this.panel1.Size = new System.Drawing.Size(196, 569);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CreditosGallegos.Properties.Resources.icons8_data_backup_80px_8;
+            this.pictureBox2.Location = new System.Drawing.Point(25, 507);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
             // 
             // buttonParticipa
             // 
@@ -123,6 +137,7 @@
             this.buttonEntrenador.TabIndex = 4;
             this.buttonEntrenador.Text = "Entrenadores";
             this.buttonEntrenador.UseVisualStyleBackColor = false;
+            this.buttonEntrenador.Click += new System.EventHandler(this.buttonEntrenador_Click);
             // 
             // buttonAlumnos
             // 
@@ -175,7 +190,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.ovalShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(196, 550);
+            this.shapeContainer1.Size = new System.Drawing.Size(196, 569);
             this.shapeContainer1.TabIndex = 8;
             this.shapeContainer1.TabStop = false;
             // 
@@ -246,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 550);
+            this.ClientSize = new System.Drawing.Size(1016, 571);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -259,6 +274,7 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.InsertarCarreras_MouseMove);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -283,5 +299,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

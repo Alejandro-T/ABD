@@ -1,6 +1,8 @@
 ﻿
+using CreditosGallegos.Alumnos;
 using CreditosGallegos.carreras;
 using CreditosGallegos.Departamentos;
+using CreditosGallegos.Entrenadores;
 using CreditosGallegos.generos;
 using System;
 using System.Collections.Generic;

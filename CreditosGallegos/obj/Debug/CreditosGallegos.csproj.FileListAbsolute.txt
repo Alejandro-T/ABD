@@ -29,3 +29,9 @@ C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\Creditos
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.generos.MantenimientoGeneros.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.MantenimientoCarreras.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.MantenimientoDepto.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.InsertaEntrenador.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.MantenimientoEntrena.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.MantenimientoEntrenadores.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Backup.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.Entrenadores.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\bin\Debug\CreditosGallegos.xml

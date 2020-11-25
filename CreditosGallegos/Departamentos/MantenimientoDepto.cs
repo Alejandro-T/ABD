@@ -64,6 +64,8 @@ namespace CreditosGallegos.Departamentos
         {
             try
             {
+               
+                     
                 string query = "DELETE FROM departamentos where id_departamento='" + textBoxIdDepto.Text + "'";
 
                 string comprobacion =
@@ -85,11 +87,27 @@ namespace CreditosGallegos.Departamentos
                     MessageBox.Show("El departamento no existe no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
-
-            catch (Oracle.DataAccess.Client.OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
             }
+           
+        }
+
+        private bool FormatException(Exception ex)
+        {
+            throw new NotImplementedException();
         }
 
         private void dataGridViewDepto_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -146,21 +164,21 @@ namespace CreditosGallegos.Departamentos
                 }
 
                 //aaaa
-
-
             }
-
-            catch (Oracle.DataAccess.Client.OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hay un campo sin datos");
-            }
-            finally
-            {
-                Conexion.cerrar();
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
             }
         }
     }

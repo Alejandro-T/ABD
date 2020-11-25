@@ -13,6 +13,9 @@ namespace CreditosGallegos
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public static int id=0;
         public Form1()
         {
