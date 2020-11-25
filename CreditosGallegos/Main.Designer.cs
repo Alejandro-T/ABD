@@ -38,14 +38,14 @@
             this.buttonAlumnos = new System.Windows.Forms.Button();
             this.buttonCarreras = new System.Windows.Forms.Button();
             this.buttonGeneros = new System.Windows.Forms.Button();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ovalShape1 = new Microsoft.VisualBasic.PowerPacks.OvalShape();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -168,11 +168,36 @@
             this.buttonGeneros.UseVisualStyleBackColor = false;
             this.buttonGeneros.Click += new System.EventHandler(this.button1_Click);
             // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.ovalShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(196, 550);
+            this.shapeContainer1.TabIndex = 8;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // ovalShape1
+            // 
+            this.ovalShape1.BackColor = System.Drawing.Color.Transparent;
+            this.ovalShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape1.BackgroundImage")));
+            this.ovalShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
+            this.ovalShape1.BorderColor = System.Drawing.Color.Transparent;
+            this.ovalShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.ovalShape1.FillColor = System.Drawing.Color.Transparent;
+            this.ovalShape1.FillGradientColor = System.Drawing.Color.Transparent;
+            this.ovalShape1.Location = new System.Drawing.Point(65, 1);
+            this.ovalShape1.Name = "ovalShape1";
+            this.ovalShape1.Size = new System.Drawing.Size(74, 76);
+            // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(202, 29);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(676, 499);
+            this.panel2.Size = new System.Drawing.Size(792, 499);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -184,17 +209,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Date";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.ovalShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(196, 550);
-            this.shapeContainer1.TabIndex = 8;
-            this.shapeContainer1.TabStop = false;
             // 
             // timer1
             // 
@@ -212,7 +226,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(719, 3);
+            this.panel3.Location = new System.Drawing.Point(825, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(169, 26);
             this.panel3.TabIndex = 3;
@@ -228,25 +242,11 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
-            // ovalShape1
-            // 
-            this.ovalShape1.BackColor = System.Drawing.Color.Transparent;
-            this.ovalShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape1.BackgroundImage")));
-            this.ovalShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
-            this.ovalShape1.BorderColor = System.Drawing.Color.Transparent;
-            this.ovalShape1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.ovalShape1.FillColor = System.Drawing.Color.Transparent;
-            this.ovalShape1.FillGradientColor = System.Drawing.Color.Transparent;
-            this.ovalShape1.Location = new System.Drawing.Point(65, 1);
-            this.ovalShape1.Name = "ovalShape1";
-            this.ovalShape1.Size = new System.Drawing.Size(74, 76);
-            // 
             // InsertarCarreras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 550);
+            this.ClientSize = new System.Drawing.Size(1016, 550);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

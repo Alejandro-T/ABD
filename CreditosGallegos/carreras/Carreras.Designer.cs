@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonAgregar = new System.Windows.Forms.Button();
-            this.buttonSeleccionar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
@@ -48,7 +46,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(785, 53);
+            this.panel1.Size = new System.Drawing.Size(801, 53);
             this.panel1.TabIndex = 2;
             // 
             // label1
@@ -65,8 +63,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(11)))), ((int)(((byte)(29)))));
             this.panel2.Controls.Add(this.buttonAgregar);
-            this.panel2.Controls.Add(this.buttonSeleccionar);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(0, 52);
@@ -79,7 +75,7 @@
             this.buttonAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAgregar.ForeColor = System.Drawing.Color.White;
-            this.buttonAgregar.Location = new System.Drawing.Point(373, 0);
+            this.buttonAgregar.Location = new System.Drawing.Point(126, 0);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonAgregar.Size = new System.Drawing.Size(129, 48);
@@ -87,34 +83,6 @@
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = true;
             this.buttonAgregar.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // buttonSeleccionar
-            // 
-            this.buttonSeleccionar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSeleccionar.ForeColor = System.Drawing.Color.White;
-            this.buttonSeleccionar.Location = new System.Drawing.Point(239, 0);
-            this.buttonSeleccionar.Name = "buttonSeleccionar";
-            this.buttonSeleccionar.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.buttonSeleccionar.Size = new System.Drawing.Size(128, 48);
-            this.buttonSeleccionar.TabIndex = 3;
-            this.buttonSeleccionar.Text = "Seleccionar";
-            this.buttonSeleccionar.UseVisualStyleBackColor = true;
-            this.buttonSeleccionar.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(116, 0);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(117, 51);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -127,7 +95,7 @@
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(110, 51);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Actualizar";
+            this.button1.Text = "Mantenimiento a Carreras";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -142,9 +110,9 @@
             // 
             // panelContenedor
             // 
-            this.panelContenedor.Location = new System.Drawing.Point(150, 109);
+            this.panelContenedor.Location = new System.Drawing.Point(12, 109);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(502, 379);
+            this.panelContenedor.Size = new System.Drawing.Size(761, 379);
             this.panelContenedor.TabIndex = 19;
             // 
             // Carreras
@@ -152,7 +120,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(176)))), ((int)(((byte)(186)))));
-            this.ClientSize = new System.Drawing.Size(785, 500);
+            this.ClientSize = new System.Drawing.Size(801, 498);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -174,8 +142,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonAgregar;
-        private System.Windows.Forms.Button buttonSeleccionar;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelContenedor;

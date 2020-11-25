@@ -39,7 +39,7 @@ namespace CreditosGallegos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new ActualizaGeneros());
+            AbrirFormEnPanel(new MantenimientoGeneros());
         }
 
         private void button2_Click(object sender, EventArgs e)

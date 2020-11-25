@@ -80,5 +80,10 @@ namespace CreditosGallegos.Departamentos
                 MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

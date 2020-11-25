@@ -168,7 +168,20 @@ end insertar_depto;
 CREATE OR REPLACE PROCEDURE  ACTUALIZACARRERAS (id_carrerain numeric,id_tecin numeric,nombrein varchar2)
 as
 begin
-update carreras set nombre = nombrein,id_tec = id_tecin
+update carreras set nombre = nombrein,id_carrera=id_carrerain
 where(id_carrera)=id_carrerain;
 end ACTUALIZACARRERAS;
+/
+
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZADEPTO (id_deptoin numeric,nombrein varchar2)
+as
+begin
+update departamentos set descripcion = nombrein,id_departamento=id_deptoin
+where(id_departamento)=id_deptoin;
+end ACTUALIZADEPTO;
 /

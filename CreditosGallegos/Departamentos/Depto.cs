@@ -29,7 +29,7 @@ namespace CreditosGallegos.Departamentos
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new MantenimientoDepto());
         }
 
         private void button2_Click(object sender, EventArgs e)

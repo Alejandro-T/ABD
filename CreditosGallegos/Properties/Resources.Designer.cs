@@ -73,6 +73,16 @@ namespace CreditosGallegos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_broom_52px_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_broom_52px_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_checkmark_48px {
             get {
                 object obj = ResourceManager.GetObject("icons8_checkmark_48px", resourceCulture);
@@ -106,6 +116,26 @@ namespace CreditosGallegos.Properties {
         internal static System.Drawing.Bitmap icons8_delete_48px {
             get {
                 object obj = ResourceManager.GetObject("icons8_delete_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_trash_48px_7 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_trash_48px_7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_left_rotation_48px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_update_left_rotation_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

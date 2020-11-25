@@ -26,3 +26,6 @@ C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\Creditos
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.BorraDepartamentos.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.SeleccionaDepto.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.Depto.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.generos.MantenimientoGeneros.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.MantenimientoCarreras.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.MantenimientoDepto.resources

@@ -29,7 +29,7 @@ namespace CreditosGallegos.carreras
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new ActualizaCarreras());
+            AbrirFormEnPanel(new MantenimientoCarreras());
         }
 
         private void button4_Click(object sender, EventArgs e)

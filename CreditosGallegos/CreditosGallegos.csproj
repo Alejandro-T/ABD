@@ -76,6 +76,12 @@
     <Compile Include="carreras\InsertaCarreras.Designer.cs">
       <DependentUpon>InsertaCarreras.cs</DependentUpon>
     </Compile>
+    <Compile Include="carreras\MantenimientoCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carreras\MantenimientoCarreras.Designer.cs">
+      <DependentUpon>MantenimientoCarreras.cs</DependentUpon>
+    </Compile>
     <Compile Include="carreras\SeleccionaCarreras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="Departamentos\InsertaDepartamentos.Designer.cs">
       <DependentUpon>InsertaDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departamentos\MantenimientoDepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departamentos\MantenimientoDepto.Designer.cs">
+      <DependentUpon>MantenimientoDepto.cs</DependentUpon>
     </Compile>
     <Compile Include="Departamentos\SeleccionaDepto.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,12 @@
     <Compile Include="generos\Generos.Designer.cs">
       <DependentUpon>Generos.cs</DependentUpon>
     </Compile>
+    <Compile Include="generos\MantenimientoGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generos\MantenimientoGeneros.Designer.cs">
+      <DependentUpon>MantenimientoGeneros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +182,9 @@
     <EmbeddedResource Include="carreras\InsertaCarreras.resx">
       <DependentUpon>InsertaCarreras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="carreras\MantenimientoCarreras.resx">
+      <DependentUpon>MantenimientoCarreras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="carreras\SeleccionaCarreras.resx">
       <DependentUpon>SeleccionaCarreras.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Departamentos\InsertaDepartamentos.resx">
       <DependentUpon>InsertaDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departamentos\MantenimientoDepto.resx">
+      <DependentUpon>MantenimientoDepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Departamentos\SeleccionaDepto.resx">
       <DependentUpon>SeleccionaDepto.cs</DependentUpon>
@@ -193,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="generos\Generos.resx">
       <DependentUpon>Generos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generos\MantenimientoGeneros.resx">
+      <DependentUpon>MantenimientoGeneros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -237,6 +264,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\icons8_close_window_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\icons8_broom_52px_1.png" />
+    <Content Include="resources\icons8_trash_48px_7.png" />
+    <Content Include="resources\icons8_update_left_rotation_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
