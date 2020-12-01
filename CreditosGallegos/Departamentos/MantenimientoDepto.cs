@@ -22,7 +22,7 @@ namespace CreditosGallegos.Departamentos
             try
             {
                 DataTable dtDepto = new DataTable();
-                string comprobacion = "Select * from departamentos";
+                string comprobacion = "select * from departamentos where ID_TEC ='" + this.textBoxId_tec.Text + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -47,7 +47,9 @@ namespace CreditosGallegos.Departamentos
         }
         private void MantenimientoDepto_Load(object sender, EventArgs e)
         {
+            this.textBoxId_tec.Text = publicas.id_tec.ToString();
             this.cargarDpto(this.dataGridViewDepto);
+            
         }
         public void limpiar()
         {
@@ -66,10 +68,10 @@ namespace CreditosGallegos.Departamentos
             {
                
                      
-                string query = "DELETE FROM departamentos where id_departamento='" + textBoxIdDepto.Text + "'";
+                string query = "DELETE FROM departamentos where id_departamento='" + textBoxIdDepto.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
 
                 string comprobacion =
-                    "SELECT id_departamento from departamentos where id_departamento='" + textBoxIdDepto.Text + "'";
+                    "SELECT id_departamento from departamentos where id_departamento='" + textBoxIdDepto.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
@@ -139,7 +141,7 @@ namespace CreditosGallegos.Departamentos
                 OracleDataReader dr = cp.ExecuteReader();
                 //
                 string comprobacion2 =
-                    "SELECT id_departamento from departamentos where id_departamento='" + textBoxIdDepto.Text + "'";
+                    "SELECT id_departamento from departamentos where id_departamento='" + textBoxIdDepto.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 OracleCommand cp2 = new OracleCommand(comprobacion2, Conexion.conectar());
                 OracleDataReader dr2 = cp2.ExecuteReader();
                 
@@ -180,6 +182,12 @@ namespace CreditosGallegos.Departamentos
                         break;
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeleccionaDepto sdepto = new SeleccionaDepto();
+            sdepto.Show();
         }
     }
 }

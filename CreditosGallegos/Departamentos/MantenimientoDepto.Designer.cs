@@ -38,12 +38,13 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridViewDepto = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxId_tec = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxIdDepto = new System.Windows.Forms.TextBox();
-            this.textBoxId_tec = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,6 +56,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.pictureBox3);
             this.groupBox3.Controls.Add(this.pictureBox2);
             this.groupBox3.Controls.Add(this.label3);
@@ -63,7 +65,7 @@
             this.groupBox3.Controls.Add(this.pictureBox1);
             this.groupBox3.Location = new System.Drawing.Point(517, 21);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(165, 244);
+            this.groupBox3.Size = new System.Drawing.Size(165, 278);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos";
@@ -160,6 +162,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ingresa Datos";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Id_Tec";
+            // 
+            // textBoxId_tec
+            // 
+            this.textBoxId_tec.Enabled = false;
+            this.textBoxId_tec.Location = new System.Drawing.Point(84, 45);
+            this.textBoxId_tec.Name = "textBoxId_tec";
+            this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
+            this.textBoxId_tec.TabIndex = 4;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -192,22 +211,15 @@
             this.textBoxIdDepto.Size = new System.Drawing.Size(100, 20);
             this.textBoxIdDepto.TabIndex = 0;
             // 
-            // textBoxId_tec
+            // button1
             // 
-            this.textBoxId_tec.Enabled = false;
-            this.textBoxId_tec.Location = new System.Drawing.Point(84, 45);
-            this.textBoxId_tec.Name = "textBoxId_tec";
-            this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_tec.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Id_Tec";
+            this.button1.Location = new System.Drawing.Point(6, 231);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Buscar Departamentos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MantenimientoDepto
             // 
@@ -252,5 +264,6 @@
         private System.Windows.Forms.TextBox textBoxIdDepto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxId_tec;
+        private System.Windows.Forms.Button button1;
     }
 }

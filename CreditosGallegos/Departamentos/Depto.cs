@@ -34,7 +34,7 @@ namespace CreditosGallegos.Departamentos
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormEnPanel(new BorraDepartamentos());
+            
         }
 
         private void buttonSelecciona_Click(object sender, EventArgs e)
@@ -45,6 +45,11 @@ namespace CreditosGallegos.Departamentos
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new InsertaDepartamentos());
+        }
+
+        private void Depto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,7 +22,7 @@ namespace CreditosGallegos
         public static OracleConnection cerrar()
         {
             OracleConnection cn = new OracleConnection("DATA SOURCE = xe; PASSWORD=patito; USER ID = consultorio");
-            cn.Close();
+            cn.Dispose();
             return cn;
         }
     }

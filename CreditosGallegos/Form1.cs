@@ -21,14 +21,14 @@ namespace CreditosGallegos
         {
             InitializeComponent();
         }
-        public int id_tec = 0;
+        
        
         private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
                 Conexion.conectar();
-                
+                MessageBox.Show("Conexion Exitosa", "aviso", MessageBoxButtons.OK);
             }
             catch
             {
@@ -65,37 +65,28 @@ namespace CreditosGallegos
         private void button1_Click(object sender, EventArgs e)
         {
             
-            string comp = "Select id_tec from tecsnm where id_tec='" + this.textBoxUser.Text + "'";
+            string comp = " select id_tec from login where user_id ='" + this.textBoxUser.Text + "'and password='"+this.textBoxPassword.Text +"'";
+            //select id_tec from login where user_id = 'alejandro' and password = 'patito';
             
-         
             OracleCommand cpe = new OracleCommand(comp, Conexion.conectar());
             OracleDataReader dre = cpe.ExecuteReader();
             if (dre.Read())
             {
-                
-                string comprobacion2 = "Select * from tecsnm where nombre='" + this.textBoxPassword.Text + "'";
-                
-               
-                cpe = new OracleCommand(comprobacion2, Conexion.conectar());
-                dre = cpe.ExecuteReader();
-                if (dre.Read())
-                {
-                    MessageBox.Show("BIENVENIDO "+textBoxPassword.Text, "aviso", MessageBoxButtons.OK);
+                publicas.id_tec = Convert.ToInt32(cpe.ExecuteScalar());
 
-                    //Mostar menu
+                
+                MessageBox.Show("BIENVENIDO "+textBoxUser.Text, "aviso", MessageBoxButtons.OK);
+
+                //Mostar menu
                     
-                    InsertarCarreras m = new InsertarCarreras();
-                    m.ShowDialog();
-                    this.Close();
+                InsertarCarreras m = new InsertarCarreras();
+                m.ShowDialog();
+                this.Close();
 
 
 
 
-                }
-                else
-                {
-                    intento += 1;
-                }
+               
             }
             else
             {

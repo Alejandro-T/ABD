@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AbrirFormEnPanel method">
+    <HelpKINode Title="Carreras.AbrirFormEnPanel (M&#233;todo )" Url="html/afc56528-c3cd-fc8d-e721-adbfc46e3253.htm" />
+    <HelpKINode Title="Depto.AbrirFormEnPanel (M&#233;todo )" Url="html/3844310a-7957-8dae-2762-c2008b7abfc2.htm" />
+    <HelpKINode Title="Entrenadores.AbrirFormEnPanel (M&#233;todo )" Url="html/d89473f2-7075-1e80-e57a-cfb76191e4df.htm" />
+    <HelpKINode Title="Generos.AbrirFormEnPanel (M&#233;todo )" Url="html/d58eb21a-1022-22ac-c5dd-3d11230cb863.htm" />
+    <HelpKINode Title="InsertarCarreras.AbrirFormEnPanel (M&#233;todo )" Url="html/257fb0cb-2c2d-2326-f0ef-3dbc86c7dcf5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActualizaCarreras class">
+    <HelpKINode Title="ActualizaCarreras (Clase)" Url="html/d24d6b56-6f7f-33be-9b53-400e172dc838.htm" />
+    <HelpKINode Title="constructor" Url="html/3142bb57-452d-d24d-ca96-61ffe908648c.htm" />
+    <HelpKINode Title="events" Url="html/1729b877-5fb9-eab3-2487-9c2d990c5474.htm" />
+    <HelpKINode Title="fields" Url="html/e0ef92b2-c121-11aa-ca56-532642816116.htm" />
+    <HelpKINode Title="methods" Url="html/ec654797-61a4-be00-4b93-fb20599cb1b6.htm" />
+    <HelpKINode Title="properties" Url="html/5586c5fc-4a87-b051-7794-d667580dc3e0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActualizaCarreras.ActualizaCarreras constructor" Url="html/3142bb57-452d-d24d-ca96-61ffe908648c.htm" />
+  <HelpKINode Title="ActualizaCarreras.ActualizaCarreras_Load method" Url="html/68d41591-ed34-ce61-598d-9889dc6179ed.htm" />
+  <HelpKINode Title="ActualizaCarreras.cargarCarreras method" Url="html/4844a860-f1b6-d475-7907-6cee203f0f4b.htm" />
+  <HelpKINode Title="ActualizaCarreras.cargarcheckbix method" Url="html/34392277-8036-a607-a568-40625e87961d.htm" />
+  <HelpKINode Title="ActualizaCarreras.checkBoxid field" Url="html/5fd46f49-1415-0e7c-eb00-c2b80f84a42e.htm" />
+  <HelpKINode Title="ActualizaCarreras.checkBoxid_name field" Url="html/51daabff-6e70-f1e7-6835-56140a3d9594.htm" />
+  <HelpKINode Title="ActualizaCarreras.checkBoxid_tec_CheckedChanged method" Url="html/2cce44b4-4477-2277-b010-31adefd3a3b1.htm" />
+  <HelpKINode Title="ActualizaCarreras.checkBoxNombre_CheckedChanged method" Url="html/44cfefb7-dd36-60e7-ec40-17854476bd23.htm" />
+  <HelpKINode Title="ActualizaCarreras.components field" Url="html/0b8820a9-c295-c2d2-ce20-1f6eb0e018b5.htm" />
+  <HelpKINode Title="ActualizaCarreras.dataGridViewCarrera field" Url="html/eef3daca-7ff5-822d-e167-5e5d5fbf7381.htm" />
+  <HelpKINode Title="ActualizaCarreras.dataGridViewCarrera_CellContentClick method" Url="html/94c154ea-734e-3f25-9ee0-ca3ce6ea8b2a.htm" />
+  <HelpKINode Title="ActualizaCarreras.Dispose method" Url="html/7e9b1685-762e-63ee-6278-3a1228945b41.htm" />
+  <HelpKINode Title="ActualizaCarreras.dr field" Url="html/22714d87-bf4e-8da8-5924-4b81fd4e70f5.htm" />
+  <HelpKINode Title="ActualizaCarreras.groupBox1 field" Url="html/3173c0cd-47db-7a71-2140-8455fcd8889e.htm" />
+  <HelpKINode Title="ActualizaCarreras.groupBox2 field" Url="html/33f893ae-060a-81ba-22a8-1c8b743c074c.htm" />
+  <HelpKINode Title="ActualizaCarreras.InitializeComponent method" Url="html/95aa80fc-a145-c5c8-7e2e-9fffecb1ce94.htm" />
+  <HelpKINode Title="ActualizaCarreras.label1 field" Url="html/a4485b83-0d24-37e2-e09f-fabdef6d510e.htm" />
+  <HelpKINode Title="ActualizaCarreras.pictureBox1 field" Url="html/f6cea8d1-b2fa-ac9e-601e-3d514324d928.htm" />
+  <HelpKINode Title="ActualizaCarreras.pictureBox1_DoubleClick method" Url="html/e9b054eb-c7cc-4a91-9707-693d4133fad5.htm" />
+  <HelpKINode Title="ActualizaCarreras.pictureBox2 field" Url="html/0d796e4d-e570-7de4-fbf9-784c92c5c411.htm" />
+  <HelpKINode Title="ActualizaCarreras.pictureBox2_DoubleClick method" Url="html/966bbf53-e094-dd05-b2a0-f09d79029cb9.htm" />
+  <HelpKINode Title="ActualizaCarreras.textBox2 field" Url="html/76fc9fb7-ed3b-7637-6c47-4b9c3d7644fa.htm" />
+  <HelpKINode Title="ActualizaCarreras.textBoxbusca_id_carrera field" Url="html/0648873f-4b85-7703-f772-e8cd7987619c.htm" />
+  <HelpKINode Title="ActualizaCarreras.textBoxName field" Url="html/15ef5645-1888-af5b-2f23-b6a8da786bee.htm" />
+  <HelpKINode Title="ActualizaCarreras_Load method" Url="html/68d41591-ed34-ce61-598d-9889dc6179ed.htm" />
+  <HelpKINode Title="ActualizaGeneros class">
+    <HelpKINode Title="ActualizaGeneros (Clase)" Url="html/173710e1-9a51-7ddf-1875-58c170e66783.htm" />
+    <HelpKINode Title="constructor" Url="html/9560495e-55cf-541a-4789-871a6808d954.htm" />
+    <HelpKINode Title="events" Url="html/25975e80-f096-8a1a-7460-cb9d6ac46df3.htm" />
+    <HelpKINode Title="fields" Url="html/ecb29ad9-7e0f-6100-551c-8004cc92d8d0.htm" />
+    <HelpKINode Title="methods" Url="html/e326b31e-908e-8c34-58b8-c0c582e34103.htm" />
+    <HelpKINode Title="properties" Url="html/5738e4d7-bd8d-155c-9ea1-caaa895fbc90.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ActualizaGeneros.ActualizaGeneros constructor" Url="html/9560495e-55cf-541a-4789-871a6808d954.htm" />
+  <HelpKINode Title="ActualizaGeneros.ActualizaGeneros_Load method" Url="html/bb22b2e5-1392-b6e9-8112-9a87da9a154a.htm" />
+  <HelpKINode Title="ActualizaGeneros.cargarGeneros method" Url="html/50056894-d11c-e4f8-9003-0c3c9f48eed8.htm" />
+  <HelpKINode Title="ActualizaGeneros.components field" Url="html/62db15ac-31ba-84e1-cf18-5223401b5d13.htm" />
+  <HelpKINode Title="ActualizaGeneros.dataGridViewAGeneros field" Url="html/7e923b79-4d4b-1d06-b561-5e9121be4bcc.htm" />
+  <HelpKINode Title="ActualizaGeneros.dataGridViewAGeneros_CellContentClick method" Url="html/f0f8448b-aefb-3ad9-fc26-2183ecd615bc.htm" />
+  <HelpKINode Title="ActualizaGeneros.Dispose method" Url="html/f3f2497a-abf9-6526-05ed-e038cc5d668d.htm" />
+  <HelpKINode Title="ActualizaGeneros.InitializeComponent method" Url="html/8eda5aa5-6274-12a1-2838-0b2943d270a5.htm" />
+  <HelpKINode Title="ActualizaGeneros.label1 field" Url="html/79e6c3a7-33d6-6500-f8da-782bf26f94c2.htm" />
+  <HelpKINode Title="ActualizaGeneros.label2 field" Url="html/85ca4a9d-ab02-5084-d881-6340a15ec7d8.htm" />
+  <HelpKINode Title="ActualizaGeneros.pictureBox1 field" Url="html/0998bc7e-8b7f-cddb-6d38-6e75521a7e73.htm" />
+  <HelpKINode Title="ActualizaGeneros.pictureBox1_DoubleClick method" Url="html/1781aee1-e1e9-7665-ec8f-ba3e664497da.htm" />
+  <HelpKINode Title="ActualizaGeneros.pictureBox2 field" Url="html/4b930274-275d-f3f3-df65-51ffee78499f.htm" />
+  <HelpKINode Title="ActualizaGeneros.pictureBox2_Click method" Url="html/049e40d7-a7fa-bfa2-d111-558a04092a0d.htm" />
+  <HelpKINode Title="ActualizaGeneros.pictureBox2_DoubleClick method" Url="html/d3eacb82-91fe-15d9-10b4-e73c429a332c.htm" />
+  <HelpKINode Title="ActualizaGeneros.textBoxActualizaGenero field" Url="html/78239ad8-6799-718d-03ac-8ac76d2f63cb.htm" />
+  <HelpKINode Title="ActualizaGeneros.textBoxAidGnero field" Url="html/52dc6916-52b2-f012-b348-0338e75cd7b7.htm" />
+  <HelpKINode Title="ActualizaGeneros_Load method" Url="html/bb22b2e5-1392-b6e9-8112-9a87da9a154a.htm" />
+  <HelpKINode Title="actualizasecuencia method" Url="html/be580fb5-594f-7de8-c79c-2983fa4b7d56.htm" />
+  <HelpKINode Title="AgregaGeneros class">
+    <HelpKINode Title="AgregaGeneros (Clase)" Url="html/a857755d-80a8-86fb-ca66-2e609b67afac.htm" />
+    <HelpKINode Title="constructor" Url="html/b508f78f-1746-d2ec-4b2d-92a1c028ecff.htm" />
+    <HelpKINode Title="events" Url="html/921a8cda-f251-f2bb-4cca-7bc2ec875b27.htm" />
+    <HelpKINode Title="fields" Url="html/5656b49b-2a32-4b81-354d-7f522aa7bd1c.htm" />
+    <HelpKINode Title="methods" Url="html/f6dc0202-1036-8df7-1002-990153bb4618.htm" />
+    <HelpKINode Title="properties" Url="html/d4180841-b480-679e-5eb4-7c6c875473cf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AgregaGeneros.AgregaGeneros constructor" Url="html/b508f78f-1746-d2ec-4b2d-92a1c028ecff.htm" />
+  <HelpKINode Title="AgregaGeneros.AgregaGeneros_Load method" Url="html/f9f93a53-9a02-39d9-7715-baa622ecbc17.htm" />
+  <HelpKINode Title="AgregaGeneros.btnAgreagrGenero field" Url="html/2ab97fa7-1b47-18e1-8eea-6d7510faf30b.htm" />
+  <HelpKINode Title="AgregaGeneros.btnAgreagrGenero_Click method" Url="html/4d00d568-d1e2-1e1e-109c-5cb27db2f7b1.htm" />
+  <HelpKINode Title="AgregaGeneros.cargarGeneros method" Url="html/2fa783b0-a6aa-fbed-2f68-0492e302eea8.htm" />
+  <HelpKINode Title="AgregaGeneros.components field" Url="html/50616a18-ce16-7eb1-69a8-d58b99749f36.htm" />
+  <HelpKINode Title="AgregaGeneros.dataGridView1 field" Url="html/5227018f-6a7c-ce2e-ed5c-3435215ac5f2.htm" />
+  <HelpKINode Title="AgregaGeneros.dataGridView1_CellContentClick method" Url="html/7c8c6a22-8d0f-a9a9-1ca6-09110fea8fa9.htm" />
+  <HelpKINode Title="AgregaGeneros.Dispose method" Url="html/742f10fd-9aa4-68f2-e3bb-04f5885a6b1f.htm" />
+  <HelpKINode Title="AgregaGeneros.dr field" Url="html/6d2bc054-44e0-33fd-f5d9-8008940dd812.htm" />
+  <HelpKINode Title="AgregaGeneros.InitializeComponent method" Url="html/d4adfd03-4260-55c8-cfa2-bbdb694e8229.htm" />
+  <HelpKINode Title="AgregaGeneros.label1 field" Url="html/b7ecfc53-1f0d-f151-95db-0b9adfa43e08.htm" />
+  <HelpKINode Title="AgregaGeneros.label1_Click method" Url="html/7667b25b-f1a6-79fe-e8ca-765e9b36f650.htm" />
+  <HelpKINode Title="AgregaGeneros.textBoxdescrpcGenero field" Url="html/f2a771fc-771d-557c-b86b-0a8c5301bcc6.htm" />
+  <HelpKINode Title="AgregaGeneros.textBoxdescrpcGenero_TextChanged method" Url="html/a741ac56-d78b-d3e3-2f5e-ec578afe3945.htm" />
+  <HelpKINode Title="AgregaGeneros_Load method" Url="html/f9f93a53-9a02-39d9-7715-baa622ecbc17.htm" />
+  <HelpKINode Title="aToolStripMenuItem_Click method" Url="html/b9a619c7-b1b1-5433-a2bf-c8f8d9ad1ee2.htm" />
+  <HelpKINode Title="Backup class">
+    <HelpKINode Title="Backup (Clase)" Url="html/dbaedbb7-d018-aded-6e83-e74392d45354.htm" />
+    <HelpKINode Title="constructor" Url="html/c4a54b82-f53a-790f-eb64-5e722185bb3b.htm" />
+    <HelpKINode Title="events" Url="html/b3cebe8c-6b85-9538-a348-cb923d2c46a8.htm" />
+    <HelpKINode Title="fields" Url="html/602e9f67-0580-0bc8-c430-5ef2c308a541.htm" />
+    <HelpKINode Title="methods" Url="html/aba32219-d8a1-6406-9c07-8388f6c6e2f6.htm" />
+    <HelpKINode Title="properties" Url="html/3c248b98-4290-19aa-0566-b50bc9f605db.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Backup.Backup constructor" Url="html/c4a54b82-f53a-790f-eb64-5e722185bb3b.htm" />
+  <HelpKINode Title="Backup.button1 field" Url="html/cd609cc4-16f1-cd74-f21e-eb7a2bb41e67.htm" />
+  <HelpKINode Title="Backup.button1_Click method" Url="html/6c8542df-9732-74d9-cf68-cad3512e98f3.htm" />
+  <HelpKINode Title="Backup.components field" Url="html/ab2214e4-94c3-7b6b-c5a0-d9fdac6f3fd0.htm" />
+  <HelpKINode Title="Backup.Dispose method" Url="html/0a1110b7-eb19-4739-15d4-afad27adf4f0.htm" />
+  <HelpKINode Title="Backup.InitializeComponent method" Url="html/b42311bf-b8c7-9a34-45ab-857be54e6a8e.htm" />
+  <HelpKINode Title="Backup.label1 field" Url="html/c27b6a43-e38e-8ec8-9aa9-e230b34649b0.htm" />
+  <HelpKINode Title="Backup.textBox1 field" Url="html/5ee30739-5f01-0fb9-8877-0c8dc59d6027.htm" />
+  <HelpKINode Title="BorraDepartamentos class">
+    <HelpKINode Title="BorraDepartamentos (Clase)" Url="html/de777f29-f67a-b5f2-33b1-ec54070cc670.htm" />
+    <HelpKINode Title="constructor" Url="html/986ab5dc-78fa-14d3-d332-632caa2c6b22.htm" />
+    <HelpKINode Title="events" Url="html/74f7e224-0af0-bd11-2440-41bd5196ca3d.htm" />
+    <HelpKINode Title="fields" Url="html/8a84bb66-0963-e33e-bdee-cb34e3adea91.htm" />
+    <HelpKINode Title="methods" Url="html/a85e4106-f5fe-90a5-58bd-a8c22417dc53.htm" />
+    <HelpKINode Title="properties" Url="html/989213d2-8f24-25fc-8c5a-d38b6c2e0ca6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BorraDepartamentos.BorraDepartamentos constructor" Url="html/986ab5dc-78fa-14d3-d332-632caa2c6b22.htm" />
+  <HelpKINode Title="BorraDepartamentos.cargarDepto method" Url="html/69badc0e-169f-4210-701e-f803562f6ffd.htm" />
+  <HelpKINode Title="BorraDepartamentos.components field" Url="html/3e13e2b2-cef9-db4b-6184-3391a5bf07de.htm" />
+  <HelpKINode Title="BorraDepartamentos.dataGridViewBDepto field" Url="html/3e5ab847-34fe-56e8-8d45-2e041f8a90ea.htm" />
+  <HelpKINode Title="BorraDepartamentos.Dispose method" Url="html/365dbaa0-a83c-f886-7209-5c79618be719.htm" />
+  <HelpKINode Title="BorraDepartamentos.InitializeComponent method" Url="html/1a3cf793-6073-5f98-78eb-fc8f94b1b75c.htm" />
+  <HelpKINode Title="BorraDepartamentos.label1 field" Url="html/92fe53c3-0b0b-9050-c067-e1828c523ee9.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox1 field" Url="html/f1bd3068-ff2f-979d-d1e4-3cdce79af9d4.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox1_Click method" Url="html/45e2166a-2d7d-3118-8f53-1ee8ab648436.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox1_DoubleClick method" Url="html/e28cbe58-938e-0c37-a941-80a03603d681.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox2 field" Url="html/0a553ab8-77d5-536c-9a75-9440c83a6b28.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox2_Click method" Url="html/6bf33c4b-7914-66d3-391f-a6a467ea51ee.htm" />
+  <HelpKINode Title="BorraDepartamentos.pictureBox2_DoubleClick method" Url="html/047664b0-a660-358c-3070-2575acedaf34.htm" />
+  <HelpKINode Title="BorraDepartamentos.textBoxBidDepto field" Url="html/d0efbdcd-217f-831c-ad1d-b10bb0dc5106.htm" />
+  <HelpKINode Title="BorraGeneros class">
+    <HelpKINode Title="BorraGeneros (Clase)" Url="html/0d37bd27-cf0a-b9fb-c524-1c209ce9dcce.htm" />
+    <HelpKINode Title="constructor" Url="html/64b32dec-d278-ecaf-329f-182f2f92f054.htm" />
+    <HelpKINode Title="events" Url="html/51bf5a5f-5a1e-e466-29d1-631b46a01154.htm" />
+    <HelpKINode Title="fields" Url="html/bb313fd6-8e38-0d28-d357-6c16767f43e2.htm" />
+    <HelpKINode Title="methods" Url="html/ebe89610-9b59-e427-4f56-7a24a45340bb.htm" />
+    <HelpKINode Title="properties" Url="html/f6659021-49b0-5368-645f-d9a943cccb2a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BorraGeneros.BorraGeneros constructor" Url="html/64b32dec-d278-ecaf-329f-182f2f92f054.htm" />
+  <HelpKINode Title="BorraGeneros.cargarGeneros method" Url="html/28c5279f-b289-a913-aa12-885451008ac4.htm" />
+  <HelpKINode Title="BorraGeneros.components field" Url="html/7c934cd0-18d6-272a-7b5c-c2f8f7cdbb3e.htm" />
+  <HelpKINode Title="BorraGeneros.dataGridViewBGeneros field" Url="html/e61d2c6b-753a-ca71-9dc9-71a15e441c99.htm" />
+  <HelpKINode Title="BorraGeneros.Dispose method" Url="html/c2cfb8df-7168-4867-7e70-bbc66bb76300.htm" />
+  <HelpKINode Title="BorraGeneros.InitializeComponent method" Url="html/6183b1cc-160f-a1bd-862b-2ab513ab27e2.htm" />
+  <HelpKINode Title="BorraGeneros.label1 field" Url="html/ede56539-36ea-b778-71cd-ab7849b5f634.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox1 field" Url="html/7cf3b02f-70b0-99e0-4e34-2797b1cf0f91.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox1_Click method" Url="html/05efef1a-9422-e024-2b32-a4a6f88bc104.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox1_DoubleClick method" Url="html/b1628c59-5db6-8f7e-1e2f-1e14ad9bd266.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox2 field" Url="html/dc59f475-c2c8-21c6-1408-575e485ccc4d.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox2_Click method" Url="html/8a175da1-855e-5f97-e232-20edc4dba4e9.htm" />
+  <HelpKINode Title="BorraGeneros.pictureBox2_DoubleClick method" Url="html/84924172-67a0-d65b-05d2-d54f7d08300f.htm" />
+  <HelpKINode Title="BorraGeneros.textBoxBidGnero field" Url="html/449a6eb8-0af2-3396-0ea9-69839c71255f.htm" />
+  <HelpKINode Title="BorrarCarreras class">
+    <HelpKINode Title="BorrarCarreras (Clase)" Url="html/6e00b769-1750-8bdc-6dbc-b550573d8ce4.htm" />
+    <HelpKINode Title="constructor" Url="html/44045c72-beb3-1803-030f-5ad937703782.htm" />
+    <HelpKINode Title="events" Url="html/0dc7589e-4154-8980-9f03-2394312f3771.htm" />
+    <HelpKINode Title="fields" Url="html/62d9d4e1-c449-daf4-e8e8-7386215ddb18.htm" />
+    <HelpKINode Title="methods" Url="html/02a5f0bc-394d-2328-178c-68fae9e5f2e5.htm" />
+    <HelpKINode Title="properties" Url="html/8e3376f3-9d36-dc84-306e-37ef7d84b2e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BorrarCarreras.BorrarCarreras constructor" Url="html/44045c72-beb3-1803-030f-5ad937703782.htm" />
+  <HelpKINode Title="BorrarCarreras.cargarCarreras method" Url="html/a071cc26-b7ed-d388-4d05-92674ef7db8a.htm" />
+  <HelpKINode Title="BorrarCarreras.components field" Url="html/7eefe33f-8530-7e31-d961-a62f195b9f3d.htm" />
+  <HelpKINode Title="BorrarCarreras.dataGridViewBCarreras field" Url="html/63d909a6-7504-fa25-59d9-1fd4ab06f5ac.htm" />
+  <HelpKINode Title="BorrarCarreras.Dispose method" Url="html/e916df09-f6fb-ec49-369a-998b8c87c15b.htm" />
+  <HelpKINode Title="BorrarCarreras.InitializeComponent method" Url="html/5c6d9acd-efc9-42cb-c583-b9a0c1ea3c48.htm" />
+  <HelpKINode Title="BorrarCarreras.label1 field" Url="html/fec390a1-0324-3e49-6bce-797d8e54f5c4.htm" />
+  <HelpKINode Title="BorrarCarreras.pictureBox1 field" Url="html/a10f9da3-96b5-270d-f467-7d71a350078e.htm" />
+  <HelpKINode Title="BorrarCarreras.pictureBox1_Click method" Url="html/bd2ee781-b277-1430-2a98-e06bf4c6072e.htm" />
+  <HelpKINode Title="BorrarCarreras.pictureBox2 field" Url="html/9b9cf965-728b-3150-063d-1c7e5fe5de47.htm" />
+  <HelpKINode Title="BorrarCarreras.pictureBox2_Click method" Url="html/7b8fe96b-491e-8e4f-e681-931d3f9fdf80.htm" />
+  <HelpKINode Title="BorrarCarreras.textBoxBidCarrera field" Url="html/a4f4bfd7-6eb2-422d-824a-2f7dbe54f303.htm" />
+  <HelpKINode Title="btnAgreagrCarrera field" Url="html/218dfc48-f74c-62c0-bbb2-bdaf1a8fb329.htm" />
+  <HelpKINode Title="btnAgreagrCarrera_Click method" Url="html/b1dc39d0-758d-2f6e-f6c3-f5a7228b4ce9.htm" />
+  <HelpKINode Title="btnAgreagrDept field" Url="html/7178ed4c-19ee-813c-0930-7dd3bb7d9adb.htm" />
+  <HelpKINode Title="btnAgreagrDept_Click method" Url="html/aa8352d2-67ba-2e47-c919-b769bb7d7272.htm" />
+  <HelpKINode Title="btnAgreagrGenero field" Url="html/2ab97fa7-1b47-18e1-8eea-6d7510faf30b.htm" />
+  <HelpKINode Title="btnAgreagrGenero_Click method" Url="html/4d00d568-d1e2-1e1e-109c-5cb27db2f7b1.htm" />
+  <HelpKINode Title="btncbuscar field">
+    <HelpKINode Title="SeleccionaCarreras.btncbuscar (Campo)" Url="html/48ce4900-55ca-d74b-b0a5-76769eed4cd9.htm" />
+    <HelpKINode Title="SeleccionaDepto.btncbuscar (Campo)" Url="html/91f7608d-e668-ed91-9549-bac1e6e1fbe6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btncbuscar_Click method">
+    <HelpKINode Title="SeleccionaCarreras.btncbuscar_Click (M&#233;todo )" Url="html/1192ac12-8915-4504-903b-0f657445d2d1.htm" />
+    <HelpKINode Title="SeleccionaDepto.btncbuscar_Click (M&#233;todo )" Url="html/727dc69d-862e-8f61-49a9-8dca4795f077.htm" />
+  </HelpKINode>
+  <HelpKINode Title="btnSbuscar field" Url="html/feebabb7-544a-227b-6f2a-4b986dfbbeb8.htm" />
+  <HelpKINode Title="btnSbuscar_Click method" Url="html/f7882d42-c323-9f91-5dcc-a3da63cfbcda.htm" />
+  <HelpKINode Title="button1 field">
+    <HelpKINode Title="Backup.button1 (Campo)" Url="html/cd609cc4-16f1-cd74-f21e-eb7a2bb41e67.htm" />
+    <HelpKINode Title="Carreras.button1 (Campo)" Url="html/5fe34cf7-09cb-df07-29b6-dcf496f07f20.htm" />
+    <HelpKINode Title="Depto.button1 (Campo)" Url="html/a0e1fa2a-02a8-363c-bef2-8e3ef923d6e5.htm" />
+    <HelpKINode Title="Entrenadores.button1 (Campo)" Url="html/9b72ae9d-982b-e065-26bc-562a7b5b43d6.htm" />
+    <HelpKINode Title="Generos.button1 (Campo)" Url="html/b90f2600-0b71-6e17-cbb8-c8e2e666ffc4.htm" />
+    <HelpKINode Title="InsertaEntrenador.button1 (Campo)" Url="html/f565f022-2402-fb3a-0815-d763d58f779c.htm" />
+    <HelpKINode Title="SeleccionaGeneros.button1 (Campo)" Url="html/1d1cb503-f31e-d0e9-bf54-ac4f01ac06ae.htm" />
+  </HelpKINode>
+  <HelpKINode Title="button1_Click method">
+    <HelpKINode Title="Backup.button1_Click (M&#233;todo )" Url="html/6c8542df-9732-74d9-cf68-cad3512e98f3.htm" />
+    <HelpKINode Title="Carreras.button1_Click (M&#233;todo )" Url="html/3c9d1c78-18f3-6012-ef5b-49a20909008d.htm" />
+    <HelpKINode Title="Depto.button1_Click (M&#233;todo )" Url="html/ba3d8c00-16dc-b858-8fa9-e73fc84be8a8.htm" />
+    <HelpKINode Title="Entrenadores.button1_Click (M&#233;todo )" Url="html/1c517be3-e8d8-7975-34ff-9296428bf8e7.htm" />
+    <HelpKINode Title="Form1.button1_Click (M&#233;todo )" Url="html/baea5fe4-1974-bd64-8885-6ebb34a19c11.htm" />
+    <HelpKINode Title="Generos.button1_Click (M&#233;todo )" Url="html/35630492-457d-9d8f-3d4e-b7023b99d3d4.htm" />
+    <HelpKINode Title="InsertaEntrenador.button1_Click (M&#233;todo )" Url="html/a7285207-567b-95bd-ed63-67dcd1f6d6af.htm" />
+    <HelpKINode Title="InsertarCarreras.button1_Click (M&#233;todo )" Url="html/7ce6e859-0d83-ab31-8d46-8c151b8d839a.htm" />
+    <HelpKINode Title="SeleccionaGeneros.button1_Click (M&#233;todo )" Url="html/3b791196-35f3-7039-185e-cbcdb87dec2c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="button2_Click method">
+    <HelpKINode Title="Carreras.button2_Click (M&#233;todo )" Url="html/300411c8-e419-7837-ecd1-d6ce7217ab6f.htm" />
+    <HelpKINode Title="Depto.button2_Click (M&#233;todo )" Url="html/bd72f2b2-f519-0dac-67be-ccf82dbe038f.htm" />
+    <HelpKINode Title="Generos.button2_Click (M&#233;todo )" Url="html/6277e972-1007-cf28-08ab-c90d22f956f8.htm" />
+    <HelpKINode Title="InsertaEntrenador.button2_Click (M&#233;todo )" Url="html/7963edba-6626-6d78-83bb-24bac51ef3b9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="button3_Click method">
+    <HelpKINode Title="Carreras.button3_Click (M&#233;todo )" Url="html/24ac7e28-ebc1-ec56-ad2e-14f1f2bf107a.htm" />
+    <HelpKINode Title="Generos.button3_Click (M&#233;todo )" Url="html/b2b686c5-2028-2dec-24a2-359bda37b001.htm" />
+  </HelpKINode>
+  <HelpKINode Title="button4 field" Url="html/27786995-8bff-69fb-3637-e3f9baa2e627.htm" />
+  <HelpKINode Title="button4_Click method">
+    <HelpKINode Title="Carreras.button4_Click (M&#233;todo )" Url="html/6a447afb-abb3-2ec1-2734-0e3967723b3d.htm" />
+    <HelpKINode Title="Generos.button4_Click (M&#233;todo )" Url="html/e59f118a-b62b-81a7-0a65-411d625f1136.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buttonAgregar field">
+    <HelpKINode Title="Carreras.buttonAgregar (Campo)" Url="html/737b880c-679f-fcc3-0aea-5af7a94876df.htm" />
+    <HelpKINode Title="Depto.buttonAgregar (Campo)" Url="html/ec139e91-362d-0d00-cd1f-4b4eca8a1662.htm" />
+    <HelpKINode Title="Entrenadores.buttonAgregar (Campo)" Url="html/834c3796-bcf1-f5f5-9f3e-c31b21402c99.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buttonAgregar_Click method">
+    <HelpKINode Title="Depto.buttonAgregar_Click (M&#233;todo )" Url="html/6beda6ae-8b66-d458-1595-691d1378ab98.htm" />
+    <HelpKINode Title="Entrenadores.buttonAgregar_Click (M&#233;todo )" Url="html/2a13ea56-16f8-5471-008e-2f54bc582709.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buttonAlumnos field" Url="html/1e1e233a-f2db-f8d5-6f30-1a8fffb61d91.htm" />
+  <HelpKINode Title="buttonCarreras field" Url="html/a1bb8552-dfa0-4e9b-9f65-0040bf6dc8f4.htm" />
+  <HelpKINode Title="buttonCarreras_Click method" Url="html/4fe2b55f-0484-4ab6-b1ce-c0b466331736.htm" />
+  <HelpKINode Title="buttonCbuscar field">
+    <HelpKINode Title="SeleccionaCarreras.buttonCbuscar (Campo)" Url="html/4ed92d57-6a9f-162f-59c5-0baf51e5f470.htm" />
+    <HelpKINode Title="SeleccionaDepto.buttonCbuscar (Campo)" Url="html/9362b4b9-8ea3-8146-b07a-69826fc8b8b5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buttonCbuscar_Click method">
+    <HelpKINode Title="SeleccionaCarreras.buttonCbuscar_Click (M&#233;todo )" Url="html/62aec3f0-bdd0-f81f-03d2-a4858ea4b375.htm" />
+    <HelpKINode Title="SeleccionaDepto.buttonCbuscar_Click (M&#233;todo )" Url="html/4aaf3e3a-a126-f664-ed92-d2684367f54e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="buttonDepartamentos field" Url="html/78de2a9e-91c0-f247-0f92-3ceba5e226ee.htm" />
+  <HelpKINode Title="buttonDepartamentos_Click method" Url="html/8443aac1-3a8f-b748-5fb4-50372bd98e48.htm" />
+  <HelpKINode Title="buttonEntrenador field" Url="html/bd25c309-73e7-8396-ad63-bb4e3a1b271c.htm" />
+  <HelpKINode Title="buttonEntrenador_Click method" Url="html/53eed924-846b-26ba-94bb-3e70dea0b8b0.htm" />
+  <HelpKINode Title="buttonEqDepor field" Url="html/7186d1db-97ca-eb44-bff6-532b5ac569ee.htm" />
+  <HelpKINode Title="buttonGeneros field" Url="html/e88c1e7b-2cfb-d4f0-9c9b-32eb7a7f9250.htm" />
+  <HelpKINode Title="buttonIngresa field" Url="html/c44ee385-5c76-636f-e07c-ef221d2a01ec.htm" />
+  <HelpKINode Title="buttonParticipa field" Url="html/55d01b2f-560d-c707-6736-6efff486f7e8.htm" />
+  <HelpKINode Title="buttonSelecciona_Click method" Url="html/715c09d6-a796-051f-8676-c68c8fffd233.htm" />
+  <HelpKINode Title="cargarAlumnos method" Url="html/1f9df92f-fb12-824b-f01a-d4beeb07a1c7.htm" />
+  <HelpKINode Title="cargarCarreras method">
+    <HelpKINode Title="ActualizaCarreras.cargarCarreras (M&#233;todo )" Url="html/4844a860-f1b6-d475-7907-6cee203f0f4b.htm" />
+    <HelpKINode Title="BorrarCarreras.cargarCarreras (M&#233;todo )" Url="html/a071cc26-b7ed-d388-4d05-92674ef7db8a.htm" />
+    <HelpKINode Title="InsertaCarreras.cargarCarreras (M&#233;todo )" Url="html/dec4a4ae-2f4e-0103-52ac-85f54627c01f.htm" />
+    <HelpKINode Title="InsertaDepartamentos.cargarCarreras (M&#233;todo )" Url="html/3fdae53b-2b51-f425-23c0-99a60dbcb5a8.htm" />
+    <HelpKINode Title="MantenimientoCarreras.cargarCarreras (M&#233;todo )" Url="html/719837d8-8645-abda-196c-3af5c4e796ff.htm" />
+    <HelpKINode Title="SeleccionaCarreras.cargarCarreras (M&#233;todo )" Url="html/4bc969bb-cc53-1296-d13f-e0e3690e481a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cargarCarrerasTodos method" Url="html/3275967f-d51f-43f6-bcca-0c5371f5d496.htm" />
+  <HelpKINode Title="cargarcheckbix method" Url="html/34392277-8036-a607-a568-40625e87961d.htm" />
+  <HelpKINode Title="cargarDepto method">
+    <HelpKINode Title="BorraDepartamentos.cargarDepto (M&#233;todo )" Url="html/69badc0e-169f-4210-701e-f803562f6ffd.htm" />
+    <HelpKINode Title="InsertaEntrenador.cargarDepto (M&#233;todo )" Url="html/006eb28a-8229-e707-e5eb-c5854ca550f3.htm" />
+    <HelpKINode Title="SeleccionaDepto.cargarDepto (M&#233;todo )" Url="html/1688930b-2e2b-8a05-40c0-9cf36b4b928d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cargarDeptoTodos method" Url="html/b5557c35-86ba-60e9-427e-4f348d654d56.htm" />
+  <HelpKINode Title="cargarDpto method" Url="html/cee98d30-5a58-8f65-d206-059e9f718839.htm" />
+  <HelpKINode Title="cargarEntrenadores method" Url="html/6b615001-7294-5a04-ae6f-6279a8b841fb.htm" />
+  <HelpKINode Title="cargarGeneros method">
+    <HelpKINode Title="ActualizaGeneros.cargarGeneros (M&#233;todo )" Url="html/50056894-d11c-e4f8-9003-0c3c9f48eed8.htm" />
+    <HelpKINode Title="AgregaGeneros.cargarGeneros (M&#233;todo )" Url="html/2fa783b0-a6aa-fbed-2f68-0492e302eea8.htm" />
+    <HelpKINode Title="BorraGeneros.cargarGeneros (M&#233;todo )" Url="html/28c5279f-b289-a913-aa12-885451008ac4.htm" />
+    <HelpKINode Title="MantenimientoGeneros.cargarGeneros (M&#233;todo )" Url="html/14ab9983-f73d-8bd9-a0b3-d4d7b02ac134.htm" />
+    <HelpKINode Title="SeleccionaGeneros.cargarGeneros (M&#233;todo )" Url="html/32ebdd28-878f-299c-7c1f-f9c1683d103f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="cargarGenerosTodos method" Url="html/b27b3749-d869-ad0f-e179-a33349a90dc0.htm" />
+  <HelpKINode Title="Carreras class">
+    <HelpKINode Title="Carreras (Clase)" Url="html/81d6baf4-c943-78fb-82cd-61c3fdb4636d.htm" />
+    <HelpKINode Title="constructor" Url="html/31635510-299a-164c-0fec-0ecd4415578f.htm" />
+    <HelpKINode Title="events" Url="html/e2ffba96-1442-3ee6-56e3-74c0d89a353c.htm" />
+    <HelpKINode Title="fields" Url="html/18f5f5d0-99ff-7b78-8cd6-f8e146235d05.htm" />
+    <HelpKINode Title="methods" Url="html/b1b79a51-9c6a-2a0c-45fa-21e5c1aa10b0.htm" />
+    <HelpKINode Title="properties" Url="html/d5e175e0-55fc-b230-e73a-afb7b4646ff8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Carreras.AbrirFormEnPanel method" Url="html/afc56528-c3cd-fc8d-e721-adbfc46e3253.htm" />
+  <HelpKINode Title="Carreras.button1 field" Url="html/5fe34cf7-09cb-df07-29b6-dcf496f07f20.htm" />
+  <HelpKINode Title="Carreras.button1_Click method" Url="html/3c9d1c78-18f3-6012-ef5b-49a20909008d.htm" />
+  <HelpKINode Title="Carreras.button2_Click method" Url="html/300411c8-e419-7837-ecd1-d6ce7217ab6f.htm" />
+  <HelpKINode Title="Carreras.button3_Click method" Url="html/24ac7e28-ebc1-ec56-ad2e-14f1f2bf107a.htm" />
+  <HelpKINode Title="Carreras.button4_Click method" Url="html/6a447afb-abb3-2ec1-2734-0e3967723b3d.htm" />
+  <HelpKINode Title="Carreras.buttonAgregar field" Url="html/737b880c-679f-fcc3-0aea-5af7a94876df.htm" />
+  <HelpKINode Title="Carreras.Carreras constructor" Url="html/31635510-299a-164c-0fec-0ecd4415578f.htm" />
+  <HelpKINode Title="Carreras.components field" Url="html/00d8289d-27fa-46ee-3591-380e76f1bc51.htm" />
+  <HelpKINode Title="Carreras.Dispose method" Url="html/f287076e-bfea-2437-9a2b-b9c99d20297d.htm" />
+  <HelpKINode Title="Carreras.InitializeComponent method" Url="html/5d94a599-819d-36fd-55e2-41aaee3f44e0.htm" />
+  <HelpKINode Title="Carreras.label1 field" Url="html/d05dbc34-1ab1-f387-018f-19007801b6bf.htm" />
+  <HelpKINode Title="Carreras.label2 field" Url="html/7f8a56f3-0385-09ab-8762-1f6370aaa8b9.htm" />
+  <HelpKINode Title="Carreras.panel1 field" Url="html/1c228448-5ba8-5573-ad98-c75ca5925124.htm" />
+  <HelpKINode Title="Carreras.panel2 field" Url="html/aca03ff1-db10-e496-8b42-fc22cfd6256c.htm" />
+  <HelpKINode Title="Carreras.panelContenedor field" Url="html/5208fe78-7f99-3f0d-a7f2-ab5413461393.htm" />
+  <HelpKINode Title="cerrar method" Url="html/60c6234a-c1eb-7eaa-cb12-a2a403be15ea.htm" />
+  <HelpKINode Title="checkBoxid field" Url="html/5fd46f49-1415-0e7c-eb00-c2b80f84a42e.htm" />
+  <HelpKINode Title="checkBoxid_name field" Url="html/51daabff-6e70-f1e7-6835-56140a3d9594.htm" />
+  <HelpKINode Title="checkBoxid_tec_CheckedChanged method" Url="html/2cce44b4-4477-2277-b010-31adefd3a3b1.htm" />
+  <HelpKINode Title="checkBoxNombre_CheckedChanged method" Url="html/44cfefb7-dd36-60e7-ec40-17854476bd23.htm" />
+  <HelpKINode Title="comboBoxDepartamento field" Url="html/826997a3-69a6-95a3-0b32-e66aedc1652c.htm" />
+  <HelpKINode Title="comboBoxDepartamento_SelectedIndexChanged method" Url="html/9bcfb039-5a92-80ed-25cc-49363c9cf008.htm" />
+  <HelpKINode Title="comboBoxDpto field" Url="html/692e5762-5d7c-5386-5825-1613e960a00c.htm" />
+  <HelpKINode Title="comboBoxGenero field" Url="html/e0bfafc1-301f-7b45-db7c-d3c394cc04c9.htm" />
+  <HelpKINode Title="comboBoxGeneros field" Url="html/8ca6eb54-7148-e37a-ce9f-cbf51ab1e365.htm" />
+  <HelpKINode Title="comboBoxGenero_SelectedIndexChanged method" Url="html/c94be4ca-53f2-963b-fd92-626aac3533eb.htm" />
+  <HelpKINode Title="components field">
+    <HelpKINode Title="ActualizaCarreras.components (Campo)" Url="html/0b8820a9-c295-c2d2-ce20-1f6eb0e018b5.htm" />
+    <HelpKINode Title="ActualizaGeneros.components (Campo)" Url="html/62db15ac-31ba-84e1-cf18-5223401b5d13.htm" />
+    <HelpKINode Title="AgregaGeneros.components (Campo)" Url="html/50616a18-ce16-7eb1-69a8-d58b99749f36.htm" />
+    <HelpKINode Title="Backup.components (Campo)" Url="html/ab2214e4-94c3-7b6b-c5a0-d9fdac6f3fd0.htm" />
+    <HelpKINode Title="BorraDepartamentos.components (Campo)" Url="html/3e13e2b2-cef9-db4b-6184-3391a5bf07de.htm" />
+    <HelpKINode Title="BorraGeneros.components (Campo)" Url="html/7c934cd0-18d6-272a-7b5c-c2f8f7cdbb3e.htm" />
+    <HelpKINode Title="BorrarCarreras.components (Campo)" Url="html/7eefe33f-8530-7e31-d961-a62f195b9f3d.htm" />
+    <HelpKINode Title="Carreras.components (Campo)" Url="html/00d8289d-27fa-46ee-3591-380e76f1bc51.htm" />
+    <HelpKINode Title="Depto.components (Campo)" Url="html/112669b5-8441-b907-c3ca-770e502a054a.htm" />
+    <HelpKINode Title="Entrenadores.components (Campo)" Url="html/3b8b9849-ca8f-6bb8-425e-f57dd9c80285.htm" />
+    <HelpKINode Title="Form1.components (Campo)" Url="html/48ba0526-62a2-3f28-64fc-a6562b323eb2.htm" />
+    <HelpKINode Title="Generos.components (Campo)" Url="html/e3058672-3c5a-782a-48b7-ac0f20e2cc2b.htm" />
+    <HelpKINode Title="InsertaCarreras.components (Campo)" Url="html/721f0e77-3bab-eb53-dc4b-840e9ef60f2c.htm" />
+    <HelpKINode Title="InsertaDepartamentos.components (Campo)" Url="html/5c44df62-1952-ffc4-eb26-1f9286bc3b51.htm" />
+    <HelpKINode Title="InsertaEntrenador.components (Campo)" Url="html/71c0a3d0-79e2-0298-2c30-688d91b80047.htm" />
+    <HelpKINode Title="InsertarCarreras.components (Campo)" Url="html/96a3de0a-2274-0e32-b979-95af5511c97f.htm" />
+    <HelpKINode Title="MantenimientoCarreras.components (Campo)" Url="html/b9be0c3d-4d19-d55d-de99-5b36450358f9.htm" />
+    <HelpKINode Title="MantenimientoDepto.components (Campo)" Url="html/4f651afe-f128-267e-cfa9-96fb32b51a30.htm" />
+    <HelpKINode Title="MantenimientoEntrena.components (Campo)" Url="html/49557e8d-ec12-f708-3171-5fd1a6823dbf.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.components (Campo)" Url="html/ba89b716-0e1d-48d0-a2d5-8ab8a5fc3591.htm" />
+    <HelpKINode Title="MantenimientoGeneros.components (Campo)" Url="html/aaf49df7-070a-df76-9739-9279f8efd5a8.htm" />
+    <HelpKINode Title="SeleccionaCarreras.components (Campo)" Url="html/4d220550-adc8-7124-f9fe-efeaf9214419.htm" />
+    <HelpKINode Title="SeleccionaDepto.components (Campo)" Url="html/63192003-1393-bbd6-4125-f0fbe0deb673.htm" />
+    <HelpKINode Title="SeleccionaGeneros.components (Campo)" Url="html/6dc76e09-3d7d-8ab4-c6b9-408ee351d458.htm" />
+  </HelpKINode>
+  <HelpKINode Title="conectar method" Url="html/3dd46bc4-fab0-62e6-a673-c08edea5a197.htm" />
+  <HelpKINode Title="Conexion class">
+    <HelpKINode Title="Conexion (Clase)" Url="html/27449ded-c958-21f1-6536-c904f291510c.htm" />
+    <HelpKINode Title="constructor" Url="html/8ee06a0d-c0e5-2b70-c986-4f9205f73c2b.htm" />
+    <HelpKINode Title="methods" Url="html/1ebeb772-f31c-b80e-3394-58ed9ef11379.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Conexion.cerrar method" Url="html/60c6234a-c1eb-7eaa-cb12-a2a403be15ea.htm" />
+  <HelpKINode Title="Conexion.conectar method" Url="html/3dd46bc4-fab0-62e6-a673-c08edea5a197.htm" />
+  <HelpKINode Title="Conexion.Conexion constructor" Url="html/8ee06a0d-c0e5-2b70-c986-4f9205f73c2b.htm" />
+  <HelpKINode Title="CreditosGallegos namespace" Url="html/4fc29afb-fb16-b843-898d-1c4fa2339731.htm" />
+  <HelpKINode Title="CreditosGallegos.AgregaGeneros class" Url="html/a857755d-80a8-86fb-ca66-2e609b67afac.htm" />
+  <HelpKINode Title="CreditosGallegos.Alumnos namespace" Url="html/e66f1379-cb26-d657-6ee0-405b69f49db3.htm" />
+  <HelpKINode Title="CreditosGallegos.Alumnos.MantenimientoEntrenadores class" Url="html/50a1c181-38e4-a20a-c807-6cb8b9839ad5.htm" />
+  <HelpKINode Title="CreditosGallegos.Backup class" Url="html/dbaedbb7-d018-aded-6e83-e74392d45354.htm" />
+  <HelpKINode Title="CreditosGallegos.BorraGeneros class" Url="html/0d37bd27-cf0a-b9fb-c524-1c209ce9dcce.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras namespace" Url="html/70295a45-7371-c467-95e6-20cfc0dc78b4.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.ActualizaCarreras class" Url="html/d24d6b56-6f7f-33be-9b53-400e172dc838.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.BorrarCarreras class" Url="html/6e00b769-1750-8bdc-6dbc-b550573d8ce4.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.Carreras class" Url="html/81d6baf4-c943-78fb-82cd-61c3fdb4636d.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.InsertaCarreras class" Url="html/78c28388-11b0-2333-4224-9ffdf74b31c4.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.MantenimientoCarreras class" Url="html/03e3fbd3-efe5-fe27-9c0a-23eef3cbded0.htm" />
+  <HelpKINode Title="CreditosGallegos.carreras.SeleccionaCarreras class" Url="html/a5fbfa19-aef2-c685-bd33-7dd516b031fb.htm" />
+  <HelpKINode Title="CreditosGallegos.Conexion class" Url="html/27449ded-c958-21f1-6536-c904f291510c.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos namespace" Url="html/6fb44b8e-a8ca-a5ac-d131-9f6787fff9ad.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos.BorraDepartamentos class" Url="html/de777f29-f67a-b5f2-33b1-ec54070cc670.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos.Depto class" Url="html/1b548d32-7091-bcb8-46b8-a269aa97240d.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos.InsertaDepartamentos class" Url="html/8d4a938c-174d-9c8b-3599-0335d9c4c43f.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos.MantenimientoDepto class" Url="html/90b6c2ad-594c-d542-8b30-795182ae528d.htm" />
+  <HelpKINode Title="CreditosGallegos.Departamentos.SeleccionaDepto class" Url="html/3f3a5f9c-0635-cb27-c397-f7fafbecbd2b.htm" />
+  <HelpKINode Title="CreditosGallegos.Entrenadores namespace" Url="html/c38c18f5-bcd5-481a-951b-3461e3b5c060.htm" />
+  <HelpKINode Title="CreditosGallegos.Entrenadores.Entrenadores class" Url="html/4a54dea1-3198-d6c9-91d7-c16d7f7f2968.htm" />
+  <HelpKINode Title="CreditosGallegos.Entrenadores.InsertaEntrenador class" Url="html/350550fd-83db-3575-7c7d-ac6afe398ca7.htm" />
+  <HelpKINode Title="CreditosGallegos.Entrenadores.MantenimientoEntrena class" Url="html/f5dd82d4-c6ab-487f-8b76-3123214d411d.htm" />
+  <HelpKINode Title="CreditosGallegos.Form1 class" Url="html/ebae0d13-79a8-9971-7c1f-4a60d3fe6d6b.htm" />
+  <HelpKINode Title="CreditosGallegos.Generos class" Url="html/b9da49c5-6019-4ffa-a7bc-6087d9a234ab.htm" />
+  <HelpKINode Title="CreditosGallegos.generos namespace" Url="html/f10263d9-f66e-7088-db3c-19dcc0f9d710.htm" />
+  <HelpKINode Title="CreditosGallegos.generos.ActualizaGeneros class" Url="html/173710e1-9a51-7ddf-1875-58c170e66783.htm" />
+  <HelpKINode Title="CreditosGallegos.generos.MantenimientoGeneros class" Url="html/52b9cd57-60b6-3f69-0b0b-a5e652b0cfb4.htm" />
+  <HelpKINode Title="CreditosGallegos.InsertarCarreras class" Url="html/a4f58894-7781-e423-6835-564eb60107de.htm" />
+  <HelpKINode Title="CreditosGallegos.Program class" Url="html/b0ac6eab-eb41-bb24-4343-26fcaa470042.htm" />
+  <HelpKINode Title="CreditosGallegos.publicas class" Url="html/0e1e5c99-796d-18b2-01cd-120df644d671.htm" />
+  <HelpKINode Title="CreditosGallegos.SeleccionaGeneros class" Url="html/5ccdae93-754c-a4e7-5854-1b1c8a9a7904.htm" />
+  <HelpKINode Title="dataGridView1 field">
+    <HelpKINode Title="AgregaGeneros.dataGridView1 (Campo)" Url="html/5227018f-6a7c-ce2e-ed5c-3435215ac5f2.htm" />
+    <HelpKINode Title="InsertaCarreras.dataGridView1 (Campo)" Url="html/77ced949-50b2-57ce-e4f9-fcbfff613d73.htm" />
+    <HelpKINode Title="InsertaDepartamentos.dataGridView1 (Campo)" Url="html/3c0b1919-97fd-5459-161b-5c2d2a3d9836.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dataGridView1_CellContentClick method">
+    <HelpKINode Title="AgregaGeneros.dataGridView1_CellContentClick (M&#233;todo )" Url="html/7c8c6a22-8d0f-a9a9-1ca6-09110fea8fa9.htm" />
+    <HelpKINode Title="MantenimientoGeneros.dataGridView1_CellContentClick (M&#233;todo )" Url="html/d2fc84d6-9fd8-90e8-a834-ea2c78664027.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dataGridViewAGeneros field" Url="html/7e923b79-4d4b-1d06-b561-5e9121be4bcc.htm" />
+  <HelpKINode Title="dataGridViewAGeneros_CellContentClick method" Url="html/f0f8448b-aefb-3ad9-fc26-2183ecd615bc.htm" />
+  <HelpKINode Title="dataGridViewAlumnos field" Url="html/2d2d8427-46e1-de5e-c51c-e1d76ca55580.htm" />
+  <HelpKINode Title="dataGridViewBCarreras field" Url="html/63d909a6-7504-fa25-59d9-1fd4ab06f5ac.htm" />
+  <HelpKINode Title="dataGridViewBDepto field" Url="html/3e5ab847-34fe-56e8-8d45-2e041f8a90ea.htm" />
+  <HelpKINode Title="dataGridViewBGeneros field" Url="html/e61d2c6b-753a-ca71-9dc9-71a15e441c99.htm" />
+  <HelpKINode Title="dataGridViewCargaCarreras field" Url="html/0af79b45-2054-3995-9165-4b1f9604b959.htm" />
+  <HelpKINode Title="dataGridViewCargaCarreras_CellContentClick method" Url="html/90a6ad5a-8834-63be-6a4b-9ea62a2b2e5d.htm" />
+  <HelpKINode Title="dataGridViewCargaDepto field" Url="html/7b925197-cb90-a4db-e81d-765da27d883c.htm" />
+  <HelpKINode Title="dataGridViewCargaGeneros field" Url="html/64dae58a-1c84-9fb5-ce92-49c78fd1af72.htm" />
+  <HelpKINode Title="dataGridViewCargaGeneros_CellContentClick method" Url="html/d0e528a8-85d2-4287-4d2c-3f5fccfa04ce.htm" />
+  <HelpKINode Title="dataGridViewCarrera field" Url="html/eef3daca-7ff5-822d-e167-5e5d5fbf7381.htm" />
+  <HelpKINode Title="dataGridViewCarreras field" Url="html/461ffdb7-4ccf-9d08-7e7b-29aa9a214d7d.htm" />
+  <HelpKINode Title="dataGridViewCarreras_CellContentClick method" Url="html/f4db33e1-2672-02c3-9588-768a0b0db688.htm" />
+  <HelpKINode Title="dataGridViewCarrera_CellContentClick method" Url="html/94c154ea-734e-3f25-9ee0-ca3ce6ea8b2a.htm" />
+  <HelpKINode Title="dataGridViewDepto field" Url="html/f8de0534-7c8b-fb35-fdd4-ce279d90eeae.htm" />
+  <HelpKINode Title="dataGridViewDepto_CellContentClick method" Url="html/b13f2f9b-3ae1-984d-d40c-582781449232.htm" />
+  <HelpKINode Title="dataGridViewEntrenadores field">
+    <HelpKINode Title="InsertaEntrenador.dataGridViewEntrenadores (Campo)" Url="html/6831c937-001b-f5e9-a1cf-166d9b2cc353.htm" />
+    <HelpKINode Title="MantenimientoEntrena.dataGridViewEntrenadores (Campo)" Url="html/065457ad-abdb-00ea-c0b3-fe01c59c79ec.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dataGridViewEntrenadores_CellContentClick method" Url="html/cc2cdddd-762d-00ec-1bf2-88383ded7a55.htm" />
+  <HelpKINode Title="dataGridViewGeneros field" Url="html/216e48bf-f501-33ff-6a0c-0497290fcabc.htm" />
+  <HelpKINode Title="Depto class">
+    <HelpKINode Title="Depto (Clase)" Url="html/1b548d32-7091-bcb8-46b8-a269aa97240d.htm" />
+    <HelpKINode Title="constructor" Url="html/edabbaad-70de-b6a0-b325-610321ee8dd0.htm" />
+    <HelpKINode Title="events" Url="html/49b23ebc-aa66-298b-3887-6c5524e41dda.htm" />
+    <HelpKINode Title="fields" Url="html/ab8deb13-96f7-fe41-1ea3-6dc004226c16.htm" />
+    <HelpKINode Title="methods" Url="html/226b5f10-1261-cfbb-cace-8f12d6bb7c68.htm" />
+    <HelpKINode Title="properties" Url="html/e3143d7c-2de1-ca8b-8d6e-a4cc4cae6720.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Depto.AbrirFormEnPanel method" Url="html/3844310a-7957-8dae-2762-c2008b7abfc2.htm" />
+  <HelpKINode Title="Depto.button1 field" Url="html/a0e1fa2a-02a8-363c-bef2-8e3ef923d6e5.htm" />
+  <HelpKINode Title="Depto.button1_Click method" Url="html/ba3d8c00-16dc-b858-8fa9-e73fc84be8a8.htm" />
+  <HelpKINode Title="Depto.button2_Click method" Url="html/bd72f2b2-f519-0dac-67be-ccf82dbe038f.htm" />
+  <HelpKINode Title="Depto.buttonAgregar field" Url="html/ec139e91-362d-0d00-cd1f-4b4eca8a1662.htm" />
+  <HelpKINode Title="Depto.buttonAgregar_Click method" Url="html/6beda6ae-8b66-d458-1595-691d1378ab98.htm" />
+  <HelpKINode Title="Depto.buttonSelecciona_Click method" Url="html/715c09d6-a796-051f-8676-c68c8fffd233.htm" />
+  <HelpKINode Title="Depto.components field" Url="html/112669b5-8441-b907-c3ca-770e502a054a.htm" />
+  <HelpKINode Title="Depto.Depto constructor" Url="html/edabbaad-70de-b6a0-b325-610321ee8dd0.htm" />
+  <HelpKINode Title="Depto.Dispose method" Url="html/837b1607-f20c-451f-65eb-bdb17bccbc8e.htm" />
+  <HelpKINode Title="Depto.InitializeComponent method" Url="html/8b86f338-4d27-fe33-0489-b4b832cd4f34.htm" />
+  <HelpKINode Title="Depto.label1 field" Url="html/b8c41983-9659-3a1a-fdc9-3a861e1d96cc.htm" />
+  <HelpKINode Title="Depto.label2 field" Url="html/3b5e080a-6094-2c5e-81ec-c27fe14dd9a3.htm" />
+  <HelpKINode Title="Depto.panel1 field" Url="html/46585c0d-78db-4c1a-ae0a-5996dace4837.htm" />
+  <HelpKINode Title="Depto.panel2 field" Url="html/81b5b5e5-cb14-8dde-3245-7f8094cf4b1a.htm" />
+  <HelpKINode Title="Depto.panelContenedor field" Url="html/548f4a47-d0cb-ab94-2abc-47f04933712f.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="ActualizaCarreras.Dispose (M&#233;todo )" Url="html/7e9b1685-762e-63ee-6278-3a1228945b41.htm" />
+    <HelpKINode Title="ActualizaGeneros.Dispose (M&#233;todo )" Url="html/f3f2497a-abf9-6526-05ed-e038cc5d668d.htm" />
+    <HelpKINode Title="AgregaGeneros.Dispose (M&#233;todo )" Url="html/742f10fd-9aa4-68f2-e3bb-04f5885a6b1f.htm" />
+    <HelpKINode Title="Backup.Dispose (M&#233;todo )" Url="html/0a1110b7-eb19-4739-15d4-afad27adf4f0.htm" />
+    <HelpKINode Title="BorraDepartamentos.Dispose (M&#233;todo )" Url="html/365dbaa0-a83c-f886-7209-5c79618be719.htm" />
+    <HelpKINode Title="BorraGeneros.Dispose (M&#233;todo )" Url="html/c2cfb8df-7168-4867-7e70-bbc66bb76300.htm" />
+    <HelpKINode Title="BorrarCarreras.Dispose (M&#233;todo )" Url="html/e916df09-f6fb-ec49-369a-998b8c87c15b.htm" />
+    <HelpKINode Title="Carreras.Dispose (M&#233;todo )" Url="html/f287076e-bfea-2437-9a2b-b9c99d20297d.htm" />
+    <HelpKINode Title="Depto.Dispose (M&#233;todo )" Url="html/837b1607-f20c-451f-65eb-bdb17bccbc8e.htm" />
+    <HelpKINode Title="Entrenadores.Dispose (M&#233;todo )" Url="html/b7613010-53d6-c827-e091-f762724132e1.htm" />
+    <HelpKINode Title="Form1.Dispose (M&#233;todo )" Url="html/9804bec4-5af6-cd45-28f9-c689f214848f.htm" />
+    <HelpKINode Title="Generos.Dispose (M&#233;todo )" Url="html/53e332a9-f351-5e20-c175-0b904ce2487c.htm" />
+    <HelpKINode Title="InsertaCarreras.Dispose (M&#233;todo )" Url="html/7a2849af-c557-ed3f-ac23-28854d6ab2b5.htm" />
+    <HelpKINode Title="InsertaDepartamentos.Dispose (M&#233;todo )" Url="html/04ebd0bd-c087-d27d-a04c-cbcfbf06df46.htm" />
+    <HelpKINode Title="InsertaEntrenador.Dispose (M&#233;todo )" Url="html/8b1c5bb1-d301-717e-ce6d-dacf40ed24c0.htm" />
+    <HelpKINode Title="InsertarCarreras.Dispose (M&#233;todo )" Url="html/68cb41b9-bbed-8568-5670-cbe77902f36e.htm" />
+    <HelpKINode Title="MantenimientoCarreras.Dispose (M&#233;todo )" Url="html/705a3cd1-3b01-5228-6a2d-4b3a8a8339a0.htm" />
+    <HelpKINode Title="MantenimientoDepto.Dispose (M&#233;todo )" Url="html/19a39e97-0459-9eeb-8765-2bbf4dd9c7b5.htm" />
+    <HelpKINode Title="MantenimientoEntrena.Dispose (M&#233;todo )" Url="html/c7a4bcc3-163b-2fc6-17ad-028a82db0e6e.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.Dispose (M&#233;todo )" Url="html/7599680a-ca4a-dcbb-0ce5-2d2e64e18420.htm" />
+    <HelpKINode Title="MantenimientoGeneros.Dispose (M&#233;todo )" Url="html/22a2a5d0-5703-74ca-378a-d3960c6cf126.htm" />
+    <HelpKINode Title="SeleccionaCarreras.Dispose (M&#233;todo )" Url="html/cc40311d-bd25-eaa4-bba3-7c0a7f2d299f.htm" />
+    <HelpKINode Title="SeleccionaDepto.Dispose (M&#233;todo )" Url="html/32f9f3c9-45e8-b1ac-f7f8-9dd44eb0d9ed.htm" />
+    <HelpKINode Title="SeleccionaGeneros.Dispose (M&#233;todo )" Url="html/e9f567a6-c810-d5e1-00a5-a5ec29b40847.htm" />
+  </HelpKINode>
+  <HelpKINode Title="dr field">
+    <HelpKINode Title="ActualizaCarreras.dr (Campo)" Url="html/22714d87-bf4e-8da8-5924-4b81fd4e70f5.htm" />
+    <HelpKINode Title="AgregaGeneros.dr (Campo)" Url="html/6d2bc054-44e0-33fd-f5d9-8008940dd812.htm" />
+    <HelpKINode Title="InsertaCarreras.dr (Campo)" Url="html/edb94436-7450-1b6a-018c-74d9896142e6.htm" />
+    <HelpKINode Title="InsertaDepartamentos.dr (Campo)" Url="html/fc12f3e6-03c0-eca7-d1cd-3c1a89d4e131.htm" />
+    <HelpKINode Title="MantenimientoCarreras.dr (Campo)" Url="html/5de3ed70-8db4-bbc2-f7ba-fc0fa1c85555.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.dr (Campo)" Url="html/1cb45318-dda8-bb33-6e68-7b8a506ce594.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Entrenadores class">
+    <HelpKINode Title="Entrenadores (Clase)" Url="html/4a54dea1-3198-d6c9-91d7-c16d7f7f2968.htm" />
+    <HelpKINode Title="constructor" Url="html/8ac2276b-e8f3-2ac3-3c8f-b0d29da56f3b.htm" />
+    <HelpKINode Title="events" Url="html/211ee03a-12fa-100b-82b0-6c8854440b26.htm" />
+    <HelpKINode Title="fields" Url="html/b229669b-c98d-793d-728a-c71cd096ff80.htm" />
+    <HelpKINode Title="methods" Url="html/02f31340-a8fe-1782-6349-1f696fe530ca.htm" />
+    <HelpKINode Title="properties" Url="html/8fae5d68-07d8-e1d6-663e-939a5905ddc1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Entrenadores.AbrirFormEnPanel method" Url="html/d89473f2-7075-1e80-e57a-cfb76191e4df.htm" />
+  <HelpKINode Title="Entrenadores.button1 field" Url="html/9b72ae9d-982b-e065-26bc-562a7b5b43d6.htm" />
+  <HelpKINode Title="Entrenadores.button1_Click method" Url="html/1c517be3-e8d8-7975-34ff-9296428bf8e7.htm" />
+  <HelpKINode Title="Entrenadores.buttonAgregar field" Url="html/834c3796-bcf1-f5f5-9f3e-c31b21402c99.htm" />
+  <HelpKINode Title="Entrenadores.buttonAgregar_Click method" Url="html/2a13ea56-16f8-5471-008e-2f54bc582709.htm" />
+  <HelpKINode Title="Entrenadores.components field" Url="html/3b8b9849-ca8f-6bb8-425e-f57dd9c80285.htm" />
+  <HelpKINode Title="Entrenadores.Dispose method" Url="html/b7613010-53d6-c827-e091-f762724132e1.htm" />
+  <HelpKINode Title="Entrenadores.Entrenadores constructor" Url="html/8ac2276b-e8f3-2ac3-3c8f-b0d29da56f3b.htm" />
+  <HelpKINode Title="Entrenadores.Entrenadores_Load method" Url="html/959568d1-2710-b159-8496-9b0b945610fb.htm" />
+  <HelpKINode Title="Entrenadores.InitializeComponent method" Url="html/1aa5abb6-e0e9-41b9-365d-afd70f3298f1.htm" />
+  <HelpKINode Title="Entrenadores.label1 field" Url="html/6d65626a-f8d2-b771-181a-2c43e20dfaa3.htm" />
+  <HelpKINode Title="Entrenadores.label2 field" Url="html/c742c1f8-7a42-7a4e-6184-d39dd7714fae.htm" />
+  <HelpKINode Title="Entrenadores.panel1 field" Url="html/14f0efaa-7cbf-7907-ca30-d37c6d47bb6b.htm" />
+  <HelpKINode Title="Entrenadores.panel2 field" Url="html/445a288d-b131-2437-40b7-761bba0b8c16.htm" />
+  <HelpKINode Title="Entrenadores.panelContenedor field" Url="html/3e735628-bca3-40fc-7c52-8ae055ba27ff.htm" />
+  <HelpKINode Title="Entrenadores_Load method" Url="html/959568d1-2710-b159-8496-9b0b945610fb.htm" />
+  <HelpKINode Title="Form1 class">
+    <HelpKINode Title="Form1 (Clase)" Url="html/ebae0d13-79a8-9971-7c1f-4a60d3fe6d6b.htm" />
+    <HelpKINode Title="constructor" Url="html/fd073115-cff8-b3c2-060d-f74e2d1523ea.htm" />
+    <HelpKINode Title="events" Url="html/2f515cfa-637f-f854-b945-ec2249d262ae.htm" />
+    <HelpKINode Title="fields" Url="html/51fa0315-5a7d-8fa7-7c54-ed7eb9ef677f.htm" />
+    <HelpKINode Title="methods" Url="html/4d147c1a-1185-d2a9-5c46-2fbc745a303f.htm" />
+    <HelpKINode Title="properties" Url="html/35e487fe-4c56-eec6-7c36-d0c2d83533d9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Form1.button1_Click method" Url="html/baea5fe4-1974-bd64-8885-6ebb34a19c11.htm" />
+  <HelpKINode Title="Form1.buttonIngresa field" Url="html/c44ee385-5c76-636f-e07c-ef221d2a01ec.htm" />
+  <HelpKINode Title="Form1.components field" Url="html/48ba0526-62a2-3f28-64fc-a6562b323eb2.htm" />
+  <HelpKINode Title="Form1.Dispose method" Url="html/9804bec4-5af6-cd45-28f9-c689f214848f.htm" />
+  <HelpKINode Title="Form1.Form1 constructor" Url="html/fd073115-cff8-b3c2-060d-f74e2d1523ea.htm" />
+  <HelpKINode Title="Form1.Form1_Load method" Url="html/63e962b9-2681-5714-6b22-da3dace00139.htm" />
+  <HelpKINode Title="Form1.id field" Url="html/3104fd24-0e84-6b37-9acc-eccd9232de4d.htm" />
+  <HelpKINode Title="Form1.id_tec field" Url="html/4f098f1d-7dcc-166f-3633-0997c5def51c.htm" />
+  <HelpKINode Title="Form1.InitializeComponent method" Url="html/ef2815e4-55fd-9754-6b93-57c2ab8194af.htm" />
+  <HelpKINode Title="Form1.intento field" Url="html/cb630142-93d6-9173-05d9-37311dd0217c.htm" />
+  <HelpKINode Title="Form1.lineShape1 field" Url="html/0c19721d-cb03-9b20-9c52-1fe720fae2df.htm" />
+  <HelpKINode Title="Form1.lineShape2 field" Url="html/e7d178c0-9e9e-c9d8-58e0-56a47aca21b4.htm" />
+  <HelpKINode Title="Form1.linkLabel1 field" Url="html/17ba8c80-0bff-cf7c-839f-297c848c8cb8.htm" />
+  <HelpKINode Title="Form1.linkLabel1_Click method" Url="html/dc371fbe-29a6-951a-ab7f-a8d9e9540b89.htm" />
+  <HelpKINode Title="Form1.ovalShape1 field" Url="html/f63dd224-52da-a8a7-b479-eb892d5afe66.htm" />
+  <HelpKINode Title="Form1.ovalShape2 field" Url="html/4c220ac0-c99d-678e-1ea3-5d3eec6d567b.htm" />
+  <HelpKINode Title="Form1.ovalShape3 field" Url="html/94b3c186-85e4-45dd-0312-ac5e2a771628.htm" />
+  <HelpKINode Title="Form1.panel1 field" Url="html/0e0adcda-6adc-716f-4067-8d1f13121ae0.htm" />
+  <HelpKINode Title="Form1.panel1_Paint method" Url="html/13cfcc5c-9292-44fc-cb41-ad5b405ff92f.htm" />
+  <HelpKINode Title="Form1.panel2 field" Url="html/d737f8a0-d4ee-8a22-f609-970a6147c261.htm" />
+  <HelpKINode Title="Form1.panel2_MouseMove method" Url="html/0591a45e-d397-cebe-a6c6-9d160ae240c4.htm" />
+  <HelpKINode Title="Form1.panel3 field" Url="html/9e13bc69-149b-f5e2-1914-c61f0a477d53.htm" />
+  <HelpKINode Title="Form1.posx field" Url="html/3463fb32-c3f3-cb9b-f36b-d160d0978656.htm" />
+  <HelpKINode Title="Form1.posy field" Url="html/b5d8d342-e89f-6006-c2e9-06a04ca6ffb7.htm" />
+  <HelpKINode Title="Form1.shapeContainer1 field" Url="html/56b731f8-b5f5-2988-78fe-ebd30ce88947.htm" />
+  <HelpKINode Title="Form1.shapeContainer2 field" Url="html/ab8b7ef8-1988-fb31-00e8-8aa04c96ac16.htm" />
+  <HelpKINode Title="Form1.textBox1_Click method" Url="html/0a9527e4-688c-efd0-a953-6539f4e1da02.htm" />
+  <HelpKINode Title="Form1.textBox2_Click method" Url="html/c2eb58c6-e786-5cdf-efc5-ef144fe200c4.htm" />
+  <HelpKINode Title="Form1.textBoxPassword field" Url="html/39992ff0-50a9-8f45-53ae-ad0822aeba65.htm" />
+  <HelpKINode Title="Form1.textBoxUser field" Url="html/7adbf171-e4e9-8dda-0ffe-a3b1c43df1eb.htm" />
+  <HelpKINode Title="Form1_Load method" Url="html/63e962b9-2681-5714-6b22-da3dace00139.htm" />
+  <HelpKINode Title="FormatException method" Url="html/f26c0fd0-5a58-4dc7-7a69-475db623dd9e.htm" />
+  <HelpKINode Title="Generos class">
+    <HelpKINode Title="Generos (Clase)" Url="html/b9da49c5-6019-4ffa-a7bc-6087d9a234ab.htm" />
+    <HelpKINode Title="constructor" Url="html/e5b4ed59-88bf-32c8-6c14-54f953369897.htm" />
+    <HelpKINode Title="events" Url="html/98bf58f9-f016-2248-37c6-7b62dd4cf2ee.htm" />
+    <HelpKINode Title="fields" Url="html/5a16d989-34b5-5511-c153-48fd9b11fea9.htm" />
+    <HelpKINode Title="methods" Url="html/43c0c44f-add1-113b-b826-96ea1281b16c.htm" />
+    <HelpKINode Title="properties" Url="html/2b9f9ff8-6cc7-e84f-63a4-edf274ddf0d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Generos.AbrirFormEnPanel method" Url="html/d58eb21a-1022-22ac-c5dd-3d11230cb863.htm" />
+  <HelpKINode Title="Generos.button1 field" Url="html/b90f2600-0b71-6e17-cbb8-c8e2e666ffc4.htm" />
+  <HelpKINode Title="Generos.button1_Click method" Url="html/35630492-457d-9d8f-3d4e-b7023b99d3d4.htm" />
+  <HelpKINode Title="Generos.button2_Click method" Url="html/6277e972-1007-cf28-08ab-c90d22f956f8.htm" />
+  <HelpKINode Title="Generos.button3_Click method" Url="html/b2b686c5-2028-2dec-24a2-359bda37b001.htm" />
+  <HelpKINode Title="Generos.button4 field" Url="html/27786995-8bff-69fb-3637-e3f9baa2e627.htm" />
+  <HelpKINode Title="Generos.button4_Click method" Url="html/e59f118a-b62b-81a7-0a65-411d625f1136.htm" />
+  <HelpKINode Title="Generos.components field" Url="html/e3058672-3c5a-782a-48b7-ac0f20e2cc2b.htm" />
+  <HelpKINode Title="Generos.Dispose method" Url="html/53e332a9-f351-5e20-c175-0b904ce2487c.htm" />
+  <HelpKINode Title="Generos.Generos constructor" Url="html/e5b4ed59-88bf-32c8-6c14-54f953369897.htm" />
+  <HelpKINode Title="Generos.Generos_Load method" Url="html/35e1f1d9-259f-622b-c0bd-ae6fb68b5d4e.htm" />
+  <HelpKINode Title="Generos.InitializeComponent method" Url="html/365e47c0-cbc9-1b52-987f-1f4edbc665ec.htm" />
+  <HelpKINode Title="Generos.label1 field" Url="html/c420ce28-9500-6e6b-231e-717110218e75.htm" />
+  <HelpKINode Title="Generos.label2 field" Url="html/2e9cfc75-5084-1f97-e52d-6ba16dea3553.htm" />
+  <HelpKINode Title="Generos.panel1 field" Url="html/970dee1d-1bfe-caf1-8d9a-9bc1ed2b74a5.htm" />
+  <HelpKINode Title="Generos.panel2 field" Url="html/7eb3e187-61ca-3068-110b-66c30435418a.htm" />
+  <HelpKINode Title="Generos.panelContenedor field" Url="html/5891b05f-f860-b77f-9380-15bef9734eed.htm" />
+  <HelpKINode Title="Generos_Load method" Url="html/35e1f1d9-259f-622b-c0bd-ae6fb68b5d4e.htm" />
+  <HelpKINode Title="groupBox1 field">
+    <HelpKINode Title="ActualizaCarreras.groupBox1 (Campo)" Url="html/3173c0cd-47db-7a71-2140-8455fcd8889e.htm" />
+    <HelpKINode Title="InsertaEntrenador.groupBox1 (Campo)" Url="html/8d3d35bd-4b00-1f41-be1f-d6877633b731.htm" />
+    <HelpKINode Title="MantenimientoCarreras.groupBox1 (Campo)" Url="html/8f02a099-6fc8-831f-034b-2cf9ce6579cb.htm" />
+    <HelpKINode Title="MantenimientoDepto.groupBox1 (Campo)" Url="html/f94268e4-8d4a-d387-8ac6-bc6d4c95f59c.htm" />
+    <HelpKINode Title="MantenimientoEntrena.groupBox1 (Campo)" Url="html/cba04555-09f6-e4d8-19c5-2af94ae1a053.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.groupBox1 (Campo)" Url="html/f542bc2f-9ad8-dde2-508e-aee8fe67ec27.htm" />
+    <HelpKINode Title="MantenimientoGeneros.groupBox1 (Campo)" Url="html/9634befc-e167-2f85-aa6f-c4e715ba326b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="groupBox2 field">
+    <HelpKINode Title="ActualizaCarreras.groupBox2 (Campo)" Url="html/33f893ae-060a-81ba-22a8-1c8b743c074c.htm" />
+    <HelpKINode Title="InsertaEntrenador.groupBox2 (Campo)" Url="html/45d81d9e-e6d6-e325-e970-032bb9d7e662.htm" />
+    <HelpKINode Title="MantenimientoCarreras.groupBox2 (Campo)" Url="html/1c0b1b5f-f89f-d8d3-625c-775d6fa939c3.htm" />
+    <HelpKINode Title="MantenimientoDepto.groupBox2 (Campo)" Url="html/99d8c2a2-c03a-7296-d953-84063ce1a7ae.htm" />
+    <HelpKINode Title="MantenimientoEntrena.groupBox2 (Campo)" Url="html/fa85a05a-dd54-1dc6-dac5-5b4f2d08130d.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.groupBox2 (Campo)" Url="html/3962b7ba-7e09-2f4f-2992-fa0761854990.htm" />
+    <HelpKINode Title="MantenimientoGeneros.groupBox2 (Campo)" Url="html/1649ff65-8c1a-043c-da35-892b467b0b5b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="groupBox3 field">
+    <HelpKINode Title="MantenimientoCarreras.groupBox3 (Campo)" Url="html/fe8ec51d-6181-235d-d2e2-fd9a97e47de1.htm" />
+    <HelpKINode Title="MantenimientoDepto.groupBox3 (Campo)" Url="html/881038ed-2062-f1c2-e5ca-aa66972d90ed.htm" />
+    <HelpKINode Title="MantenimientoEntrena.groupBox3 (Campo)" Url="html/4a2116d9-764c-c6a9-caee-afc117c99c04.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.groupBox3 (Campo)" Url="html/5dc6d58b-7d00-c9a7-ff23-42f4705e3b47.htm" />
+    <HelpKINode Title="MantenimientoGeneros.groupBox3 (Campo)" Url="html/8ca9bbe4-a52f-dc44-a3c0-b1f1fa596edb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="id field" Url="html/3104fd24-0e84-6b37-9acc-eccd9232de4d.htm" />
+  <HelpKINode Title="id_tec field">
+    <HelpKINode Title="Form1.id_tec (Campo)" Url="html/4f098f1d-7dcc-166f-3633-0997c5def51c.htm" />
+    <HelpKINode Title="publicas.id_tec (Campo)" Url="html/9fd5e17f-ec00-eea6-5017-5b4c02bc036d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InitializeComponent method">
+    <HelpKINode Title="ActualizaCarreras.InitializeComponent (M&#233;todo )" Url="html/95aa80fc-a145-c5c8-7e2e-9fffecb1ce94.htm" />
+    <HelpKINode Title="ActualizaGeneros.InitializeComponent (M&#233;todo )" Url="html/8eda5aa5-6274-12a1-2838-0b2943d270a5.htm" />
+    <HelpKINode Title="AgregaGeneros.InitializeComponent (M&#233;todo )" Url="html/d4adfd03-4260-55c8-cfa2-bbdb694e8229.htm" />
+    <HelpKINode Title="Backup.InitializeComponent (M&#233;todo )" Url="html/b42311bf-b8c7-9a34-45ab-857be54e6a8e.htm" />
+    <HelpKINode Title="BorraDepartamentos.InitializeComponent (M&#233;todo )" Url="html/1a3cf793-6073-5f98-78eb-fc8f94b1b75c.htm" />
+    <HelpKINode Title="BorraGeneros.InitializeComponent (M&#233;todo )" Url="html/6183b1cc-160f-a1bd-862b-2ab513ab27e2.htm" />
+    <HelpKINode Title="BorrarCarreras.InitializeComponent (M&#233;todo )" Url="html/5c6d9acd-efc9-42cb-c583-b9a0c1ea3c48.htm" />
+    <HelpKINode Title="Carreras.InitializeComponent (M&#233;todo )" Url="html/5d94a599-819d-36fd-55e2-41aaee3f44e0.htm" />
+    <HelpKINode Title="Depto.InitializeComponent (M&#233;todo )" Url="html/8b86f338-4d27-fe33-0489-b4b832cd4f34.htm" />
+    <HelpKINode Title="Entrenadores.InitializeComponent (M&#233;todo )" Url="html/1aa5abb6-e0e9-41b9-365d-afd70f3298f1.htm" />
+    <HelpKINode Title="Form1.InitializeComponent (M&#233;todo )" Url="html/ef2815e4-55fd-9754-6b93-57c2ab8194af.htm" />
+    <HelpKINode Title="Generos.InitializeComponent (M&#233;todo )" Url="html/365e47c0-cbc9-1b52-987f-1f4edbc665ec.htm" />
+    <HelpKINode Title="InsertaCarreras.InitializeComponent (M&#233;todo )" Url="html/e4995d9d-78b3-b216-53ea-ed4ac03bacec.htm" />
+    <HelpKINode Title="InsertaDepartamentos.InitializeComponent (M&#233;todo )" Url="html/48fdec9a-9b0e-3d2a-fce3-bcd55685bcf0.htm" />
+    <HelpKINode Title="InsertaEntrenador.InitializeComponent (M&#233;todo )" Url="html/ce29cfba-c8ed-ba99-f6f6-00625f452dcb.htm" />
+    <HelpKINode Title="InsertarCarreras.InitializeComponent (M&#233;todo )" Url="html/828a169e-4274-8c1b-2526-aea823cfadaf.htm" />
+    <HelpKINode Title="MantenimientoCarreras.InitializeComponent (M&#233;todo )" Url="html/c3807073-92ec-f061-f066-5c2a1539b83b.htm" />
+    <HelpKINode Title="MantenimientoDepto.InitializeComponent (M&#233;todo )" Url="html/63d1fd93-617d-e13d-3a5b-19ac48a951d3.htm" />
+    <HelpKINode Title="MantenimientoEntrena.InitializeComponent (M&#233;todo )" Url="html/9eacb10c-c146-0b83-4386-7202cb81411a.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.InitializeComponent (M&#233;todo )" Url="html/312b0e99-13b0-e336-abf5-e152d0949b2e.htm" />
+    <HelpKINode Title="MantenimientoGeneros.InitializeComponent (M&#233;todo )" Url="html/de4641bf-f8a8-dab4-506e-9c752c4e7337.htm" />
+    <HelpKINode Title="SeleccionaCarreras.InitializeComponent (M&#233;todo )" Url="html/97f95e4a-c2da-6edb-8ff7-01384a68d2c9.htm" />
+    <HelpKINode Title="SeleccionaDepto.InitializeComponent (M&#233;todo )" Url="html/ccf42969-128c-2ec4-c731-0de759bdee23.htm" />
+    <HelpKINode Title="SeleccionaGeneros.InitializeComponent (M&#233;todo )" Url="html/88461e4d-47e3-4ae1-0208-19c4379344c3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertaCarreras class">
+    <HelpKINode Title="InsertaCarreras (Clase)" Url="html/78c28388-11b0-2333-4224-9ffdf74b31c4.htm" />
+    <HelpKINode Title="constructor" Url="html/96c716bf-e42f-1649-dd0b-9cdd81f99331.htm" />
+    <HelpKINode Title="events" Url="html/048ee5a3-6c96-26ab-b78a-a9d8494d5096.htm" />
+    <HelpKINode Title="fields" Url="html/8a552f1d-cc35-d362-ba2c-e63f4770c7c8.htm" />
+    <HelpKINode Title="methods" Url="html/adb02ac0-b58f-462c-93cc-0dd1037f7a33.htm" />
+    <HelpKINode Title="properties" Url="html/9681a68e-3e0d-52a8-3bd8-13883c368dc3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertaCarreras.btnAgreagrCarrera field" Url="html/218dfc48-f74c-62c0-bbb2-bdaf1a8fb329.htm" />
+  <HelpKINode Title="InsertaCarreras.btnAgreagrCarrera_Click method" Url="html/b1dc39d0-758d-2f6e-f6c3-f5a7228b4ce9.htm" />
+  <HelpKINode Title="InsertaCarreras.cargarCarreras method" Url="html/dec4a4ae-2f4e-0103-52ac-85f54627c01f.htm" />
+  <HelpKINode Title="InsertaCarreras.components field" Url="html/721f0e77-3bab-eb53-dc4b-840e9ef60f2c.htm" />
+  <HelpKINode Title="InsertaCarreras.dataGridView1 field" Url="html/77ced949-50b2-57ce-e4f9-fcbfff613d73.htm" />
+  <HelpKINode Title="InsertaCarreras.Dispose method" Url="html/7a2849af-c557-ed3f-ac23-28854d6ab2b5.htm" />
+  <HelpKINode Title="InsertaCarreras.dr field" Url="html/edb94436-7450-1b6a-018c-74d9896142e6.htm" />
+  <HelpKINode Title="InsertaCarreras.InitializeComponent method" Url="html/e4995d9d-78b3-b216-53ea-ed4ac03bacec.htm" />
+  <HelpKINode Title="InsertaCarreras.InsertaCarreras constructor" Url="html/96c716bf-e42f-1649-dd0b-9cdd81f99331.htm" />
+  <HelpKINode Title="InsertaCarreras.label1 field" Url="html/382b46d8-db4c-2135-1e77-be9a65fb01ff.htm" />
+  <HelpKINode Title="InsertaCarreras.label2 field" Url="html/5de6aee8-752f-926c-406d-f8e379391354.htm" />
+  <HelpKINode Title="InsertaCarreras.textBoxdescCarrera field" Url="html/35dfcdc0-4e85-e643-ca1b-27f574fcd6c4.htm" />
+  <HelpKINode Title="InsertaCarreras.textBoxIdtec field" Url="html/b4758c98-13d0-3ec5-96fb-af20a9479d3d.htm" />
+  <HelpKINode Title="InsertaDepartamentos class">
+    <HelpKINode Title="InsertaDepartamentos (Clase)" Url="html/8d4a938c-174d-9c8b-3599-0335d9c4c43f.htm" />
+    <HelpKINode Title="constructor" Url="html/ac6bb086-eef0-dc70-2914-bbcc88441b48.htm" />
+    <HelpKINode Title="events" Url="html/81aa6c86-d5d9-aabe-d4fd-7d545fbb4b75.htm" />
+    <HelpKINode Title="fields" Url="html/ce4b5557-48f1-21bb-eddd-d1f069cf934a.htm" />
+    <HelpKINode Title="methods" Url="html/8564ce4a-d4aa-bcc7-297a-9e20387edda9.htm" />
+    <HelpKINode Title="properties" Url="html/50293908-8207-45a3-5c4e-9aa7577e1e42.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertaDepartamentos.btnAgreagrDept field" Url="html/7178ed4c-19ee-813c-0930-7dd3bb7d9adb.htm" />
+  <HelpKINode Title="InsertaDepartamentos.btnAgreagrDept_Click method" Url="html/aa8352d2-67ba-2e47-c919-b769bb7d7272.htm" />
+  <HelpKINode Title="InsertaDepartamentos.cargarCarreras method" Url="html/3fdae53b-2b51-f425-23c0-99a60dbcb5a8.htm" />
+  <HelpKINode Title="InsertaDepartamentos.components field" Url="html/5c44df62-1952-ffc4-eb26-1f9286bc3b51.htm" />
+  <HelpKINode Title="InsertaDepartamentos.dataGridView1 field" Url="html/3c0b1919-97fd-5459-161b-5c2d2a3d9836.htm" />
+  <HelpKINode Title="InsertaDepartamentos.Dispose method" Url="html/04ebd0bd-c087-d27d-a04c-cbcfbf06df46.htm" />
+  <HelpKINode Title="InsertaDepartamentos.dr field" Url="html/fc12f3e6-03c0-eca7-d1cd-3c1a89d4e131.htm" />
+  <HelpKINode Title="InsertaDepartamentos.InitializeComponent method" Url="html/48fdec9a-9b0e-3d2a-fce3-bcd55685bcf0.htm" />
+  <HelpKINode Title="InsertaDepartamentos.InsertaDepartamentos constructor" Url="html/ac6bb086-eef0-dc70-2914-bbcc88441b48.htm" />
+  <HelpKINode Title="InsertaDepartamentos.label1 field" Url="html/55d46279-b89f-b34d-a454-1b2e9cb11c2b.htm" />
+  <HelpKINode Title="InsertaDepartamentos.label2 field" Url="html/d24e6173-8532-3937-7b48-3279dac38467.htm" />
+  <HelpKINode Title="InsertaDepartamentos.textBoxdescDpto field" Url="html/6a7c8360-c9ec-a2bc-b1ae-3136e6701618.htm" />
+  <HelpKINode Title="InsertaDepartamentos.textBoxIdtec field" Url="html/45757b2d-7107-aa3f-2fbe-5244981c86dd.htm" />
+  <HelpKINode Title="InsertaEntrenador class">
+    <HelpKINode Title="InsertaEntrenador (Clase)" Url="html/350550fd-83db-3575-7c7d-ac6afe398ca7.htm" />
+    <HelpKINode Title="constructor" Url="html/da3c46c6-26ea-8fca-6bbe-a53252d85012.htm" />
+    <HelpKINode Title="events" Url="html/657e07ea-e715-4507-c0a4-a4b3bf347a6c.htm" />
+    <HelpKINode Title="fields" Url="html/7368aea7-c32b-dda5-5709-0ffce7f5a0df.htm" />
+    <HelpKINode Title="methods" Url="html/a1892e21-1776-9067-3433-68a00a2c7b53.htm" />
+    <HelpKINode Title="properties" Url="html/32028fb3-425a-2a77-4397-91063fd92f13.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertaEntrenador.actualizasecuencia method" Url="html/be580fb5-594f-7de8-c79c-2983fa4b7d56.htm" />
+  <HelpKINode Title="InsertaEntrenador.button1 field" Url="html/f565f022-2402-fb3a-0815-d763d58f779c.htm" />
+  <HelpKINode Title="InsertaEntrenador.button1_Click method" Url="html/a7285207-567b-95bd-ed63-67dcd1f6d6af.htm" />
+  <HelpKINode Title="InsertaEntrenador.button2_Click method" Url="html/7963edba-6626-6d78-83bb-24bac51ef3b9.htm" />
+  <HelpKINode Title="InsertaEntrenador.cargarDepto method" Url="html/006eb28a-8229-e707-e5eb-c5854ca550f3.htm" />
+  <HelpKINode Title="InsertaEntrenador.comboBoxDepartamento field" Url="html/826997a3-69a6-95a3-0b32-e66aedc1652c.htm" />
+  <HelpKINode Title="InsertaEntrenador.comboBoxDepartamento_SelectedIndexChanged method" Url="html/9bcfb039-5a92-80ed-25cc-49363c9cf008.htm" />
+  <HelpKINode Title="InsertaEntrenador.comboBoxGenero field" Url="html/e0bfafc1-301f-7b45-db7c-d3c394cc04c9.htm" />
+  <HelpKINode Title="InsertaEntrenador.comboBoxGenero_SelectedIndexChanged method" Url="html/c94be4ca-53f2-963b-fd92-626aac3533eb.htm" />
+  <HelpKINode Title="InsertaEntrenador.components field" Url="html/71c0a3d0-79e2-0298-2c30-688d91b80047.htm" />
+  <HelpKINode Title="InsertaEntrenador.dataGridViewEntrenadores field" Url="html/6831c937-001b-f5e9-a1cf-166d9b2cc353.htm" />
+  <HelpKINode Title="InsertaEntrenador.Dispose method" Url="html/8b1c5bb1-d301-717e-ce6d-dacf40ed24c0.htm" />
+  <HelpKINode Title="InsertaEntrenador.groupBox1 field" Url="html/8d3d35bd-4b00-1f41-be1f-d6877633b731.htm" />
+  <HelpKINode Title="InsertaEntrenador.groupBox2 field" Url="html/45d81d9e-e6d6-e325-e970-032bb9d7e662.htm" />
+  <HelpKINode Title="InsertaEntrenador.InitializeComponent method" Url="html/ce29cfba-c8ed-ba99-f6f6-00625f452dcb.htm" />
+  <HelpKINode Title="InsertaEntrenador.InsertaEntrenador constructor" Url="html/da3c46c6-26ea-8fca-6bbe-a53252d85012.htm" />
+  <HelpKINode Title="InsertaEntrenador.InsertaEntrenador_Load method" Url="html/ecdb1579-8b2c-30b1-f359-04b7e35be39a.htm" />
+  <HelpKINode Title="InsertaEntrenador.label1 field" Url="html/95711a90-2bc1-7d4b-9875-07494e1ae941.htm" />
+  <HelpKINode Title="InsertaEntrenador.label2 field" Url="html/22ffb423-fd9a-3762-4283-2e7bbee514c4.htm" />
+  <HelpKINode Title="InsertaEntrenador.label3 field" Url="html/b6a3a005-08f5-cda5-ce60-fc304cff5969.htm" />
+  <HelpKINode Title="InsertaEntrenador.label4 field" Url="html/1fe5fa44-337e-d3ba-9548-30768e2e471f.htm" />
+  <HelpKINode Title="InsertaEntrenador.label5 field" Url="html/ebfeca05-f83f-b87c-968d-f78e77cd7196.htm" />
+  <HelpKINode Title="InsertaEntrenador.label6 field" Url="html/74d0b779-e446-3383-f200-8c8e27f7ede0.htm" />
+  <HelpKINode Title="InsertaEntrenador.label7 field" Url="html/6c8e73c1-0b1c-be9d-f073-7ec16850850f.htm" />
+  <HelpKINode Title="InsertaEntrenador.seleccionacomboDepto method" Url="html/f97091ad-359b-0cd7-4b04-41731d10cad2.htm" />
+  <HelpKINode Title="InsertaEntrenador.seleccionacomboGenero method" Url="html/1521fdea-d8fa-ec84-4c4f-3c65f6148ecd.htm" />
+  <HelpKINode Title="InsertaEntrenador.textBoxMaterno field" Url="html/deaa3b33-9e9c-84c8-f8b0-f8b182de8360.htm" />
+  <HelpKINode Title="InsertaEntrenador.textBoxName field" Url="html/86d87671-5740-6d8e-73f0-350f52645cba.htm" />
+  <HelpKINode Title="InsertaEntrenador.textBoxPaterno field" Url="html/f38edd15-6a9e-e9c1-e429-0c3545b802fc.htm" />
+  <HelpKINode Title="InsertaEntrenador.textBoxTec field" Url="html/078d515c-69f1-e2a8-fbdc-7ace7bb3faea.htm" />
+  <HelpKINode Title="InsertaEntrenador_Load method" Url="html/ecdb1579-8b2c-30b1-f359-04b7e35be39a.htm" />
+  <HelpKINode Title="InsertarCarreras class">
+    <HelpKINode Title="InsertarCarreras (Clase)" Url="html/a4f58894-7781-e423-6835-564eb60107de.htm" />
+    <HelpKINode Title="constructor" Url="html/1dbb2677-d620-d2b8-3ada-311e3b583260.htm" />
+    <HelpKINode Title="events" Url="html/37561f44-9b8e-d917-573e-b1231a306eca.htm" />
+    <HelpKINode Title="fields" Url="html/0182a415-1c4b-5c31-cb96-5ed9a8641158.htm" />
+    <HelpKINode Title="methods" Url="html/2f8c851f-8668-8295-f8bc-ff2cadb7ec75.htm" />
+    <HelpKINode Title="properties" Url="html/ea3ab977-4ee9-c750-0c74-bd00682c148d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InsertarCarreras.AbrirFormEnPanel method" Url="html/257fb0cb-2c2d-2326-f0ef-3dbc86c7dcf5.htm" />
+  <HelpKINode Title="InsertarCarreras.aToolStripMenuItem_Click method" Url="html/b9a619c7-b1b1-5433-a2bf-c8f8d9ad1ee2.htm" />
+  <HelpKINode Title="InsertarCarreras.button1_Click method" Url="html/7ce6e859-0d83-ab31-8d46-8c151b8d839a.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonAlumnos field" Url="html/1e1e233a-f2db-f8d5-6f30-1a8fffb61d91.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonCarreras field" Url="html/a1bb8552-dfa0-4e9b-9f65-0040bf6dc8f4.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonCarreras_Click method" Url="html/4fe2b55f-0484-4ab6-b1ce-c0b466331736.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonDepartamentos field" Url="html/78de2a9e-91c0-f247-0f92-3ceba5e226ee.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonDepartamentos_Click method" Url="html/8443aac1-3a8f-b748-5fb4-50372bd98e48.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonEntrenador field" Url="html/bd25c309-73e7-8396-ad63-bb4e3a1b271c.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonEntrenador_Click method" Url="html/53eed924-846b-26ba-94bb-3e70dea0b8b0.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonEqDepor field" Url="html/7186d1db-97ca-eb44-bff6-532b5ac569ee.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonGeneros field" Url="html/e88c1e7b-2cfb-d4f0-9c9b-32eb7a7f9250.htm" />
+  <HelpKINode Title="InsertarCarreras.buttonParticipa field" Url="html/55d01b2f-560d-c707-6736-6efff486f7e8.htm" />
+  <HelpKINode Title="InsertarCarreras.components field" Url="html/96a3de0a-2274-0e32-b979-95af5511c97f.htm" />
+  <HelpKINode Title="InsertarCarreras.Dispose method" Url="html/68cb41b9-bbed-8568-5670-cbe77902f36e.htm" />
+  <HelpKINode Title="InsertarCarreras.InitializeComponent method" Url="html/828a169e-4274-8c1b-2526-aea823cfadaf.htm" />
+  <HelpKINode Title="InsertarCarreras.InsertarCarreras constructor" Url="html/1dbb2677-d620-d2b8-3ada-311e3b583260.htm" />
+  <HelpKINode Title="InsertarCarreras.InsertarCarreras_MouseMove method" Url="html/8a67711a-c4c4-71c5-15a6-80baa6c89f14.htm" />
+  <HelpKINode Title="InsertarCarreras.label1 field" Url="html/0ae02865-9e67-6462-f50b-59171fd52202.htm" />
+  <HelpKINode Title="InsertarCarreras.label1_Click method" Url="html/6e08913c-6844-d21f-a7f6-a6878704ac47.htm" />
+  <HelpKINode Title="InsertarCarreras.label2 field" Url="html/e76afcc3-2915-4aff-2dcd-fbba46a11043.htm" />
+  <HelpKINode Title="InsertarCarreras.LUser field" Url="html/620a8790-79f4-4bb4-9254-444cd9817e73.htm" />
+  <HelpKINode Title="InsertarCarreras.Main_Load method" Url="html/2200262a-c1fe-18a7-6c58-d4eae1d852f5.htm" />
+  <HelpKINode Title="InsertarCarreras.ovalShape1 field" Url="html/94f5dbc9-4e38-7013-dd96-89ce6aa389b6.htm" />
+  <HelpKINode Title="InsertarCarreras.panel1 field" Url="html/4745c217-d3bd-afbf-3e18-214f8c55bc3b.htm" />
+  <HelpKINode Title="InsertarCarreras.panel2 field" Url="html/8859ad48-b9ca-9189-1898-a23ee5ba698f.htm" />
+  <HelpKINode Title="InsertarCarreras.panel3 field" Url="html/87617d34-b537-8365-cd16-1f57f0463cf5.htm" />
+  <HelpKINode Title="InsertarCarreras.pictureBox1 field" Url="html/b05b1fb1-141e-f2e7-b2eb-aa8b701d8c41.htm" />
+  <HelpKINode Title="InsertarCarreras.pictureBox1_DoubleClick method" Url="html/04ea8bd6-818f-40e4-ed23-c046547e24b5.htm" />
+  <HelpKINode Title="InsertarCarreras.pictureBox2 field" Url="html/5ce4bace-be42-2235-4adb-95844526ddfb.htm" />
+  <HelpKINode Title="InsertarCarreras.pictureBox2_DoubleClick method" Url="html/f46b79d2-775d-7963-343f-ef5601660bda.htm" />
+  <HelpKINode Title="InsertarCarreras.posx field" Url="html/352f695f-e2d3-44c7-7ce4-0eb82a75ca1f.htm" />
+  <HelpKINode Title="InsertarCarreras.posy field" Url="html/d41f5ba4-f022-c034-2e4b-16aeea16050b.htm" />
+  <HelpKINode Title="InsertarCarreras.shapeContainer1 field" Url="html/495134f0-1067-59ef-76ad-a997b7884764.htm" />
+  <HelpKINode Title="InsertarCarreras.timer1 field" Url="html/b17a9efc-2cdb-e536-880f-7b5fdce8fb39.htm" />
+  <HelpKINode Title="InsertarCarreras.timer1_Tick method" Url="html/343e7ea6-be6f-b654-2be1-4a0daf05ddec.htm" />
+  <HelpKINode Title="InsertarCarreras_MouseMove method" Url="html/8a67711a-c4c4-71c5-15a6-80baa6c89f14.htm" />
+  <HelpKINode Title="intento field" Url="html/cb630142-93d6-9173-05d9-37311dd0217c.htm" />
+  <HelpKINode Title="label1 field">
+    <HelpKINode Title="ActualizaCarreras.label1 (Campo)" Url="html/a4485b83-0d24-37e2-e09f-fabdef6d510e.htm" />
+    <HelpKINode Title="ActualizaGeneros.label1 (Campo)" Url="html/79e6c3a7-33d6-6500-f8da-782bf26f94c2.htm" />
+    <HelpKINode Title="AgregaGeneros.label1 (Campo)" Url="html/b7ecfc53-1f0d-f151-95db-0b9adfa43e08.htm" />
+    <HelpKINode Title="Backup.label1 (Campo)" Url="html/c27b6a43-e38e-8ec8-9aa9-e230b34649b0.htm" />
+    <HelpKINode Title="BorraDepartamentos.label1 (Campo)" Url="html/92fe53c3-0b0b-9050-c067-e1828c523ee9.htm" />
+    <HelpKINode Title="BorraGeneros.label1 (Campo)" Url="html/ede56539-36ea-b778-71cd-ab7849b5f634.htm" />
+    <HelpKINode Title="BorrarCarreras.label1 (Campo)" Url="html/fec390a1-0324-3e49-6bce-797d8e54f5c4.htm" />
+    <HelpKINode Title="Carreras.label1 (Campo)" Url="html/d05dbc34-1ab1-f387-018f-19007801b6bf.htm" />
+    <HelpKINode Title="Depto.label1 (Campo)" Url="html/b8c41983-9659-3a1a-fdc9-3a861e1d96cc.htm" />
+    <HelpKINode Title="Entrenadores.label1 (Campo)" Url="html/6d65626a-f8d2-b771-181a-2c43e20dfaa3.htm" />
+    <HelpKINode Title="Generos.label1 (Campo)" Url="html/c420ce28-9500-6e6b-231e-717110218e75.htm" />
+    <HelpKINode Title="InsertaCarreras.label1 (Campo)" Url="html/382b46d8-db4c-2135-1e77-be9a65fb01ff.htm" />
+    <HelpKINode Title="InsertaDepartamentos.label1 (Campo)" Url="html/55d46279-b89f-b34d-a454-1b2e9cb11c2b.htm" />
+    <HelpKINode Title="InsertaEntrenador.label1 (Campo)" Url="html/95711a90-2bc1-7d4b-9875-07494e1ae941.htm" />
+    <HelpKINode Title="InsertarCarreras.label1 (Campo)" Url="html/0ae02865-9e67-6462-f50b-59171fd52202.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label1 (Campo)" Url="html/cb25b414-73e6-643f-4c6f-66d29e929f95.htm" />
+    <HelpKINode Title="MantenimientoDepto.label1 (Campo)" Url="html/acaaf3be-6564-9a05-26e1-e6325806f684.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label1 (Campo)" Url="html/ffd19328-be6f-79ab-c4fc-66f6049f0425.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label1 (Campo)" Url="html/fda80589-fa20-fa9f-56b1-1234533259a4.htm" />
+    <HelpKINode Title="MantenimientoGeneros.label1 (Campo)" Url="html/93872443-9673-62a4-5c75-bb39a0eab93d.htm" />
+    <HelpKINode Title="SeleccionaCarreras.label1 (Campo)" Url="html/fb648ee6-98f1-1dfe-11f2-9818be46cb7a.htm" />
+    <HelpKINode Title="SeleccionaDepto.label1 (Campo)" Url="html/9c7cbeeb-a97e-787d-a8a7-bfbdbf9af628.htm" />
+    <HelpKINode Title="SeleccionaGeneros.label1 (Campo)" Url="html/c7aac87a-d007-4b6b-ae72-66ae0a3c4c4e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label10 field" Url="html/f5c0ddb1-691b-87eb-f04a-d987799b173b.htm" />
+  <HelpKINode Title="label1_Click method">
+    <HelpKINode Title="AgregaGeneros.label1_Click (M&#233;todo )" Url="html/7667b25b-f1a6-79fe-e8ca-765e9b36f650.htm" />
+    <HelpKINode Title="InsertarCarreras.label1_Click (M&#233;todo )" Url="html/6e08913c-6844-d21f-a7f6-a6878704ac47.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label2 field">
+    <HelpKINode Title="ActualizaGeneros.label2 (Campo)" Url="html/85ca4a9d-ab02-5084-d881-6340a15ec7d8.htm" />
+    <HelpKINode Title="Carreras.label2 (Campo)" Url="html/7f8a56f3-0385-09ab-8762-1f6370aaa8b9.htm" />
+    <HelpKINode Title="Depto.label2 (Campo)" Url="html/3b5e080a-6094-2c5e-81ec-c27fe14dd9a3.htm" />
+    <HelpKINode Title="Entrenadores.label2 (Campo)" Url="html/c742c1f8-7a42-7a4e-6184-d39dd7714fae.htm" />
+    <HelpKINode Title="Generos.label2 (Campo)" Url="html/2e9cfc75-5084-1f97-e52d-6ba16dea3553.htm" />
+    <HelpKINode Title="InsertaCarreras.label2 (Campo)" Url="html/5de6aee8-752f-926c-406d-f8e379391354.htm" />
+    <HelpKINode Title="InsertaDepartamentos.label2 (Campo)" Url="html/d24e6173-8532-3937-7b48-3279dac38467.htm" />
+    <HelpKINode Title="InsertaEntrenador.label2 (Campo)" Url="html/22ffb423-fd9a-3762-4283-2e7bbee514c4.htm" />
+    <HelpKINode Title="InsertarCarreras.label2 (Campo)" Url="html/e76afcc3-2915-4aff-2dcd-fbba46a11043.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label2 (Campo)" Url="html/848107c9-5418-25dc-bec5-4338dd8ee8da.htm" />
+    <HelpKINode Title="MantenimientoDepto.label2 (Campo)" Url="html/25f7b4dc-15aa-b164-cf59-1122a71caff8.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label2 (Campo)" Url="html/35ee16b9-8e0a-8d8a-dc29-8a3536a4f6db.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label2 (Campo)" Url="html/c9f10acd-9e29-5035-9fe7-6b1b773105db.htm" />
+    <HelpKINode Title="MantenimientoGeneros.label2 (Campo)" Url="html/03768340-712d-9183-d7e1-6cd877ec9527.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label3 field">
+    <HelpKINode Title="InsertaEntrenador.label3 (Campo)" Url="html/b6a3a005-08f5-cda5-ce60-fc304cff5969.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label3 (Campo)" Url="html/9e3a7287-dbeb-8cd9-9e52-4a66b16f2375.htm" />
+    <HelpKINode Title="MantenimientoDepto.label3 (Campo)" Url="html/ca1ff2a0-0f59-b861-2e89-1375849258df.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label3 (Campo)" Url="html/8f963e20-8192-183e-29d4-e2e8fe01ae30.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label3 (Campo)" Url="html/6fe7f922-f89e-6234-daaf-8e0163801726.htm" />
+    <HelpKINode Title="MantenimientoGeneros.label3 (Campo)" Url="html/4328775a-5c75-4baf-e39a-141c5d8208e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label4 field">
+    <HelpKINode Title="InsertaEntrenador.label4 (Campo)" Url="html/1fe5fa44-337e-d3ba-9548-30768e2e471f.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label4 (Campo)" Url="html/b676c260-d96c-fb92-6088-9e0b7512da7e.htm" />
+    <HelpKINode Title="MantenimientoDepto.label4 (Campo)" Url="html/2856a613-1df3-286e-f195-5a4012ccc192.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label4 (Campo)" Url="html/f6fee2ac-d1cf-fbff-7280-37e34d9fd2a6.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label4 (Campo)" Url="html/76ac1cc3-c9a7-2620-35e7-cf1d801a35bb.htm" />
+    <HelpKINode Title="MantenimientoGeneros.label4 (Campo)" Url="html/909896a4-8c03-b0c9-3ddd-b9a036d77542.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label5 field">
+    <HelpKINode Title="InsertaEntrenador.label5 (Campo)" Url="html/ebfeca05-f83f-b87c-968d-f78e77cd7196.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label5 (Campo)" Url="html/776482ec-154a-a20c-0568-6cf27782ecf2.htm" />
+    <HelpKINode Title="MantenimientoDepto.label5 (Campo)" Url="html/f7929455-1c2c-b3b2-721d-52f3e243cff5.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label5 (Campo)" Url="html/b1675233-5e12-5e16-769e-16ffdacad116.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label5 (Campo)" Url="html/913b42a8-2af0-3a9a-64fa-6d9a549dfa85.htm" />
+    <HelpKINode Title="MantenimientoGeneros.label5 (Campo)" Url="html/c8cc9217-1239-5089-394b-e883048f3945.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label6 field">
+    <HelpKINode Title="InsertaEntrenador.label6 (Campo)" Url="html/74d0b779-e446-3383-f200-8c8e27f7ede0.htm" />
+    <HelpKINode Title="MantenimientoCarreras.label6 (Campo)" Url="html/1d70914c-1601-def4-9cd2-a977c51ec15f.htm" />
+    <HelpKINode Title="MantenimientoDepto.label6 (Campo)" Url="html/42ccce3c-1454-db12-1985-52f63af644ac.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label6 (Campo)" Url="html/52ee0e16-86d9-3306-b013-5f622addeaa3.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.label6 (Campo)" Url="html/455eb4b4-1009-2826-f926-5962d8765269.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label7 field">
+    <HelpKINode Title="InsertaEntrenador.label7 (Campo)" Url="html/6c8e73c1-0b1c-be9d-f073-7ec16850850f.htm" />
+    <HelpKINode Title="MantenimientoEntrena.label7 (Campo)" Url="html/203b125e-d413-7d92-d379-d45dc4edff61.htm" />
+  </HelpKINode>
+  <HelpKINode Title="label8 field" Url="html/64eabdba-197a-ea35-9861-e21fcce6ca72.htm" />
+  <HelpKINode Title="label9 field" Url="html/6e0b6f7a-96e6-5df8-953a-629579efa0f5.htm" />
+  <HelpKINode Title="limpiar method">
+    <HelpKINode Title="MantenimientoCarreras.limpiar (M&#233;todo )" Url="html/7fe02ab0-8e6b-b759-6934-7171b5573ee3.htm" />
+    <HelpKINode Title="MantenimientoDepto.limpiar (M&#233;todo )" Url="html/92f479aa-3651-f09b-b793-42beabe60927.htm" />
+    <HelpKINode Title="MantenimientoEntrena.limpiar (M&#233;todo )" Url="html/4c44335f-f6b2-7850-c831-20d8f2d5ca11.htm" />
+    <HelpKINode Title="MantenimientoGeneros.limpiar (M&#233;todo )" Url="html/9faf5008-7359-b284-70ab-6490acdc0a09.htm" />
+  </HelpKINode>
+  <HelpKINode Title="lineShape1 field" Url="html/0c19721d-cb03-9b20-9c52-1fe720fae2df.htm" />
+  <HelpKINode Title="lineShape2 field" Url="html/e7d178c0-9e9e-c9d8-58e0-56a47aca21b4.htm" />
+  <HelpKINode Title="linkLabel1 field" Url="html/17ba8c80-0bff-cf7c-839f-297c848c8cb8.htm" />
+  <HelpKINode Title="linkLabel1_Click method" Url="html/dc371fbe-29a6-951a-ab7f-a8d9e9540b89.htm" />
+  <HelpKINode Title="LUser field" Url="html/620a8790-79f4-4bb4-9254-444cd9817e73.htm" />
+  <HelpKINode Title="Main method" Url="html/c4da6918-9d17-cd8b-7bad-76f063547a17.htm" />
+  <HelpKINode Title="Main_Load method" Url="html/2200262a-c1fe-18a7-6c58-d4eae1d852f5.htm" />
+  <HelpKINode Title="MantenimientoAlumnos_Load method" Url="html/2dcb7efa-0733-7b5a-a03b-2c1bd445ff2a.htm" />
+  <HelpKINode Title="MantenimientoCarreras class">
+    <HelpKINode Title="MantenimientoCarreras (Clase)" Url="html/03e3fbd3-efe5-fe27-9c0a-23eef3cbded0.htm" />
+    <HelpKINode Title="constructor" Url="html/139f6772-f510-dab6-89c0-4177bb2290ef.htm" />
+    <HelpKINode Title="events" Url="html/dc9728a6-faaf-3f78-3ee8-3f3a212f42d2.htm" />
+    <HelpKINode Title="fields" Url="html/262544b1-080b-b7ef-5d58-520cb8ae11f4.htm" />
+    <HelpKINode Title="methods" Url="html/97f6d22d-60b3-1c9b-047d-fba7ebf64f96.htm" />
+    <HelpKINode Title="properties" Url="html/90a54328-53f8-0740-4283-49f65fc6c8a2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MantenimientoCarreras.cargarCarreras method" Url="html/719837d8-8645-abda-196c-3af5c4e796ff.htm" />
+  <HelpKINode Title="MantenimientoCarreras.components field" Url="html/b9be0c3d-4d19-d55d-de99-5b36450358f9.htm" />
+  <HelpKINode Title="MantenimientoCarreras.dataGridViewCarreras field" Url="html/461ffdb7-4ccf-9d08-7e7b-29aa9a214d7d.htm" />
+  <HelpKINode Title="MantenimientoCarreras.dataGridViewCarreras_CellContentClick method" Url="html/f4db33e1-2672-02c3-9588-768a0b0db688.htm" />
+  <HelpKINode Title="MantenimientoCarreras.Dispose method" Url="html/705a3cd1-3b01-5228-6a2d-4b3a8a8339a0.htm" />
+  <HelpKINode Title="MantenimientoCarreras.dr field" Url="html/5de3ed70-8db4-bbc2-f7ba-fc0fa1c85555.htm" />
+  <HelpKINode Title="MantenimientoCarreras.groupBox1 field" Url="html/8f02a099-6fc8-831f-034b-2cf9ce6579cb.htm" />
+  <HelpKINode Title="MantenimientoCarreras.groupBox2 field" Url="html/1c0b1b5f-f89f-d8d3-625c-775d6fa939c3.htm" />
+  <HelpKINode Title="MantenimientoCarreras.groupBox3 field" Url="html/fe8ec51d-6181-235d-d2e2-fd9a97e47de1.htm" />
+  <HelpKINode Title="MantenimientoCarreras.InitializeComponent method" Url="html/c3807073-92ec-f061-f066-5c2a1539b83b.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label1 field" Url="html/cb25b414-73e6-643f-4c6f-66d29e929f95.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label2 field" Url="html/848107c9-5418-25dc-bec5-4338dd8ee8da.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label3 field" Url="html/9e3a7287-dbeb-8cd9-9e52-4a66b16f2375.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label4 field" Url="html/b676c260-d96c-fb92-6088-9e0b7512da7e.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label5 field" Url="html/776482ec-154a-a20c-0568-6cf27782ecf2.htm" />
+  <HelpKINode Title="MantenimientoCarreras.label6 field" Url="html/1d70914c-1601-def4-9cd2-a977c51ec15f.htm" />
+  <HelpKINode Title="MantenimientoCarreras.limpiar method" Url="html/7fe02ab0-8e6b-b759-6934-7171b5573ee3.htm" />
+  <HelpKINode Title="MantenimientoCarreras.MantenimientoCarreras constructor" Url="html/139f6772-f510-dab6-89c0-4177bb2290ef.htm" />
+  <HelpKINode Title="MantenimientoCarreras.MantenimientoCarreras_Load method" Url="html/807406c3-5028-dbec-8ff2-afbdc2ef09fd.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox1 field" Url="html/6cad438a-2a5a-210e-6bf6-9a68f583c66c.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox1_DoubleClick method" Url="html/9c9559d0-19d3-5eff-ad67-fe2200b12c4e.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox2 field" Url="html/d22feb5b-1bbc-d5cd-768c-ffd59e5cec37.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox2_DoubleClick method" Url="html/3aead986-b266-d7a2-d78b-1bd4cb7ab0ea.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox3 field" Url="html/f9db55bf-5bd7-611f-6e38-00f6cc045b4e.htm" />
+  <HelpKINode Title="MantenimientoCarreras.pictureBox3_DoubleClick method" Url="html/174ed4b9-7182-356b-7684-65af1526123b.htm" />
+  <HelpKINode Title="MantenimientoCarreras.textBoxDescripcion field" Url="html/0416915e-e806-da38-d985-5569eb45b6a0.htm" />
+  <HelpKINode Title="MantenimientoCarreras.textBoxIdCarrera field" Url="html/6e3cc48e-a7f0-53c4-ed19-664dd43a2467.htm" />
+  <HelpKINode Title="MantenimientoCarreras.textBoxId_tec field" Url="html/db459535-5934-ecf8-1262-18f27ed551c3.htm" />
+  <HelpKINode Title="MantenimientoCarreras_Load method" Url="html/807406c3-5028-dbec-8ff2-afbdc2ef09fd.htm" />
+  <HelpKINode Title="MantenimientoDepto class">
+    <HelpKINode Title="MantenimientoDepto (Clase)" Url="html/90b6c2ad-594c-d542-8b30-795182ae528d.htm" />
+    <HelpKINode Title="constructor" Url="html/4b129b4c-ed99-95b6-c60f-2b14e0bc80a6.htm" />
+    <HelpKINode Title="events" Url="html/850b5974-d083-9e46-5cf5-fe97330b1020.htm" />
+    <HelpKINode Title="fields" Url="html/39d2a82b-b2e1-858f-6e02-88cc1e241e88.htm" />
+    <HelpKINode Title="methods" Url="html/1f991af3-61da-3151-30bd-55615790db0c.htm" />
+    <HelpKINode Title="properties" Url="html/419e5a9d-3c85-11af-1076-97015c4f4561.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MantenimientoDepto.cargarDpto method" Url="html/cee98d30-5a58-8f65-d206-059e9f718839.htm" />
+  <HelpKINode Title="MantenimientoDepto.components field" Url="html/4f651afe-f128-267e-cfa9-96fb32b51a30.htm" />
+  <HelpKINode Title="MantenimientoDepto.dataGridViewDepto field" Url="html/f8de0534-7c8b-fb35-fdd4-ce279d90eeae.htm" />
+  <HelpKINode Title="MantenimientoDepto.dataGridViewDepto_CellContentClick method" Url="html/b13f2f9b-3ae1-984d-d40c-582781449232.htm" />
+  <HelpKINode Title="MantenimientoDepto.Dispose method" Url="html/19a39e97-0459-9eeb-8765-2bbf4dd9c7b5.htm" />
+  <HelpKINode Title="MantenimientoDepto.FormatException method" Url="html/f26c0fd0-5a58-4dc7-7a69-475db623dd9e.htm" />
+  <HelpKINode Title="MantenimientoDepto.groupBox1 field" Url="html/f94268e4-8d4a-d387-8ac6-bc6d4c95f59c.htm" />
+  <HelpKINode Title="MantenimientoDepto.groupBox2 field" Url="html/99d8c2a2-c03a-7296-d953-84063ce1a7ae.htm" />
+  <HelpKINode Title="MantenimientoDepto.groupBox3 field" Url="html/881038ed-2062-f1c2-e5ca-aa66972d90ed.htm" />
+  <HelpKINode Title="MantenimientoDepto.InitializeComponent method" Url="html/63d1fd93-617d-e13d-3a5b-19ac48a951d3.htm" />
+  <HelpKINode Title="MantenimientoDepto.label1 field" Url="html/acaaf3be-6564-9a05-26e1-e6325806f684.htm" />
+  <HelpKINode Title="MantenimientoDepto.label2 field" Url="html/25f7b4dc-15aa-b164-cf59-1122a71caff8.htm" />
+  <HelpKINode Title="MantenimientoDepto.label3 field" Url="html/ca1ff2a0-0f59-b861-2e89-1375849258df.htm" />
+  <HelpKINode Title="MantenimientoDepto.label4 field" Url="html/2856a613-1df3-286e-f195-5a4012ccc192.htm" />
+  <HelpKINode Title="MantenimientoDepto.label5 field" Url="html/f7929455-1c2c-b3b2-721d-52f3e243cff5.htm" />
+  <HelpKINode Title="MantenimientoDepto.label6 field" Url="html/42ccce3c-1454-db12-1985-52f63af644ac.htm" />
+  <HelpKINode Title="MantenimientoDepto.limpiar method" Url="html/92f479aa-3651-f09b-b793-42beabe60927.htm" />
+  <HelpKINode Title="MantenimientoDepto.MantenimientoDepto constructor" Url="html/4b129b4c-ed99-95b6-c60f-2b14e0bc80a6.htm" />
+  <HelpKINode Title="MantenimientoDepto.MantenimientoDepto_Load method" Url="html/1d69032c-2306-015d-9829-482f942a70d5.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox1 field" Url="html/f210ce50-ae4c-85b9-7ab4-64f0d9254875.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox1_DoubleClick method" Url="html/d3130af2-18cd-66d4-8679-55ea975564b4.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox2 field" Url="html/663f3096-2422-c621-3e75-09e761dd2c47.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox2_DoubleClick method" Url="html/9d94706a-ac32-5d98-94dc-a30713fd4486.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox3 field" Url="html/63fbb792-2159-bdf1-a04d-0f411fb1e123.htm" />
+  <HelpKINode Title="MantenimientoDepto.pictureBox3_DoubleClick method" Url="html/d8651fb9-6217-68e6-9456-55bd3e67a32c.htm" />
+  <HelpKINode Title="MantenimientoDepto.textBoxDescripcion field" Url="html/fead678a-a2fa-7f70-838f-f4b36f29878f.htm" />
+  <HelpKINode Title="MantenimientoDepto.textBoxIdDepto field" Url="html/d12bdedd-dcf1-77fc-498b-7754d3831c52.htm" />
+  <HelpKINode Title="MantenimientoDepto.textBoxId_tec field" Url="html/616e65fa-3495-0567-ba96-9021db47a881.htm" />
+  <HelpKINode Title="MantenimientoDepto_Load method" Url="html/1d69032c-2306-015d-9829-482f942a70d5.htm" />
+  <HelpKINode Title="MantenimientoEntrena class">
+    <HelpKINode Title="MantenimientoEntrena (Clase)" Url="html/f5dd82d4-c6ab-487f-8b76-3123214d411d.htm" />
+    <HelpKINode Title="constructor" Url="html/289afb25-a607-bc42-5e9a-7c0a08355835.htm" />
+    <HelpKINode Title="events" Url="html/02319171-0d11-2778-f6b4-b1c97824ba8d.htm" />
+    <HelpKINode Title="fields" Url="html/b7bc14cb-db7e-f3ae-bcfb-75f5eb11cf87.htm" />
+    <HelpKINode Title="methods" Url="html/0176b0fd-e5c8-613e-faf9-864cde31dff3.htm" />
+    <HelpKINode Title="properties" Url="html/e80c006c-bc29-b377-d37c-aac0e2470805.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MantenimientoEntrena.cargarEntrenadores method" Url="html/6b615001-7294-5a04-ae6f-6279a8b841fb.htm" />
+  <HelpKINode Title="MantenimientoEntrena.comboBoxDpto field" Url="html/692e5762-5d7c-5386-5825-1613e960a00c.htm" />
+  <HelpKINode Title="MantenimientoEntrena.comboBoxGeneros field" Url="html/8ca6eb54-7148-e37a-ce9f-cbf51ab1e365.htm" />
+  <HelpKINode Title="MantenimientoEntrena.components field" Url="html/49557e8d-ec12-f708-3171-5fd1a6823dbf.htm" />
+  <HelpKINode Title="MantenimientoEntrena.dataGridViewEntrenadores field" Url="html/065457ad-abdb-00ea-c0b3-fe01c59c79ec.htm" />
+  <HelpKINode Title="MantenimientoEntrena.dataGridViewEntrenadores_CellContentClick method" Url="html/cc2cdddd-762d-00ec-1bf2-88383ded7a55.htm" />
+  <HelpKINode Title="MantenimientoEntrena.Dispose method" Url="html/c7a4bcc3-163b-2fc6-17ad-028a82db0e6e.htm" />
+  <HelpKINode Title="MantenimientoEntrena.groupBox1 field" Url="html/cba04555-09f6-e4d8-19c5-2af94ae1a053.htm" />
+  <HelpKINode Title="MantenimientoEntrena.groupBox2 field" Url="html/fa85a05a-dd54-1dc6-dac5-5b4f2d08130d.htm" />
+  <HelpKINode Title="MantenimientoEntrena.groupBox3 field" Url="html/4a2116d9-764c-c6a9-caee-afc117c99c04.htm" />
+  <HelpKINode Title="MantenimientoEntrena.InitializeComponent method" Url="html/9eacb10c-c146-0b83-4386-7202cb81411a.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label1 field" Url="html/ffd19328-be6f-79ab-c4fc-66f6049f0425.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label10 field" Url="html/f5c0ddb1-691b-87eb-f04a-d987799b173b.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label2 field" Url="html/35ee16b9-8e0a-8d8a-dc29-8a3536a4f6db.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label3 field" Url="html/8f963e20-8192-183e-29d4-e2e8fe01ae30.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label4 field" Url="html/f6fee2ac-d1cf-fbff-7280-37e34d9fd2a6.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label5 field" Url="html/b1675233-5e12-5e16-769e-16ffdacad116.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label6 field" Url="html/52ee0e16-86d9-3306-b013-5f622addeaa3.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label7 field" Url="html/203b125e-d413-7d92-d379-d45dc4edff61.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label8 field" Url="html/64eabdba-197a-ea35-9861-e21fcce6ca72.htm" />
+  <HelpKINode Title="MantenimientoEntrena.label9 field" Url="html/6e0b6f7a-96e6-5df8-953a-629579efa0f5.htm" />
+  <HelpKINode Title="MantenimientoEntrena.limpiar method" Url="html/4c44335f-f6b2-7850-c831-20d8f2d5ca11.htm" />
+  <HelpKINode Title="MantenimientoEntrena.MantenimientoEntrena constructor" Url="html/289afb25-a607-bc42-5e9a-7c0a08355835.htm" />
+  <HelpKINode Title="MantenimientoEntrena.MantenimientoEntrena_Load method" Url="html/dcc1bc84-c0c8-80df-4df5-0b1eec8599a6.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxClean field" Url="html/af0bad2d-e078-b9bb-6242-baad52764543.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxClean_DoubleClick method" Url="html/62c4bcf1-e078-69ba-f3e0-17809fb8c344.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxDrop field" Url="html/dc311d9e-cfc4-16a0-11f3-000ea3cc5b9b.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxDrop_DoubleClick method" Url="html/8c2621e2-867d-6da4-7761-326855d25aae.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxUpdate field" Url="html/ddfcc0c7-bea9-c174-0a8f-07aa07dcf3a6.htm" />
+  <HelpKINode Title="MantenimientoEntrena.pictureBoxUpdate_DoubleClick method" Url="html/0ec97c16-3ab2-4185-5cdc-9f67603e523c.htm" />
+  <HelpKINode Title="MantenimientoEntrena.seleccionacomboDepto method" Url="html/bbfb29a9-caea-2f2f-7576-56a4d89934b6.htm" />
+  <HelpKINode Title="MantenimientoEntrena.seleccionacomboGenero method" Url="html/d337b25d-4d59-c0de-835b-13272047bdf1.htm" />
+  <HelpKINode Title="MantenimientoEntrena.textBoxId_entrena field" Url="html/668e111c-88b3-5516-90f8-59db30a44a21.htm" />
+  <HelpKINode Title="MantenimientoEntrena.textBoxId_tec field" Url="html/2ee963c8-eb55-4bce-79af-3d1fbca45fda.htm" />
+  <HelpKINode Title="MantenimientoEntrena.textBoxMaterno field" Url="html/cbc6a7eb-fd9c-6e90-5b08-a8610247cb94.htm" />
+  <HelpKINode Title="MantenimientoEntrena.textBoxNombre field" Url="html/2312dd57-6fcd-2e9d-9f1c-e0c004754a55.htm" />
+  <HelpKINode Title="MantenimientoEntrena.textBoxPaterno field" Url="html/7c594867-58f9-48ee-41ce-2d2e1e812bc2.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores class">
+    <HelpKINode Title="MantenimientoEntrenadores (Clase)" Url="html/50a1c181-38e4-a20a-c807-6cb8b9839ad5.htm" />
+    <HelpKINode Title="constructor" Url="html/98ae54ff-c0c6-2509-919d-cd694c1f120e.htm" />
+    <HelpKINode Title="events" Url="html/9c961a67-3e00-30de-263d-8e1a06e69aa9.htm" />
+    <HelpKINode Title="fields" Url="html/d7cf2c38-4664-eee6-5225-80cc0829db32.htm" />
+    <HelpKINode Title="methods" Url="html/aa3ace08-02ae-d208-fc87-2e8c41bf0ce1.htm" />
+    <HelpKINode Title="properties" Url="html/c5480770-edef-6313-9823-cbbaa17f9758.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MantenimientoEntrenadores.cargarAlumnos method" Url="html/1f9df92f-fb12-824b-f01a-d4beeb07a1c7.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.components field" Url="html/ba89b716-0e1d-48d0-a2d5-8ab8a5fc3591.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.dataGridViewAlumnos field" Url="html/2d2d8427-46e1-de5e-c51c-e1d76ca55580.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.Dispose method" Url="html/7599680a-ca4a-dcbb-0ce5-2d2e64e18420.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.dr field" Url="html/1cb45318-dda8-bb33-6e68-7b8a506ce594.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.groupBox1 field" Url="html/f542bc2f-9ad8-dde2-508e-aee8fe67ec27.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.groupBox2 field" Url="html/3962b7ba-7e09-2f4f-2992-fa0761854990.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.groupBox3 field" Url="html/5dc6d58b-7d00-c9a7-ff23-42f4705e3b47.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.InitializeComponent method" Url="html/312b0e99-13b0-e336-abf5-e152d0949b2e.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label1 field" Url="html/fda80589-fa20-fa9f-56b1-1234533259a4.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label2 field" Url="html/c9f10acd-9e29-5035-9fe7-6b1b773105db.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label3 field" Url="html/6fe7f922-f89e-6234-daaf-8e0163801726.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label4 field" Url="html/76ac1cc3-c9a7-2620-35e7-cf1d801a35bb.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label5 field" Url="html/913b42a8-2af0-3a9a-64fa-6d9a549dfa85.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.label6 field" Url="html/455eb4b4-1009-2826-f926-5962d8765269.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.MantenimientoAlumnos_Load method" Url="html/2dcb7efa-0733-7b5a-a03b-2c1bd445ff2a.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.MantenimientoEntrenadores constructor" Url="html/98ae54ff-c0c6-2509-919d-cd694c1f120e.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.pictureBoxClean field" Url="html/ad386974-9662-c201-080e-f1cc394abd18.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.pictureBoxDrop field" Url="html/b4f17d1b-a59e-0af7-8797-f0cb7a8fd8ac.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.pictureBoxUpdate field" Url="html/11b01d72-15f3-12f5-0c8f-2e67c2b43cb4.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.textBoxDescripcion field" Url="html/738f9dab-cae7-b3b3-ad6d-b8bedee03962.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.textBoxIdDepto field" Url="html/417a58fd-1703-0ae5-c065-efc11dcceae1.htm" />
+  <HelpKINode Title="MantenimientoEntrenadores.textBoxId_tec field" Url="html/d901407a-ce35-84f0-d71f-cdbd19e4ae62.htm" />
+  <HelpKINode Title="MantenimientoEntrena_Load method" Url="html/dcc1bc84-c0c8-80df-4df5-0b1eec8599a6.htm" />
+  <HelpKINode Title="MantenimientoGeneros class">
+    <HelpKINode Title="MantenimientoGeneros (Clase)" Url="html/52b9cd57-60b6-3f69-0b0b-a5e652b0cfb4.htm" />
+    <HelpKINode Title="constructor" Url="html/2fb55ca9-c7d5-a84b-3008-2ca1ca0adfd9.htm" />
+    <HelpKINode Title="events" Url="html/dddd50ed-a77c-b198-e8e2-7f27b036de72.htm" />
+    <HelpKINode Title="fields" Url="html/3ab27213-4bdd-4b2c-996e-cf6f56b877e2.htm" />
+    <HelpKINode Title="methods" Url="html/09d706ff-3b4d-c8fc-e769-ba5884e8133a.htm" />
+    <HelpKINode Title="properties" Url="html/d2819bcb-7eaa-ef01-6c25-55b3a782bd15.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MantenimientoGeneros.cargarGeneros method" Url="html/14ab9983-f73d-8bd9-a0b3-d4d7b02ac134.htm" />
+  <HelpKINode Title="MantenimientoGeneros.components field" Url="html/aaf49df7-070a-df76-9739-9279f8efd5a8.htm" />
+  <HelpKINode Title="MantenimientoGeneros.dataGridView1_CellContentClick method" Url="html/d2fc84d6-9fd8-90e8-a834-ea2c78664027.htm" />
+  <HelpKINode Title="MantenimientoGeneros.dataGridViewGeneros field" Url="html/216e48bf-f501-33ff-6a0c-0497290fcabc.htm" />
+  <HelpKINode Title="MantenimientoGeneros.Dispose method" Url="html/22a2a5d0-5703-74ca-378a-d3960c6cf126.htm" />
+  <HelpKINode Title="MantenimientoGeneros.groupBox1 field" Url="html/9634befc-e167-2f85-aa6f-c4e715ba326b.htm" />
+  <HelpKINode Title="MantenimientoGeneros.groupBox2 field" Url="html/1649ff65-8c1a-043c-da35-892b467b0b5b.htm" />
+  <HelpKINode Title="MantenimientoGeneros.groupBox3 field" Url="html/8ca9bbe4-a52f-dc44-a3c0-b1f1fa596edb.htm" />
+  <HelpKINode Title="MantenimientoGeneros.InitializeComponent method" Url="html/de4641bf-f8a8-dab4-506e-9c752c4e7337.htm" />
+  <HelpKINode Title="MantenimientoGeneros.label1 field" Url="html/93872443-9673-62a4-5c75-bb39a0eab93d.htm" />
+  <HelpKINode Title="MantenimientoGeneros.label2 field" Url="html/03768340-712d-9183-d7e1-6cd877ec9527.htm" />
+  <HelpKINode Title="MantenimientoGeneros.label3 field" Url="html/4328775a-5c75-4baf-e39a-141c5d8208e5.htm" />
+  <HelpKINode Title="MantenimientoGeneros.label4 field" Url="html/909896a4-8c03-b0c9-3ddd-b9a036d77542.htm" />
+  <HelpKINode Title="MantenimientoGeneros.label5 field" Url="html/c8cc9217-1239-5089-394b-e883048f3945.htm" />
+  <HelpKINode Title="MantenimientoGeneros.limpiar method" Url="html/9faf5008-7359-b284-70ab-6490acdc0a09.htm" />
+  <HelpKINode Title="MantenimientoGeneros.MantenimientoGeneros constructor" Url="html/2fb55ca9-c7d5-a84b-3008-2ca1ca0adfd9.htm" />
+  <HelpKINode Title="MantenimientoGeneros.MantenimientoGeneros_Load method" Url="html/82704f3c-fba0-be46-521b-50bbba676043.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox1 field" Url="html/ebd0d1b2-ebbf-4948-4202-f54d9f8bb1a1.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox1_DoubleClick method" Url="html/bdda6b73-da8b-ad8f-72af-41b02e8fdac6.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox2 field" Url="html/eb4f96f6-56db-61ad-2ca6-cf8067cea013.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox2_DoubleClick method" Url="html/d4124a95-d562-33d3-3f86-f173b4f9357c.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox3 field" Url="html/12354d15-fb6a-e3b4-8926-a581ee9cb45a.htm" />
+  <HelpKINode Title="MantenimientoGeneros.pictureBox3_DoubleClick method" Url="html/8bf8e5c7-9852-d12c-70a9-e53b50738767.htm" />
+  <HelpKINode Title="MantenimientoGeneros.textBoxDescripcion field" Url="html/92d62f4f-24d8-bf37-2d90-c3c96941fe49.htm" />
+  <HelpKINode Title="MantenimientoGeneros.textBoxIdGenero field" Url="html/ac950164-8f2d-9ceb-49b0-c9ce6fcf6972.htm" />
+  <HelpKINode Title="MantenimientoGeneros_Load method" Url="html/82704f3c-fba0-be46-521b-50bbba676043.htm" />
+  <HelpKINode Title="Nombreid property" Url="html/9ffc2981-6a53-49ad-c9fc-e2b66f461137.htm" />
+  <HelpKINode Title="ovalShape1 field">
+    <HelpKINode Title="Form1.ovalShape1 (Campo)" Url="html/f63dd224-52da-a8a7-b479-eb892d5afe66.htm" />
+    <HelpKINode Title="InsertarCarreras.ovalShape1 (Campo)" Url="html/94f5dbc9-4e38-7013-dd96-89ce6aa389b6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ovalShape2 field" Url="html/4c220ac0-c99d-678e-1ea3-5d3eec6d567b.htm" />
+  <HelpKINode Title="ovalShape3 field" Url="html/94b3c186-85e4-45dd-0312-ac5e2a771628.htm" />
+  <HelpKINode Title="panel1 field">
+    <HelpKINode Title="Carreras.panel1 (Campo)" Url="html/1c228448-5ba8-5573-ad98-c75ca5925124.htm" />
+    <HelpKINode Title="Depto.panel1 (Campo)" Url="html/46585c0d-78db-4c1a-ae0a-5996dace4837.htm" />
+    <HelpKINode Title="Entrenadores.panel1 (Campo)" Url="html/14f0efaa-7cbf-7907-ca30-d37c6d47bb6b.htm" />
+    <HelpKINode Title="Form1.panel1 (Campo)" Url="html/0e0adcda-6adc-716f-4067-8d1f13121ae0.htm" />
+    <HelpKINode Title="Generos.panel1 (Campo)" Url="html/970dee1d-1bfe-caf1-8d9a-9bc1ed2b74a5.htm" />
+    <HelpKINode Title="InsertarCarreras.panel1 (Campo)" Url="html/4745c217-d3bd-afbf-3e18-214f8c55bc3b.htm" />
+    <HelpKINode Title="SeleccionaCarreras.panel1 (Campo)" Url="html/6fdcb24b-6391-66f7-eaba-051664582e74.htm" />
+    <HelpKINode Title="SeleccionaDepto.panel1 (Campo)" Url="html/88f867f7-2998-ff3d-fa61-e7bdba03be05.htm" />
+    <HelpKINode Title="SeleccionaGeneros.panel1 (Campo)" Url="html/519ce6e5-2539-0d7d-84b3-b8df5f97bd8e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="panel1_Paint method" Url="html/13cfcc5c-9292-44fc-cb41-ad5b405ff92f.htm" />
+  <HelpKINode Title="panel2 field">
+    <HelpKINode Title="Carreras.panel2 (Campo)" Url="html/aca03ff1-db10-e496-8b42-fc22cfd6256c.htm" />
+    <HelpKINode Title="Depto.panel2 (Campo)" Url="html/81b5b5e5-cb14-8dde-3245-7f8094cf4b1a.htm" />
+    <HelpKINode Title="Entrenadores.panel2 (Campo)" Url="html/445a288d-b131-2437-40b7-761bba0b8c16.htm" />
+    <HelpKINode Title="Form1.panel2 (Campo)" Url="html/d737f8a0-d4ee-8a22-f609-970a6147c261.htm" />
+    <HelpKINode Title="Generos.panel2 (Campo)" Url="html/7eb3e187-61ca-3068-110b-66c30435418a.htm" />
+    <HelpKINode Title="InsertarCarreras.panel2 (Campo)" Url="html/8859ad48-b9ca-9189-1898-a23ee5ba698f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="panel2_MouseMove method" Url="html/0591a45e-d397-cebe-a6c6-9d160ae240c4.htm" />
+  <HelpKINode Title="panel3 field">
+    <HelpKINode Title="Form1.panel3 (Campo)" Url="html/9e13bc69-149b-f5e2-1914-c61f0a477d53.htm" />
+    <HelpKINode Title="InsertarCarreras.panel3 (Campo)" Url="html/87617d34-b537-8365-cd16-1f57f0463cf5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="panelContenedor field">
+    <HelpKINode Title="Carreras.panelContenedor (Campo)" Url="html/5208fe78-7f99-3f0d-a7f2-ab5413461393.htm" />
+    <HelpKINode Title="Depto.panelContenedor (Campo)" Url="html/548f4a47-d0cb-ab94-2abc-47f04933712f.htm" />
+    <HelpKINode Title="Entrenadores.panelContenedor (Campo)" Url="html/3e735628-bca3-40fc-7c52-8ae055ba27ff.htm" />
+    <HelpKINode Title="Generos.panelContenedor (Campo)" Url="html/5891b05f-f860-b77f-9380-15bef9734eed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox1 field">
+    <HelpKINode Title="ActualizaCarreras.pictureBox1 (Campo)" Url="html/f6cea8d1-b2fa-ac9e-601e-3d514324d928.htm" />
+    <HelpKINode Title="ActualizaGeneros.pictureBox1 (Campo)" Url="html/0998bc7e-8b7f-cddb-6d38-6e75521a7e73.htm" />
+    <HelpKINode Title="BorraDepartamentos.pictureBox1 (Campo)" Url="html/f1bd3068-ff2f-979d-d1e4-3cdce79af9d4.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox1 (Campo)" Url="html/7cf3b02f-70b0-99e0-4e34-2797b1cf0f91.htm" />
+    <HelpKINode Title="BorrarCarreras.pictureBox1 (Campo)" Url="html/a10f9da3-96b5-270d-f467-7d71a350078e.htm" />
+    <HelpKINode Title="InsertarCarreras.pictureBox1 (Campo)" Url="html/b05b1fb1-141e-f2e7-b2eb-aa8b701d8c41.htm" />
+    <HelpKINode Title="MantenimientoCarreras.pictureBox1 (Campo)" Url="html/6cad438a-2a5a-210e-6bf6-9a68f583c66c.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox1 (Campo)" Url="html/f210ce50-ae4c-85b9-7ab4-64f0d9254875.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox1 (Campo)" Url="html/ebd0d1b2-ebbf-4948-4202-f54d9f8bb1a1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox1_Click method">
+    <HelpKINode Title="BorraDepartamentos.pictureBox1_Click (M&#233;todo )" Url="html/45e2166a-2d7d-3118-8f53-1ee8ab648436.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox1_Click (M&#233;todo )" Url="html/05efef1a-9422-e024-2b32-a4a6f88bc104.htm" />
+    <HelpKINode Title="BorrarCarreras.pictureBox1_Click (M&#233;todo )" Url="html/bd2ee781-b277-1430-2a98-e06bf4c6072e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox1_DoubleClick method">
+    <HelpKINode Title="ActualizaCarreras.pictureBox1_DoubleClick (M&#233;todo )" Url="html/e9b054eb-c7cc-4a91-9707-693d4133fad5.htm" />
+    <HelpKINode Title="ActualizaGeneros.pictureBox1_DoubleClick (M&#233;todo )" Url="html/1781aee1-e1e9-7665-ec8f-ba3e664497da.htm" />
+    <HelpKINode Title="BorraDepartamentos.pictureBox1_DoubleClick (M&#233;todo )" Url="html/e28cbe58-938e-0c37-a941-80a03603d681.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox1_DoubleClick (M&#233;todo )" Url="html/b1628c59-5db6-8f7e-1e2f-1e14ad9bd266.htm" />
+    <HelpKINode Title="InsertarCarreras.pictureBox1_DoubleClick (M&#233;todo )" Url="html/04ea8bd6-818f-40e4-ed23-c046547e24b5.htm" />
+    <HelpKINode Title="MantenimientoCarreras.pictureBox1_DoubleClick (M&#233;todo )" Url="html/9c9559d0-19d3-5eff-ad67-fe2200b12c4e.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox1_DoubleClick (M&#233;todo )" Url="html/d3130af2-18cd-66d4-8679-55ea975564b4.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox1_DoubleClick (M&#233;todo )" Url="html/bdda6b73-da8b-ad8f-72af-41b02e8fdac6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox2 field">
+    <HelpKINode Title="ActualizaCarreras.pictureBox2 (Campo)" Url="html/0d796e4d-e570-7de4-fbf9-784c92c5c411.htm" />
+    <HelpKINode Title="ActualizaGeneros.pictureBox2 (Campo)" Url="html/4b930274-275d-f3f3-df65-51ffee78499f.htm" />
+    <HelpKINode Title="BorraDepartamentos.pictureBox2 (Campo)" Url="html/0a553ab8-77d5-536c-9a75-9440c83a6b28.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox2 (Campo)" Url="html/dc59f475-c2c8-21c6-1408-575e485ccc4d.htm" />
+    <HelpKINode Title="BorrarCarreras.pictureBox2 (Campo)" Url="html/9b9cf965-728b-3150-063d-1c7e5fe5de47.htm" />
+    <HelpKINode Title="InsertarCarreras.pictureBox2 (Campo)" Url="html/5ce4bace-be42-2235-4adb-95844526ddfb.htm" />
+    <HelpKINode Title="MantenimientoCarreras.pictureBox2 (Campo)" Url="html/d22feb5b-1bbc-d5cd-768c-ffd59e5cec37.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox2 (Campo)" Url="html/663f3096-2422-c621-3e75-09e761dd2c47.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox2 (Campo)" Url="html/eb4f96f6-56db-61ad-2ca6-cf8067cea013.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox2_Click method">
+    <HelpKINode Title="ActualizaGeneros.pictureBox2_Click (M&#233;todo )" Url="html/049e40d7-a7fa-bfa2-d111-558a04092a0d.htm" />
+    <HelpKINode Title="BorraDepartamentos.pictureBox2_Click (M&#233;todo )" Url="html/6bf33c4b-7914-66d3-391f-a6a467ea51ee.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox2_Click (M&#233;todo )" Url="html/8a175da1-855e-5f97-e232-20edc4dba4e9.htm" />
+    <HelpKINode Title="BorrarCarreras.pictureBox2_Click (M&#233;todo )" Url="html/7b8fe96b-491e-8e4f-e681-931d3f9fdf80.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox2_DoubleClick method">
+    <HelpKINode Title="ActualizaCarreras.pictureBox2_DoubleClick (M&#233;todo )" Url="html/966bbf53-e094-dd05-b2a0-f09d79029cb9.htm" />
+    <HelpKINode Title="ActualizaGeneros.pictureBox2_DoubleClick (M&#233;todo )" Url="html/d3eacb82-91fe-15d9-10b4-e73c429a332c.htm" />
+    <HelpKINode Title="BorraDepartamentos.pictureBox2_DoubleClick (M&#233;todo )" Url="html/047664b0-a660-358c-3070-2575acedaf34.htm" />
+    <HelpKINode Title="BorraGeneros.pictureBox2_DoubleClick (M&#233;todo )" Url="html/84924172-67a0-d65b-05d2-d54f7d08300f.htm" />
+    <HelpKINode Title="InsertarCarreras.pictureBox2_DoubleClick (M&#233;todo )" Url="html/f46b79d2-775d-7963-343f-ef5601660bda.htm" />
+    <HelpKINode Title="MantenimientoCarreras.pictureBox2_DoubleClick (M&#233;todo )" Url="html/3aead986-b266-d7a2-d78b-1bd4cb7ab0ea.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox2_DoubleClick (M&#233;todo )" Url="html/9d94706a-ac32-5d98-94dc-a30713fd4486.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox2_DoubleClick (M&#233;todo )" Url="html/d4124a95-d562-33d3-3f86-f173b4f9357c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox3 field">
+    <HelpKINode Title="MantenimientoCarreras.pictureBox3 (Campo)" Url="html/f9db55bf-5bd7-611f-6e38-00f6cc045b4e.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox3 (Campo)" Url="html/63fbb792-2159-bdf1-a04d-0f411fb1e123.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox3 (Campo)" Url="html/12354d15-fb6a-e3b4-8926-a581ee9cb45a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBox3_DoubleClick method">
+    <HelpKINode Title="MantenimientoCarreras.pictureBox3_DoubleClick (M&#233;todo )" Url="html/174ed4b9-7182-356b-7684-65af1526123b.htm" />
+    <HelpKINode Title="MantenimientoDepto.pictureBox3_DoubleClick (M&#233;todo )" Url="html/d8651fb9-6217-68e6-9456-55bd3e67a32c.htm" />
+    <HelpKINode Title="MantenimientoGeneros.pictureBox3_DoubleClick (M&#233;todo )" Url="html/8bf8e5c7-9852-d12c-70a9-e53b50738767.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBoxClean field">
+    <HelpKINode Title="MantenimientoEntrena.pictureBoxClean (Campo)" Url="html/af0bad2d-e078-b9bb-6242-baad52764543.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.pictureBoxClean (Campo)" Url="html/ad386974-9662-c201-080e-f1cc394abd18.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBoxClean_DoubleClick method" Url="html/62c4bcf1-e078-69ba-f3e0-17809fb8c344.htm" />
+  <HelpKINode Title="pictureBoxDrop field">
+    <HelpKINode Title="MantenimientoEntrena.pictureBoxDrop (Campo)" Url="html/dc311d9e-cfc4-16a0-11f3-000ea3cc5b9b.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.pictureBoxDrop (Campo)" Url="html/b4f17d1b-a59e-0af7-8797-f0cb7a8fd8ac.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBoxDrop_DoubleClick method" Url="html/8c2621e2-867d-6da4-7761-326855d25aae.htm" />
+  <HelpKINode Title="pictureBoxUpdate field">
+    <HelpKINode Title="MantenimientoEntrena.pictureBoxUpdate (Campo)" Url="html/ddfcc0c7-bea9-c174-0a8f-07aa07dcf3a6.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.pictureBoxUpdate (Campo)" Url="html/11b01d72-15f3-12f5-0c8f-2e67c2b43cb4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="pictureBoxUpdate_DoubleClick method" Url="html/0ec97c16-3ab2-4185-5cdc-9f67603e523c.htm" />
+  <HelpKINode Title="posx field">
+    <HelpKINode Title="Form1.posx (Campo)" Url="html/3463fb32-c3f3-cb9b-f36b-d160d0978656.htm" />
+    <HelpKINode Title="InsertarCarreras.posx (Campo)" Url="html/352f695f-e2d3-44c7-7ce4-0eb82a75ca1f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="posy field">
+    <HelpKINode Title="Form1.posy (Campo)" Url="html/b5d8d342-e89f-6006-c2e9-06a04ca6ffb7.htm" />
+    <HelpKINode Title="InsertarCarreras.posy (Campo)" Url="html/d41f5ba4-f022-c034-2e4b-16aeea16050b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program (Clase)" Url="html/b0ac6eab-eb41-bb24-4343-26fcaa470042.htm" />
+    <HelpKINode Title="methods" Url="html/70a38fe0-eb10-2d13-2aa3-453a5ec4d58e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/c4da6918-9d17-cd8b-7bad-76f063547a17.htm" />
+  <HelpKINode Title="publicas class">
+    <HelpKINode Title="publicas (Clase)" Url="html/0e1e5c99-796d-18b2-01cd-120df644d671.htm" />
+    <HelpKINode Title="constructor" Url="html/a8be882b-3d3d-5493-642e-35dd1801fe79.htm" />
+    <HelpKINode Title="fields" Url="html/48f098a9-5534-19ef-1807-5211ff7457b4.htm" />
+    <HelpKINode Title="methods" Url="html/ba3a2c45-2065-9e6b-f779-138ba3c73a0e.htm" />
+    <HelpKINode Title="properties" Url="html/c81fe9a6-cb39-9237-f01c-1a82dbd2ce7a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="publicas.id_tec field" Url="html/9fd5e17f-ec00-eea6-5017-5b4c02bc036d.htm" />
+  <HelpKINode Title="publicas.Nombreid property" Url="html/9ffc2981-6a53-49ad-c9fc-e2b66f461137.htm" />
+  <HelpKINode Title="publicas.publicas constructor" Url="html/a8be882b-3d3d-5493-642e-35dd1801fe79.htm" />
+  <HelpKINode Title="SeleccionaCarreras class">
+    <HelpKINode Title="SeleccionaCarreras (Clase)" Url="html/a5fbfa19-aef2-c685-bd33-7dd516b031fb.htm" />
+    <HelpKINode Title="constructor" Url="html/a06fc82c-601e-215d-c624-1d32d1adb504.htm" />
+    <HelpKINode Title="events" Url="html/6fe73e86-95f1-7dbb-192a-6264a49c32ec.htm" />
+    <HelpKINode Title="fields" Url="html/db841ac3-016c-ed8d-abc6-fd95f2f7ea0a.htm" />
+    <HelpKINode Title="methods" Url="html/ec24278b-eb88-c397-d61f-117371c2cf02.htm" />
+    <HelpKINode Title="properties" Url="html/0fcf78f6-e42c-862c-92fa-2f84a46eddc6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SeleccionaCarreras.btncbuscar field" Url="html/48ce4900-55ca-d74b-b0a5-76769eed4cd9.htm" />
+  <HelpKINode Title="SeleccionaCarreras.btncbuscar_Click method" Url="html/1192ac12-8915-4504-903b-0f657445d2d1.htm" />
+  <HelpKINode Title="SeleccionaCarreras.buttonCbuscar field" Url="html/4ed92d57-6a9f-162f-59c5-0baf51e5f470.htm" />
+  <HelpKINode Title="SeleccionaCarreras.buttonCbuscar_Click method" Url="html/62aec3f0-bdd0-f81f-03d2-a4858ea4b375.htm" />
+  <HelpKINode Title="SeleccionaCarreras.cargarCarreras method" Url="html/4bc969bb-cc53-1296-d13f-e0e3690e481a.htm" />
+  <HelpKINode Title="SeleccionaCarreras.cargarCarrerasTodos method" Url="html/3275967f-d51f-43f6-bcca-0c5371f5d496.htm" />
+  <HelpKINode Title="SeleccionaCarreras.components field" Url="html/4d220550-adc8-7124-f9fe-efeaf9214419.htm" />
+  <HelpKINode Title="SeleccionaCarreras.dataGridViewCargaCarreras field" Url="html/0af79b45-2054-3995-9165-4b1f9604b959.htm" />
+  <HelpKINode Title="SeleccionaCarreras.dataGridViewCargaCarreras_CellContentClick method" Url="html/90a6ad5a-8834-63be-6a4b-9ea62a2b2e5d.htm" />
+  <HelpKINode Title="SeleccionaCarreras.Dispose method" Url="html/cc40311d-bd25-eaa4-bba3-7c0a7f2d299f.htm" />
+  <HelpKINode Title="SeleccionaCarreras.InitializeComponent method" Url="html/97f95e4a-c2da-6edb-8ff7-01384a68d2c9.htm" />
+  <HelpKINode Title="SeleccionaCarreras.label1 field" Url="html/fb648ee6-98f1-1dfe-11f2-9818be46cb7a.htm" />
+  <HelpKINode Title="SeleccionaCarreras.panel1 field" Url="html/6fdcb24b-6391-66f7-eaba-051664582e74.htm" />
+  <HelpKINode Title="SeleccionaCarreras.SeleccionaCarreras constructor" Url="html/a06fc82c-601e-215d-c624-1d32d1adb504.htm" />
+  <HelpKINode Title="SeleccionaCarreras.textBoxSidCarrera field" Url="html/08ed0d95-a3e0-2d74-2140-d7248ed16a7e.htm" />
+  <HelpKINode Title="seleccionacomboDepto method">
+    <HelpKINode Title="InsertaEntrenador.seleccionacomboDepto (M&#233;todo )" Url="html/f97091ad-359b-0cd7-4b04-41731d10cad2.htm" />
+    <HelpKINode Title="MantenimientoEntrena.seleccionacomboDepto (M&#233;todo )" Url="html/bbfb29a9-caea-2f2f-7576-56a4d89934b6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="seleccionacomboGenero method">
+    <HelpKINode Title="InsertaEntrenador.seleccionacomboGenero (M&#233;todo )" Url="html/1521fdea-d8fa-ec84-4c4f-3c65f6148ecd.htm" />
+    <HelpKINode Title="MantenimientoEntrena.seleccionacomboGenero (M&#233;todo )" Url="html/d337b25d-4d59-c0de-835b-13272047bdf1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SeleccionaDepto class">
+    <HelpKINode Title="SeleccionaDepto (Clase)" Url="html/3f3a5f9c-0635-cb27-c397-f7fafbecbd2b.htm" />
+    <HelpKINode Title="constructor" Url="html/913412ce-4a02-eb12-ffb7-9f0c6d2ffeac.htm" />
+    <HelpKINode Title="events" Url="html/b9446274-3361-9728-b4a6-8738be7b34c2.htm" />
+    <HelpKINode Title="fields" Url="html/9bfe5aec-c771-36ce-a24e-e141e710c66d.htm" />
+    <HelpKINode Title="methods" Url="html/c89ab1d1-d6ab-f3e9-afa2-d709e3896f65.htm" />
+    <HelpKINode Title="properties" Url="html/fee5f36d-5056-ee7e-4622-65923bcff8e2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SeleccionaDepto.btncbuscar field" Url="html/91f7608d-e668-ed91-9549-bac1e6e1fbe6.htm" />
+  <HelpKINode Title="SeleccionaDepto.btncbuscar_Click method" Url="html/727dc69d-862e-8f61-49a9-8dca4795f077.htm" />
+  <HelpKINode Title="SeleccionaDepto.buttonCbuscar field" Url="html/9362b4b9-8ea3-8146-b07a-69826fc8b8b5.htm" />
+  <HelpKINode Title="SeleccionaDepto.buttonCbuscar_Click method" Url="html/4aaf3e3a-a126-f664-ed92-d2684367f54e.htm" />
+  <HelpKINode Title="SeleccionaDepto.cargarDepto method" Url="html/1688930b-2e2b-8a05-40c0-9cf36b4b928d.htm" />
+  <HelpKINode Title="SeleccionaDepto.cargarDeptoTodos method" Url="html/b5557c35-86ba-60e9-427e-4f348d654d56.htm" />
+  <HelpKINode Title="SeleccionaDepto.components field" Url="html/63192003-1393-bbd6-4125-f0fbe0deb673.htm" />
+  <HelpKINode Title="SeleccionaDepto.dataGridViewCargaDepto field" Url="html/7b925197-cb90-a4db-e81d-765da27d883c.htm" />
+  <HelpKINode Title="SeleccionaDepto.Dispose method" Url="html/32f9f3c9-45e8-b1ac-f7f8-9dd44eb0d9ed.htm" />
+  <HelpKINode Title="SeleccionaDepto.InitializeComponent method" Url="html/ccf42969-128c-2ec4-c731-0de759bdee23.htm" />
+  <HelpKINode Title="SeleccionaDepto.label1 field" Url="html/9c7cbeeb-a97e-787d-a8a7-bfbdbf9af628.htm" />
+  <HelpKINode Title="SeleccionaDepto.panel1 field" Url="html/88f867f7-2998-ff3d-fa61-e7bdba03be05.htm" />
+  <HelpKINode Title="SeleccionaDepto.SeleccionaDepto constructor" Url="html/913412ce-4a02-eb12-ffb7-9f0c6d2ffeac.htm" />
+  <HelpKINode Title="SeleccionaDepto.textBoxSidDepto field" Url="html/98f0480c-6306-b46c-482d-2a02bcb60fea.htm" />
+  <HelpKINode Title="SeleccionaGeneros class">
+    <HelpKINode Title="SeleccionaGeneros (Clase)" Url="html/5ccdae93-754c-a4e7-5854-1b1c8a9a7904.htm" />
+    <HelpKINode Title="constructor" Url="html/4c091570-4fdf-e7c6-a68b-d43cb3a7195b.htm" />
+    <HelpKINode Title="events" Url="html/3448d763-6bdc-e370-e247-b1d4878368b1.htm" />
+    <HelpKINode Title="fields" Url="html/64556dbd-e1b0-ae60-2b94-123d357f5f32.htm" />
+    <HelpKINode Title="methods" Url="html/9732167b-1527-0461-9e9a-c310c75be97c.htm" />
+    <HelpKINode Title="properties" Url="html/11369dbc-7057-6292-4a90-633569a02e3d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SeleccionaGeneros.btnSbuscar field" Url="html/feebabb7-544a-227b-6f2a-4b986dfbbeb8.htm" />
+  <HelpKINode Title="SeleccionaGeneros.btnSbuscar_Click method" Url="html/f7882d42-c323-9f91-5dcc-a3da63cfbcda.htm" />
+  <HelpKINode Title="SeleccionaGeneros.button1 field" Url="html/1d1cb503-f31e-d0e9-bf54-ac4f01ac06ae.htm" />
+  <HelpKINode Title="SeleccionaGeneros.button1_Click method" Url="html/3b791196-35f3-7039-185e-cbcdb87dec2c.htm" />
+  <HelpKINode Title="SeleccionaGeneros.cargarGeneros method" Url="html/32ebdd28-878f-299c-7c1f-f9c1683d103f.htm" />
+  <HelpKINode Title="SeleccionaGeneros.cargarGenerosTodos method" Url="html/b27b3749-d869-ad0f-e179-a33349a90dc0.htm" />
+  <HelpKINode Title="SeleccionaGeneros.components field" Url="html/6dc76e09-3d7d-8ab4-c6b9-408ee351d458.htm" />
+  <HelpKINode Title="SeleccionaGeneros.dataGridViewCargaGeneros field" Url="html/64dae58a-1c84-9fb5-ce92-49c78fd1af72.htm" />
+  <HelpKINode Title="SeleccionaGeneros.dataGridViewCargaGeneros_CellContentClick method" Url="html/d0e528a8-85d2-4287-4d2c-3f5fccfa04ce.htm" />
+  <HelpKINode Title="SeleccionaGeneros.Dispose method" Url="html/e9f567a6-c810-d5e1-00a5-a5ec29b40847.htm" />
+  <HelpKINode Title="SeleccionaGeneros.InitializeComponent method" Url="html/88461e4d-47e3-4ae1-0208-19c4379344c3.htm" />
+  <HelpKINode Title="SeleccionaGeneros.label1 field" Url="html/c7aac87a-d007-4b6b-ae72-66ae0a3c4c4e.htm" />
+  <HelpKINode Title="SeleccionaGeneros.panel1 field" Url="html/519ce6e5-2539-0d7d-84b3-b8df5f97bd8e.htm" />
+  <HelpKINode Title="SeleccionaGeneros.SeleccionaGeneros constructor" Url="html/4c091570-4fdf-e7c6-a68b-d43cb3a7195b.htm" />
+  <HelpKINode Title="SeleccionaGeneros.SeleccionaGeneros_Load method" Url="html/fda1d76c-c8de-cfb5-c244-33148ba16e3b.htm" />
+  <HelpKINode Title="SeleccionaGeneros.textBoxSidGnero field" Url="html/bde23165-1b0e-615b-ef22-367332489f2d.htm" />
+  <HelpKINode Title="SeleccionaGeneros_Load method" Url="html/fda1d76c-c8de-cfb5-c244-33148ba16e3b.htm" />
+  <HelpKINode Title="shapeContainer1 field">
+    <HelpKINode Title="Form1.shapeContainer1 (Campo)" Url="html/56b731f8-b5f5-2988-78fe-ebd30ce88947.htm" />
+    <HelpKINode Title="InsertarCarreras.shapeContainer1 (Campo)" Url="html/495134f0-1067-59ef-76ad-a997b7884764.htm" />
+  </HelpKINode>
+  <HelpKINode Title="shapeContainer2 field" Url="html/ab8b7ef8-1988-fb31-00e8-8aa04c96ac16.htm" />
+  <HelpKINode Title="textBox1 field" Url="html/5ee30739-5f01-0fb9-8877-0c8dc59d6027.htm" />
+  <HelpKINode Title="textBox1_Click method" Url="html/0a9527e4-688c-efd0-a953-6539f4e1da02.htm" />
+  <HelpKINode Title="textBox2 field" Url="html/76fc9fb7-ed3b-7637-6c47-4b9c3d7644fa.htm" />
+  <HelpKINode Title="textBox2_Click method" Url="html/c2eb58c6-e786-5cdf-efc5-ef144fe200c4.htm" />
+  <HelpKINode Title="textBoxActualizaGenero field" Url="html/78239ad8-6799-718d-03ac-8ac76d2f63cb.htm" />
+  <HelpKINode Title="textBoxAidGnero field" Url="html/52dc6916-52b2-f012-b348-0338e75cd7b7.htm" />
+  <HelpKINode Title="textBoxBidCarrera field" Url="html/a4f4bfd7-6eb2-422d-824a-2f7dbe54f303.htm" />
+  <HelpKINode Title="textBoxBidDepto field" Url="html/d0efbdcd-217f-831c-ad1d-b10bb0dc5106.htm" />
+  <HelpKINode Title="textBoxBidGnero field" Url="html/449a6eb8-0af2-3396-0ea9-69839c71255f.htm" />
+  <HelpKINode Title="textBoxbusca_id_carrera field" Url="html/0648873f-4b85-7703-f772-e8cd7987619c.htm" />
+  <HelpKINode Title="textBoxdescCarrera field" Url="html/35dfcdc0-4e85-e643-ca1b-27f574fcd6c4.htm" />
+  <HelpKINode Title="textBoxdescDpto field" Url="html/6a7c8360-c9ec-a2bc-b1ae-3136e6701618.htm" />
+  <HelpKINode Title="textBoxDescripcion field">
+    <HelpKINode Title="MantenimientoCarreras.textBoxDescripcion (Campo)" Url="html/0416915e-e806-da38-d985-5569eb45b6a0.htm" />
+    <HelpKINode Title="MantenimientoDepto.textBoxDescripcion (Campo)" Url="html/fead678a-a2fa-7f70-838f-f4b36f29878f.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.textBoxDescripcion (Campo)" Url="html/738f9dab-cae7-b3b3-ad6d-b8bedee03962.htm" />
+    <HelpKINode Title="MantenimientoGeneros.textBoxDescripcion (Campo)" Url="html/92d62f4f-24d8-bf37-2d90-c3c96941fe49.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxdescrpcGenero field" Url="html/f2a771fc-771d-557c-b86b-0a8c5301bcc6.htm" />
+  <HelpKINode Title="textBoxdescrpcGenero_TextChanged method" Url="html/a741ac56-d78b-d3e3-2f5e-ec578afe3945.htm" />
+  <HelpKINode Title="textBoxIdCarrera field" Url="html/6e3cc48e-a7f0-53c4-ed19-664dd43a2467.htm" />
+  <HelpKINode Title="textBoxIdDepto field">
+    <HelpKINode Title="MantenimientoDepto.textBoxIdDepto (Campo)" Url="html/d12bdedd-dcf1-77fc-498b-7754d3831c52.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.textBoxIdDepto (Campo)" Url="html/417a58fd-1703-0ae5-c065-efc11dcceae1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxIdGenero field" Url="html/ac950164-8f2d-9ceb-49b0-c9ce6fcf6972.htm" />
+  <HelpKINode Title="textBoxIdtec field">
+    <HelpKINode Title="InsertaCarreras.textBoxIdtec (Campo)" Url="html/b4758c98-13d0-3ec5-96fb-af20a9479d3d.htm" />
+    <HelpKINode Title="InsertaDepartamentos.textBoxIdtec (Campo)" Url="html/45757b2d-7107-aa3f-2fbe-5244981c86dd.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxId_entrena field" Url="html/668e111c-88b3-5516-90f8-59db30a44a21.htm" />
+  <HelpKINode Title="textBoxId_tec field">
+    <HelpKINode Title="MantenimientoCarreras.textBoxId_tec (Campo)" Url="html/db459535-5934-ecf8-1262-18f27ed551c3.htm" />
+    <HelpKINode Title="MantenimientoDepto.textBoxId_tec (Campo)" Url="html/616e65fa-3495-0567-ba96-9021db47a881.htm" />
+    <HelpKINode Title="MantenimientoEntrena.textBoxId_tec (Campo)" Url="html/2ee963c8-eb55-4bce-79af-3d1fbca45fda.htm" />
+    <HelpKINode Title="MantenimientoEntrenadores.textBoxId_tec (Campo)" Url="html/d901407a-ce35-84f0-d71f-cdbd19e4ae62.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxMaterno field">
+    <HelpKINode Title="InsertaEntrenador.textBoxMaterno (Campo)" Url="html/deaa3b33-9e9c-84c8-f8b0-f8b182de8360.htm" />
+    <HelpKINode Title="MantenimientoEntrena.textBoxMaterno (Campo)" Url="html/cbc6a7eb-fd9c-6e90-5b08-a8610247cb94.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxName field">
+    <HelpKINode Title="ActualizaCarreras.textBoxName (Campo)" Url="html/15ef5645-1888-af5b-2f23-b6a8da786bee.htm" />
+    <HelpKINode Title="InsertaEntrenador.textBoxName (Campo)" Url="html/86d87671-5740-6d8e-73f0-350f52645cba.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxNombre field" Url="html/2312dd57-6fcd-2e9d-9f1c-e0c004754a55.htm" />
+  <HelpKINode Title="textBoxPassword field" Url="html/39992ff0-50a9-8f45-53ae-ad0822aeba65.htm" />
+  <HelpKINode Title="textBoxPaterno field">
+    <HelpKINode Title="InsertaEntrenador.textBoxPaterno (Campo)" Url="html/f38edd15-6a9e-e9c1-e429-0c3545b802fc.htm" />
+    <HelpKINode Title="MantenimientoEntrena.textBoxPaterno (Campo)" Url="html/7c594867-58f9-48ee-41ce-2d2e1e812bc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="textBoxSidCarrera field" Url="html/08ed0d95-a3e0-2d74-2140-d7248ed16a7e.htm" />
+  <HelpKINode Title="textBoxSidDepto field" Url="html/98f0480c-6306-b46c-482d-2a02bcb60fea.htm" />
+  <HelpKINode Title="textBoxSidGnero field" Url="html/bde23165-1b0e-615b-ef22-367332489f2d.htm" />
+  <HelpKINode Title="textBoxTec field" Url="html/078d515c-69f1-e2a8-fbdc-7ace7bb3faea.htm" />
+  <HelpKINode Title="textBoxUser field" Url="html/7adbf171-e4e9-8dda-0ffe-a3b1c43df1eb.htm" />
+  <HelpKINode Title="timer1 field" Url="html/b17a9efc-2cdb-e536-880f-7b5fdce8fb39.htm" />
+  <HelpKINode Title="timer1_Tick method" Url="html/343e7ea6-be6f-b654-2be1-4a0daf05ddec.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/aa13d13d-3247-40bd-8f90-446263252ec3.htm" />
+    <HelpKINode Title="history" Url="html/d86761bd-4a42-48df-a3e2-492981c03395.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/71d926b7-a717-4a22-a3c9-0dab60072cc6.htm" />
+</HelpKI>

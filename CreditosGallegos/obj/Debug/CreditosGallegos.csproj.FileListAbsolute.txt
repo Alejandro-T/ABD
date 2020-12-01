@@ -20,10 +20,7 @@ C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\Creditos
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.SeleccionaCarreras.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.Carreras.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.InsertaCarreras.resources
-C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.ActualizaCarreras.resources
-C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.carreras.BorrarCarreras.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.InsertaDepartamentos.resources
-C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.BorraDepartamentos.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.SeleccionaDepto.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Departamentos.Depto.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.generos.MantenimientoGeneros.resources
@@ -34,4 +31,12 @@ C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\Creditos
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.MantenimientoEntrenadores.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Backup.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.Entrenadores.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.csproj.CoreCompileInputs.cache
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\bin\Debug\CreditosGallegos.xml
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.Alumnos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.InsertaAlumno.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.Equipos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.MantenimientoEquipos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.AgregaEq.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.SeleccionAlumnos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.SeleccionaEntrena.resources

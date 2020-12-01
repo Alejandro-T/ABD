@@ -37,14 +37,12 @@ namespace CreditosGallegos.carreras
             AbrirFormEnPanel(new InsertaCarreras());
         }
 
-        private void button3_Click(object sender, EventArgs e)
+       
+       
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new SeleccionaCarreras());
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new BorrarCarreras());
         }
     }
 }

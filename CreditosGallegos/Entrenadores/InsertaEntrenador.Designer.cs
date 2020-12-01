@@ -185,6 +185,7 @@
             // 
             // textBoxTec
             // 
+            this.textBoxTec.Enabled = false;
             this.textBoxTec.Location = new System.Drawing.Point(17, 36);
             this.textBoxTec.Name = "textBoxTec";
             this.textBoxTec.Size = new System.Drawing.Size(100, 20);

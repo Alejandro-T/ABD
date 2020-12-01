@@ -17,21 +17,120 @@ namespace CreditosGallegos.Alumnos
         {
             InitializeComponent();
         }
-        OracleDataReader dr;
+
+
+
+
+
+
+
+
+
+
+        private void MantenimientoAlumnos_Load(object sender, EventArgs e)
+        {
+            this.textBoxId_tec.Text = publicas.id_tec.ToString();
+            this.seleccionacomboCarreras();
+            this.seleccionacomboGenero();
+            this.cargarAlumnos(dataGridViewAlumnos);
+        }
+
+
+
+
+
+
+        public void seleccionacomboGenero()
+        {
+            DataTable dt = new DataTable();
+
+            string depto = "SELECT id_genero,descripcion FROM generos";
+            OracleDataAdapter da = new OracleDataAdapter
+                (depto, Conexion.conectar());
+            OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
+
+            OracleDataReader dr = cmd.ExecuteReader();
+            da.Fill(dt);
+            if (dr.Read())
+            {
+                if (dr.HasRows)
+                {
+                    comboBoxGeneros.Items.Clear();
+                    while (dr.Read())
+                    {
+                        comboBoxGeneros.DataSource = dt;
+                        comboBoxGeneros.DisplayMember = dt.Columns[1].ColumnName;
+                        comboBoxGeneros.ValueMember = dt.Columns[0].ColumnName;
+                    }
+                }
+            }
+            else
+            {
+                comboBoxGeneros.Items.Add("Ningun valor");
+                comboBoxGeneros.SelectedIndex = 0;
+                Conexion.cerrar();
+
+            }
+        }
+
+
+        public void seleccionacomboCarreras()
+        {
+
+
+            DataTable dt = new DataTable();
+
+            string depto = "SELECT id_carrera,id_tec,nombre FROM carreras where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+            OracleDataAdapter da = new OracleDataAdapter
+                (depto, Conexion.conectar());
+            OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
+
+            OracleDataReader dr = cmd.ExecuteReader();
+            da.Fill(dt);
+            if (dr.Read())
+            {
+
+
+                comboBoxCarreras.Items.Clear();
+                while (dr.Read())
+                {
+                    comboBoxCarreras.DataSource = dt;
+                    comboBoxCarreras.DisplayMember = dt.Columns[2].ColumnName;
+                    comboBoxCarreras.ValueMember = dt.Columns[0].ColumnName;
+                }
+
+                //comboBoxDepartamento.SelectedIndex = 0;
+                Conexion.cerrar();
+
+            }
+            else
+            {
+                comboBoxCarreras.Items.Add("Ningun valor");
+                comboBoxCarreras.SelectedIndex = 0;
+                Conexion.cerrar();
+            }
+
+        }
+
+
+
+
+
         public void cargarAlumnos(DataGridView dvg)
         {
             try
             {
-                DataTable dtcarreras = new DataTable();
-                string comprobacion = "Select * from Alumnos";
+                DataTable dtentrenadores = new DataTable();
+                string comprobacion = "select * from alumnos where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
                 {
-                    da.Fill(dtcarreras);
-                    dvg.DataSource = dtcarreras;
+                    da.Fill(dtentrenadores);
+                    dvg.DataSource = dtentrenadores;
 
                 }
                 else
@@ -44,11 +143,169 @@ namespace CreditosGallegos.Alumnos
             {
                 MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
+
         }
-        private void MantenimientoAlumnos_Load(object sender, EventArgs e)
+
+
+        private void dataGridViewEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewAlumnos.Rows[e.RowIndex];
+                this.textBoxNombre.Text = row.Cells["nombre"].Value.ToString();
+                this.textBoxPaterno.Text = row.Cells["paterno"].Value.ToString();
+                this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
+                // this.textBoxIdDepto.Text = row.Cells["id_departamento"].Value.ToString();
+                this.textBoxId_tec.Text = row.Cells["id_tec"].Value.ToString();
+                this.textBoxId_Alumno.Text = row.Cells["id_alumno"].Value.ToString();
+                this.comboBoxGeneros.SelectedValue = row.Cells["id_genero"].Value.ToString();
+                this.comboBoxCarreras.SelectedValue = row.Cells["id_departamento"].Value.ToString();
+            }
+        }
+
+        private void pictureBoxClean_DoubleClick(object sender, EventArgs e)
+        {
+            limpiar();
+        }
         
-            this.cargarAlumnos(dataGridViewAlumnos);
+        private void pictureBoxDrop_DoubleClick_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = "DELETE FROM alumnos where NO_CONTROL='" + textBoxId_Alumno.Text + "'and ID_TEC='"+this.textBoxId_tec.Text+"'";
+
+                string comprobacion =
+                    "SELECT NO_CONTROL from alumnos where NO_CONTROL='" + textBoxId_Alumno.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
+                OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
+                OracleDataReader dr = cp.ExecuteReader();
+                if (dr.Read())
+                {
+                    OracleCommand comando = new OracleCommand(query, Conexion.conectar());
+                    OracleDataReader reader = comando.ExecuteReader();
+                    MessageBox.Show("Borrado", "aviso", MessageBoxButtons.OK);
+                    //Select para saber el valor actual.
+                    this.cargarAlumnos(this.dataGridViewAlumnos);
+                    //limpiar los cuadros de texto
+                    this.limpiar();
+                }
+                else
+                {
+                    MessageBox.Show("El Alumno no existe no existe", "aviso", MessageBoxButtons.OK);
+                }
+            }
+
+            catch (OracleException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
+            }
+        }
+
+        private void pictureBoxUpdate_DoubleClick_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string comprobacion = "select id_tec from tecsnm where id_tec='" + textBoxId_tec.Text + "'";
+                OracleCommand act = new OracleCommand("ACTUALIZALUMNOS", Conexion.conectar());
+                act.CommandType = System.Data.CommandType.StoredProcedure;
+
+                act.Parameters.Add("id_NO_CONTROLIN", OracleDbType.Int16).Value = textBoxId_Alumno.Text;
+                act.Parameters.Add("id_generoin", OracleDbType.Int16).Value = Convert.ToInt16(comboBoxGeneros.SelectedValue);
+                act.Parameters.Add("ID_TECIN", OracleDbType.Int16).Value = textBoxId_tec.Text;
+                act.Parameters.Add("ID_CARRERAIN", OracleDbType.Int16).Value = Convert.ToInt16(comboBoxCarreras.SelectedValue);
+
+                act.Parameters.Add("nombrein", OracleDbType.Varchar2).Value = textBoxNombre.Text;
+                act.Parameters.Add("paternoin", OracleDbType.Varchar2).Value = textBoxPaterno.Text;
+                act.Parameters.Add("maternoin", OracleDbType.Varchar2).Value = textBoxMaterno.Text;
+                //aaaa
+                OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
+                OracleDataReader dr = cp.ExecuteReader();
+                //
+                string comprobacion2 =
+                    "SELECT NO_CONTROL from alumnos where NO_CONTROL='" + textBoxId_Alumno.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
+                OracleCommand cp2 = new OracleCommand(comprobacion2, Conexion.conectar());
+                OracleDataReader dr2 = cp2.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    if (dr2.Read())
+                    {
+                        act.ExecuteNonQuery();
+                        MessageBox.Show("Dato actualizado con exito", "exito", MessageBoxButtons.OK);
+                        this.cargarAlumnos(this.dataGridViewAlumnos);
+                        this.limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("El Alumno no existe no existe", "aviso", MessageBoxButtons.OK);
+                    }
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Error en la llave foranea de Tecsnm", "aviso", MessageBoxButtons.OK);
+                }
+
+                //aaaa
+            }
+            catch (OracleException ex)
+            {
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
+            }
+            finally
+            {
+                Conexion.cerrar();
+            }
+        }
+
+        private void dataGridViewAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewAlumnos.Rows[e.RowIndex];
+                this.textBoxNombre.Text = row.Cells["nombre"].Value.ToString();
+                this.textBoxPaterno.Text = row.Cells["paterno"].Value.ToString();
+                this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
+                // this.textBoxIdDepto.Text = row.Cells["id_departamento"].Value.ToString();
+                this.textBoxId_tec.Text = row.Cells["id_tec"].Value.ToString();
+                this.textBoxId_Alumno.Text = row.Cells["NO_CONTROL"].Value.ToString();
+                this.comboBoxGeneros.SelectedValue = row.Cells["id_genero"].Value.ToString();
+                this.comboBoxCarreras.SelectedValue = row.Cells["id_carrera"].Value.ToString();
+            }
+        }
+
+        private void pictureBoxClean_DoubleClick_1(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+        public void limpiar()
+        {
+            this.textBoxId_Alumno.Clear();
+            this.textBoxNombre.Clear();
+            this.textBoxPaterno.Clear();
+            this.textBoxMaterno.Clear();
         }
     }
 }

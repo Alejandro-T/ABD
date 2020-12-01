@@ -53,29 +53,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos\Alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Alumnos.Designer.cs">
+      <DependentUpon>Alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\InsertaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\InsertaAlumno.Designer.cs">
+      <DependentUpon>InsertaAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos\MantenimientoAlumnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Alumnos\MantenimientoAlumnos.Designer.cs">
       <DependentUpon>MantenimientoAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alumnos\SeleccionAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumnos\SeleccionAlumnos.Designer.cs">
+      <DependentUpon>SeleccionAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Backup.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Backup.Designer.cs">
       <DependentUpon>Backup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="carreras\ActualizaCarreras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="carreras\ActualizaCarreras.Designer.cs">
-      <DependentUpon>ActualizaCarreras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="carreras\BorrarCarreras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="carreras\BorrarCarreras.Designer.cs">
-      <DependentUpon>BorrarCarreras.cs</DependentUpon>
     </Compile>
     <Compile Include="carreras\Carreras.cs">
       <SubType>Form</SubType>
@@ -100,12 +106,6 @@
     </Compile>
     <Compile Include="carreras\SeleccionaCarreras.Designer.cs">
       <DependentUpon>SeleccionaCarreras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Departamentos\BorraDepartamentos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Departamentos\BorraDepartamentos.Designer.cs">
-      <DependentUpon>BorraDepartamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="Departamentos\Depto.cs">
       <SubType>Form</SubType>
@@ -148,6 +148,30 @@
     </Compile>
     <Compile Include="Entrenadores\MantenimientoEntrena.Designer.cs">
       <DependentUpon>MantenimientoEntrena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entrenadores\SeleccionaEntrena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entrenadores\SeleccionaEntrena.Designer.cs">
+      <DependentUpon>SeleccionaEntrena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EqDeportivos\AgregaEq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EqDeportivos\AgregaEq.Designer.cs">
+      <DependentUpon>AgregaEq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EqDeportivos\Equipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EqDeportivos\Equipos.Designer.cs">
+      <DependentUpon>Equipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EqDeportivos\MantenimientoEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EqDeportivos\MantenimientoEquipos.Designer.cs">
+      <DependentUpon>MantenimientoEquipos.cs</DependentUpon>
     </Compile>
     <Compile Include="generos\AgregaGeneros.cs">
       <SubType>Form</SubType>
@@ -201,17 +225,20 @@
       <DependentUpon>SeleccionaGeneros.cs</DependentUpon>
     </Compile>
     <Compile Include="publicas.cs" />
+    <EmbeddedResource Include="Alumnos\Alumnos.resx">
+      <DependentUpon>Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos\InsertaAlumno.resx">
+      <DependentUpon>InsertaAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Alumnos\MantenimientoAlumnos.resx">
       <DependentUpon>MantenimientoAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alumnos\SeleccionAlumnos.resx">
+      <DependentUpon>SeleccionAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="carreras\ActualizaCarreras.resx">
-      <DependentUpon>ActualizaCarreras.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="carreras\BorrarCarreras.resx">
-      <DependentUpon>BorrarCarreras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="carreras\Carreras.resx">
       <DependentUpon>Carreras.cs</DependentUpon>
@@ -224,9 +251,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="carreras\SeleccionaCarreras.resx">
       <DependentUpon>SeleccionaCarreras.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Departamentos\BorraDepartamentos.resx">
-      <DependentUpon>BorraDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Departamentos\Depto.resx">
       <DependentUpon>Depto.cs</DependentUpon>
@@ -248,6 +272,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entrenadores\MantenimientoEntrena.resx">
       <DependentUpon>MantenimientoEntrena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entrenadores\SeleccionaEntrena.resx">
+      <DependentUpon>SeleccionaEntrena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EqDeportivos\AgregaEq.resx">
+      <DependentUpon>AgregaEq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EqDeportivos\Equipos.resx">
+      <DependentUpon>Equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EqDeportivos\MantenimientoEquipos.resx">
+      <DependentUpon>MantenimientoEquipos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="generos\AgregaGeneros.resx">
       <DependentUpon>AgregaGeneros.cs</DependentUpon>
@@ -317,6 +353,9 @@
     <Content Include="resources\icons8_data_backup_80px_8.png" />
     <Content Include="resources\icons8_trash_48px_7.png" />
     <Content Include="resources\icons8_update_left_rotation_48px.png" />
+    <None Include="resources\tecnm.png" />
+    <None Include="resources\logo.png" />
+    <None Include="resources\ITL.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

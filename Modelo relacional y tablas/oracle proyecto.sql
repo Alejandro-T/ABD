@@ -86,46 +86,17 @@ START WITH 1
 INCREMENT BY 1 
 NOMAXVALUE; 
 
-create or replace trigger generos_triger_auto
-	before insert on generos
-	for each row 
-	begin 
-	select seq_genero_id_genero.nextval
-	into:new.id_genero
-	from dual;
-end;
-/
-
 
 CREATE SEQUENCE seq_departa_id_departa
 START WITH 1
 INCREMENT BY 1 
 NOMAXVALUE; 
 
-create or replace trigger departa_triger_auto
-	before insert on departamentos
-	for each row 
-	begin 
-	select seq_departa_id_departa.nextval
-	into:new.ID_DEPARTAMENTO
-	from dual;
-end;
-/
 
-
-
-
-
-create or replace procedure insertar_genero
-(genero_descr varchar2)
-as
-begin
-      insert into generos(descripcion) 
-      values(genero_descr);
-end insertar_genero;
-/
-
-
+CREATE SEQUENCE seq_alum_id_alum
+START WITH 1
+INCREMENT BY 1 
+NOMAXVALUE; 
 
 
 CREATE SEQUENCE seq_carrera_id_carrera
@@ -133,66 +104,73 @@ START WITH 1
 INCREMENT BY 1 
 NOMAXVALUE; 
 
-create or replace trigger carrera_triger_auto
-	before insert on carreras
-	for each row 
-	begin 
-	select seq_carrera_id_carrera.nextval
-	into:new.id_carrera
-	from dual;
-end;
-/
 
-
-create or replace procedure insertar_carreras
-(carrera_id_tec numeric,carrera_nombre varchar2)
-as
-begin
-      insert into carreras(id_tec,nombre) 
-      values(carrera_id_tec,carrera_nombre);
-end insertar_carreras;
-/
-
-create or replace procedure insertar_depto
-(depto_id_tec numeric,depto_descr varchar2)
-as
-begin
-      insert into departamentos(id_tec,DESCRIPCION) 
-      values(depto_id_tec,depto_descr);
-end insertar_depto;
-/
-
-
+CREATE SEQUENCE seq_equipos_id_equipos
+START WITH 1
+INCREMENT BY 1 
+NOMAXVALUE; 
 
 CREATE SEQUENCE seq_entrena_id_entrena
 START WITH 1
 INCREMENT BY 1 
 NOMAXVALUE; 
 
-create or replace trigger entrena_triger_auto
-	before insert on entrenadores
-	for each row 
-	begin 
-	select seq_entrena_id_entrena.nextval
-	into:new.id_entrenador
-	from dual;
-end;
-/
 
-
-create or replace procedure insertar_entrena
-(entrena_id_genero numeric,entrena_id_tec numeric,entrena_id_depto numeric,entrena_nombre varchar2,entrena_paterno varchar2,entrena_materno varchar2)
+create or replace procedure insertar_genero
+(id_genre numeric, genero_descr varchar2)
 as
 begin
-      insert into entrenadores(id_genero,id_tec,id_departamento,nombre,paterno,materno) 
-      values(entrena_id_genero,entrena_id_tec,entrena_id_depto,entrena_nombre,entrena_paterno,entrena_materno);
-end insertar_entrena;
+      insert into generos(id_genero,descripcion) 
+      values(id_genre,lower(genero_descr));
+end insertar_genero;
+/
+
+create or replace procedure insertar_depto
+(id_pto numeric,depto_id_tec numeric,depto_descr varchar2)
+as
+begin
+      insert into departamentos(ID_DEPARTAMENTO,id_tec,DESCRIPCION) 
+      values(id_pto,depto_id_tec,lower(depto_descr));
+end insertar_depto;
 /
 
 
+create or replace procedure insertar_equipo
+(id_eq numeric,entrena_id_entrena numeric,nombre_eq varchar2,eq_id_tec numeric)
+as
+begin
+      insert into EQUIPOSDEPORTIVOS(ID_EQUIPO,ENTRENADORES_ID_ENTRENADOR,NOMBRE,ID_TEC) 
+      values(id_eq,entrena_id_entrena,lower(nombre_eq),eq_id_tec);
+end insertar_equipo;
+/
 
 
+create or replace procedure insertar_carreras
+(carrera_id numeric,carrera_id_tec numeric,carrera_nombre varchar2)
+as
+begin
+      insert into carreras(id_carrera,id_tec,nombre) 
+      values(carrera_id,carrera_id_tec,lower(carrera_nombre));
+end insertar_carreras;
+/
 
+create or replace procedure insertar_entrena
+(entrena_id numeric,entrena_id_genero numeric,entrena_id_tec numeric,entrena_id_depto numeric,entrena_nombre varchar2,entrena_paterno varchar2,entrena_materno varchar2)
+as
+begin
+      insert into entrenadores(ID_ENTRENADOR,id_genero,id_tec,id_departamento,nombre,paterno,materno) 
+      values(entrena_id,entrena_id_genero,entrena_id_tec,entrena_id_depto,lower(entrena_nombre),lower(entrena_paterno),lower(entrena_materno));
+end insertar_entrena;
+/	
+
+create or replace procedure insertar_alumno
+(id_control numeric,alumno_id_genero numeric,entrena_id_carrera numeric,alumno_id_tec numeric,alumno_nombre varchar2,alumno_paterno varchar2,alumno_materno varchar2)
+as
+begin
+      insert into alumnos(no_control,id_genero,id_carrera,id_tec,nombre,paterno,materno) 
+      values(id_control,alumno_id_genero,entrena_id_carrera,alumno_id_tec,lower(alumno_nombre),lower(alumno_paterno),lower(alumno_materno));
+end insertar_alumno;
+/
 
 
 CREATE OR REPLACE PROCEDURE  ACTUALIZACARRERAS (id_carrerain numeric,id_tecin numeric,nombrein varchar2)
@@ -204,10 +182,6 @@ end ACTUALIZACARRERAS;
 /
 
 
-
-
-
-
 CREATE OR REPLACE PROCEDURE  ACTUALIZADEPTO (id_deptoin numeric,nombrein varchar2)
 as
 begin
@@ -217,8 +191,6 @@ end ACTUALIZADEPTO;
 /
 
 
-
-
 CREATE OR REPLACE PROCEDURE  ACTUALIZAENTRENA (ID_ENTRENADORIN numeric,ID_GENEROIN numeric,ID_TECIN numeric,ID_DEPARTAMENTOIN numeric,NOMBREIN varchar2,PATERNOIN varchar2,MATERNOIN varchar2)
 as
 begin
@@ -226,3 +198,13 @@ update ENTRENADORES set id_genero = ID_GENEROIN,id_departamento=ID_DEPARTAMENTOI
 where(id_ENTRENADOR)=ID_ENTRENADORIN;
 end ACTUALIZAENTRENA;
 /
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZALUMNOS (NO_CONTROLIN numeric,ID_GENEROIN numeric,ID_TECIN numeric,ID_CARRERAIN numeric,NOMBREIN varchar2,PATERNOIN varchar2,MATERNOIN varchar2)
+as
+begin
+update ALUMNOS set id_genero = ID_GENEROIN,id_CARRERA=ID_CARRERAIN,nombre = nombrein,paterno=PATERNOIN,MATERNO=MATERNOIN
+where(NO_CONTROL)=NO_CONTROLIN;
+end ACTUALIZALUMNOS;
+/
+

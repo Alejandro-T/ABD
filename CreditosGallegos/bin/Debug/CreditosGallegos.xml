@@ -4,6 +4,40 @@
         <name>CreditosGallegos</name>
     </assembly>
     <members>
+        <member name="F:CreditosGallegos.Alumnos.Alumnos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.Alumnos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.Alumnos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Alumnos.InsertaAlumno.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.InsertaAlumno.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.InsertaAlumno.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:CreditosGallegos.Alumnos.MantenimientoEntrenadores.components">
             <summary>
             Required designer variable.
@@ -21,6 +55,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:CreditosGallegos.Alumnos.SeleccionAlumnos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumnos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumnos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:CreditosGallegos.Backup.components">
             <summary>
             Required designer variable.
@@ -33,40 +84,6 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:CreditosGallegos.Backup.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="F:CreditosGallegos.carreras.ActualizaCarreras.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:CreditosGallegos.carreras.ActualizaCarreras.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CreditosGallegos.carreras.ActualizaCarreras.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="F:CreditosGallegos.carreras.BorrarCarreras.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:CreditosGallegos.carreras.BorrarCarreras.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CreditosGallegos.carreras.BorrarCarreras.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -135,23 +152,6 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:CreditosGallegos.carreras.SeleccionaCarreras.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="F:CreditosGallegos.Departamentos.BorraDepartamentos.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:CreditosGallegos.Departamentos.BorraDepartamentos.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:CreditosGallegos.Departamentos.BorraDepartamentos.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -271,6 +271,74 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:CreditosGallegos.Entrenadores.MantenimientoEntrena.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Entrenadores.SeleccionaEntrena.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Entrenadores.SeleccionaEntrena.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Entrenadores.SeleccionaEntrena.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.EqDeportivos.AgregaEq.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.AgregaEq.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.AgregaEq.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.EqDeportivos.Equipos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.Equipos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.Equipos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.EqDeportivos.MantenimientoEquipos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.MantenimientoEquipos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.MantenimientoEquipos.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -484,6 +552,21 @@
             </summary>
         </member>
         <member name="P:CreditosGallegos.Properties.Resources.icons8_update_left_rotation_48px">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CreditosGallegos.Properties.Resources.ITL">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CreditosGallegos.Properties.Resources.logo">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:CreditosGallegos.Properties.Resources.tecnm">
             <summary>
               Busca un recurso adaptado de tipo System.Drawing.Bitmap.
             </summary>

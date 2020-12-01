@@ -14,6 +14,7 @@ namespace CreditosGallegos
 {
     public partial class InsertarCarreras : Form
     {
+        private const string V = "";
         public int LUser = 0;
         public InsertarCarreras()
         {
@@ -43,10 +44,25 @@ namespace CreditosGallegos
 
         private void Main_Load(object sender, EventArgs e)
         {
+            int valor = Convert.ToInt32(publicas.id_tec.ToString());
+            if (valor == 1)
+            {
+                this.pictureBox3.Image = Image.FromFile("C:/Users/90474/source/repos/creditosGallegos/CreditosGallegos/resources/logo.png");
+                this.pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else if (valor == 2){
+                this.pictureBox3.Image = Image.FromFile("C:/Users/90474/source/repos/creditosGallegos/CreditosGallegos/resources/itd.png");
+                this.pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else if (valor == 3)
+            {
+                this.pictureBox3.Image = Image.FromFile("C:/Users/90474/source/repos/creditosGallegos/CreditosGallegos/resources/ITL.png");
+                this.pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
             label1.Text = DateTime.Now.ToLongDateString();
             timer1.Enabled = true;
             timer1.Interval = 100;
-           
+            label3.Text = publicas.id_tec.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -105,6 +121,16 @@ namespace CreditosGallegos
         private void buttonEntrenador_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Entrenadores.Entrenadores());
+        }
+
+        private void buttonAlumnos_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Alumnos.Alumnos());
+        }
+
+        private void buttonEqDepor_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new EqDeportivos.Equipos());
         }
     }
 }

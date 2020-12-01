@@ -50,6 +50,7 @@
             // 
             this.textBoxIdtec.BackColor = System.Drawing.Color.White;
             this.textBoxIdtec.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIdtec.Enabled = false;
             this.textBoxIdtec.Location = new System.Drawing.Point(186, 69);
             this.textBoxIdtec.Name = "textBoxIdtec";
             this.textBoxIdtec.Size = new System.Drawing.Size(100, 13);
@@ -105,6 +106,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InsertaDepartamentos";
             this.Text = "AgregaDepartamentos";
+            this.Load += new System.EventHandler(this.InsertaDepartamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

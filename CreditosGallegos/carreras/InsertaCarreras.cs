@@ -18,11 +18,11 @@ namespace CreditosGallegos.carreras
         {
             InitializeComponent();
         }
-        OracleDataReader dr;
+        
         public void cargarCarreras(DataGridView dvg)
         {
             DataTable dtsgenero = new DataTable();
-            string comprobacion = "Select * from carreras where nombre='" + this.textBoxdescCarrera.Text + "'";
+            string comprobacion = "Select * from carreras where  ID_CARRERA='" + publicas.id_carrera.ToString() + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
             OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -36,7 +36,6 @@ namespace CreditosGallegos.carreras
             {
                 MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
             }
-
         }
         private void btnAgreagrCarrera_Click(object sender, EventArgs e)
         {
@@ -48,8 +47,14 @@ namespace CreditosGallegos.carreras
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
                 {
+                    string comp = "Select seq_carrera_id_carrera.nextval from dual";
+                    OracleCommand cpe = new OracleCommand(comp, Conexion.conectar());
+                    publicas.id_carrera = Convert.ToInt32(cpe.ExecuteScalar());
+
                     OracleCommand comando = new OracleCommand("insertar_carreras", Conexion.conectar());
                     comando.CommandType = CommandType.StoredProcedure;
+
+                    comando.Parameters.Add("@id_carrera", OracleDbType.Int32).Value = publicas.id_carrera.ToString();
                     comando.Parameters.Add("@id_tec", OracleDbType.Int16).Value = this.textBoxIdtec.Text;
                     comando.Parameters.Add("@nombre", OracleDbType.Varchar2).Value = this.textBoxdescCarrera.Text;
 
@@ -63,13 +68,28 @@ namespace CreditosGallegos.carreras
                     MessageBox.Show("no existe el tec", "aviso", MessageBoxButtons.OK);
                 }
             }
-            catch (Oracle.DataAccess.Client.OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
             }
-            
-           
-               
+
+
+        }
+
+        private void InsertaCarreras_Load(object sender, EventArgs e)
+        {
+            textBoxIdtec.Text = publicas.id_tec.ToString();
         }
     }
 }

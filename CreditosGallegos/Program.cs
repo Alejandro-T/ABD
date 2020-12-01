@@ -22,7 +22,7 @@ namespace CreditosGallegos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InsertarCarreras());
+            Application.Run(new Form1());
         }
     }
 }

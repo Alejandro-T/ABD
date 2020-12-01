@@ -23,7 +23,7 @@ namespace CreditosGallegos.carreras
             try
             {
                 DataTable dtcarreras = new DataTable();
-                string comprobacion = "Select * from carreras";
+                string comprobacion = "select * from carreras where ID_TEC ='" + this.textBoxId_tec.Text + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -47,7 +47,9 @@ namespace CreditosGallegos.carreras
         }
         private void MantenimientoCarreras_Load(object sender, EventArgs e)
         {
+            this.textBoxId_tec.Text = publicas.id_tec.ToString();
             this.cargarCarreras(dataGridViewCarreras);
+            
         }
 
         private void pictureBox3_DoubleClick(object sender, EventArgs e)
@@ -66,12 +68,23 @@ namespace CreditosGallegos.carreras
                 //aaaa
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
+                string comprobacion2 =
+                    "SELECT id_carrera from carreras where id_carrera='" + textBoxIdCarrera.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
+                OracleCommand cp2 = new OracleCommand(comprobacion2, Conexion.conectar());
+                OracleDataReader dr2 = cp2.ExecuteReader();
                 if (dr.Read())
                 {
-                    act.ExecuteNonQuery();
-                    MessageBox.Show("Dato actualizado con exito", "exito", MessageBoxButtons.OK);
-                    this.cargarCarreras(this.dataGridViewCarreras);
-                    this.limpiar();
+                    if (dr2.Read())
+                    {
+                        act.ExecuteNonQuery();
+                        MessageBox.Show("Dato actualizado con exito", "exito", MessageBoxButtons.OK);
+                        this.cargarCarreras(this.dataGridViewCarreras);
+                        this.limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
+                    }
                 }
                 else
                 {
@@ -83,13 +96,20 @@ namespace CreditosGallegos.carreras
                 
             }
 
-            catch (Oracle.DataAccess.Client.OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hay un campo sin datos");
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
             }
             finally
             {
@@ -115,13 +135,12 @@ namespace CreditosGallegos.carreras
 
         private void pictureBox2_DoubleClick(object sender, EventArgs e)
         {
-            string query = "DELETE FROM carreras where  id_carrera='" + textBoxIdCarrera.Text + "'";
             try
             {
 
-
+                string query = "DELETE FROM carreras where  id_carrera='" + textBoxIdCarrera.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 string comprobacion =
-                    "SELECT id_carrera from carreras where id_carrera='" + textBoxIdCarrera.Text + "'";
+                    "SELECT id_carrera from carreras where id_carrera='" + textBoxIdCarrera.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
@@ -140,15 +159,36 @@ namespace CreditosGallegos.carreras
                 }
             }
 
-            catch (OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
+            }
+            finally
+            {
+                Conexion.cerrar();
             }
         }
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
         {
             this.limpiar();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeleccionaCarreras se = new SeleccionaCarreras();
+            se.Show();
         }
     }
 }

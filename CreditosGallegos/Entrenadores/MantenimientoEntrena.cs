@@ -29,16 +29,25 @@ namespace CreditosGallegos.Entrenadores
 
             OracleDataReader dr = cmd.ExecuteReader();
             da.Fill(dt);
-
-            if (dr.HasRows)
+            if (dr.Read())
             {
-                comboBoxGeneros.Items.Clear();
-                while (dr.Read())
+                if (dr.HasRows)
                 {
-                    comboBoxGeneros.DataSource = dt;
-                    comboBoxGeneros.DisplayMember = dt.Columns[1].ColumnName;
-                    comboBoxGeneros.ValueMember = dt.Columns[0].ColumnName;
-                }
+                    comboBoxGeneros.Items.Clear();
+                    while (dr.Read())
+                    {
+                        comboBoxGeneros.DataSource = dt;
+                        comboBoxGeneros.DisplayMember = dt.Columns[1].ColumnName;
+                        comboBoxGeneros.ValueMember = dt.Columns[0].ColumnName;
+                    }
+                }   
+            }
+            else
+            {
+                comboBoxGeneros.Items.Add("Ningun valor");
+                comboBoxGeneros.SelectedIndex = 0;
+                Conexion.cerrar();
+
             }
         }
 
@@ -47,23 +56,31 @@ namespace CreditosGallegos.Entrenadores
         {
             DataTable dt = new DataTable();
 
-            string depto = "SELECT id_departamento,id_tec,descripcion FROM departamentos";
+            string depto = "SELECT id_departamento,id_tec,descripcion FROM departamentos where ID_TEC = '" + this.textBoxId_tec.Text + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
             da.Fill(dt);
-
-            if (dr.HasRows)
-            {
-                comboBoxDpto.Items.Clear();
-                while (dr.Read())
+            if(dr.Read()){
+                if (dr.HasRows)
                 {
-                    comboBoxDpto.DataSource = dt;
-                    comboBoxDpto.DisplayMember = dt.Columns[2].ColumnName;
-                    comboBoxDpto.ValueMember = dt.Columns[0].ColumnName;
+                    comboBoxDpto.Items.Clear();
+                    while (dr.Read())
+                    {
+                        comboBoxDpto.DataSource = dt;
+                        comboBoxDpto.DisplayMember = dt.Columns[2].ColumnName;
+                        comboBoxDpto.ValueMember = dt.Columns[0].ColumnName;
+                    }
                 }
+                
+            }
+            else
+            {
+                comboBoxDpto.Items.Add("Ningun valor");
+                comboBoxDpto.SelectedIndex = 0;
+                Conexion.cerrar();
             }
         }
 
@@ -76,7 +93,8 @@ namespace CreditosGallegos.Entrenadores
             try
             {
                 DataTable dtentrenadores = new DataTable();
-                string comprobacion = "Select * from entrenadores";
+                string comprobacion = "select * from entrenadores where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+                
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -101,9 +119,11 @@ namespace CreditosGallegos.Entrenadores
         }
         private void MantenimientoEntrena_Load(object sender, EventArgs e)
         {
+            this.textBoxId_tec.Text = publicas.id_tec.ToString();
             this.seleccionacomboDepto();
             this.seleccionacomboGenero();
             this.cargarEntrenadores(dataGridViewEntrenadores);
+            
         }
 
         private void dataGridViewEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -141,10 +161,10 @@ namespace CreditosGallegos.Entrenadores
         {
             try
             {
-                string query = "DELETE FROM entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'";
+                string query = "DELETE FROM entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
 
                 string comprobacion =
-                    "SELECT id_entrenador from entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'";
+                    "SELECT id_entrenador from entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
@@ -159,7 +179,7 @@ namespace CreditosGallegos.Entrenadores
                 }
                 else
                 {
-                    MessageBox.Show("El entrenador no existe no existe", "aviso", MessageBoxButtons.OK);
+                    MessageBox.Show("El entrenador no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
 
@@ -201,7 +221,7 @@ namespace CreditosGallegos.Entrenadores
                 OracleDataReader dr = cp.ExecuteReader();
                 //
                 string comprobacion2 =
-                    "SELECT id_entrenador from entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'";
+                    "SELECT id_entrenador from entrenadores where id_entrenador='" + textBoxId_entrena.Text + "'and ID_TEC='" + this.textBoxId_tec.Text + "'";
                 OracleCommand cp2 = new OracleCommand(comprobacion2, Conexion.conectar());
                 OracleDataReader dr2 = cp2.ExecuteReader();
 
@@ -216,7 +236,7 @@ namespace CreditosGallegos.Entrenadores
                     }
                     else
                     {
-                        MessageBox.Show("Error en la llave de departamento", "aviso", MessageBoxButtons.OK);
+                        MessageBox.Show("El entrenador no existe", "aviso", MessageBoxButtons.OK);
                     }
 
                 }
@@ -247,6 +267,12 @@ namespace CreditosGallegos.Entrenadores
             {
                 Conexion.cerrar();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SeleccionaEntrena sentrena = new SeleccionaEntrena();
+            sentrena.Show();
         }
     }
 }

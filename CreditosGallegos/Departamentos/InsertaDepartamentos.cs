@@ -18,10 +18,11 @@ namespace CreditosGallegos.Departamentos
             InitializeComponent();
         }
         OracleDataReader dr;
-        public void cargarCarreras(DataGridView dvg)
+        public void cargardepto(DataGridView dvg)
         {
             DataTable dtDepto = new DataTable();
-            string comprobacion = "Select * from departamentos where DESCRIPCION='" + this.textBoxdescDpto.Text + "'";
+            string comprobacion = "select * from departamentos where ID_DEPARTAMENTO ='" + publicas.id_departamento.ToString() + "'";
+            
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
             OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -47,25 +48,47 @@ namespace CreditosGallegos.Departamentos
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
                 {
+                    string comp = "Select seq_departa_id_departa.nextval from dual";
+                    OracleCommand cpe = new OracleCommand(comp, Conexion.conectar());
+                    publicas.id_departamento = Convert.ToInt32(cpe.ExecuteScalar());
+
                     OracleCommand comando = new OracleCommand("insertar_depto", Conexion.conectar());
                     comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.Add("@ID_DEPARTAMENTO", OracleDbType.Int32).Value = publicas.id_departamento.ToString();
                     comando.Parameters.Add("@id_tec", OracleDbType.Int16).Value = this.textBoxIdtec.Text;
                     comando.Parameters.Add("@DESCRIPCION", OracleDbType.Varchar2).Value = this.textBoxdescDpto.Text;
 
                     comando.ExecuteNonQuery();
                     MessageBox.Show("insertado", "aviso", MessageBoxButtons.OK);
                     //Select para saber el numero actual.
-                    this.cargarCarreras(this.dataGridView1);
+                    this.cargardepto(this.dataGridView1);
+                    Conexion.cerrar();
                 }
                 else
                 {
                     MessageBox.Show("no existe el tec", "aviso", MessageBoxButtons.OK);
                 }
             }
-            catch (OracleException)
+            catch (OracleException ex)
             {
-                MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
+                switch (ex.Number)
+                {
+                    case 1722:
+                        MessageBox.Show("Numero invalido(FormatException)--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                    case 2292:
+                        MessageBox.Show("No se puede eliminar el dato, porque existe una tabla hijo con ese dato", "Aviso", MessageBoxButtons.OK);
+                        break;
+                    default:
+                        MessageBox.Show("Formato invalido--Error--" + ex.Number, "Aviso", MessageBoxButtons.OK);
+                        break;
+                }
             }
+        }
+
+        private void InsertaDepartamentos_Load(object sender, EventArgs e)
+        {
+            textBoxIdtec.Text = publicas.id_tec.ToString(); 
         }
     }
 }

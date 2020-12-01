@@ -199,7 +199,7 @@
             // ovalShape1
             // 
             this.ovalShape1.BackColor = System.Drawing.Color.Transparent;
-            this.ovalShape1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ovalShape1.BackgroundImage")));
+            this.ovalShape1.BackgroundImage = global::CreditosGallegos.Properties.Resources.tecnm;
             this.ovalShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ovalShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque;
             this.ovalShape1.BorderColor = System.Drawing.Color.Transparent;
