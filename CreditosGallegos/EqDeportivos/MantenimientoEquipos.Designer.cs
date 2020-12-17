@@ -31,6 +31,7 @@ namespace CreditosGallegos.EqDeportivos
         {
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxUpdate = new System.Windows.Forms.PictureBox();
             this.pictureBoxDrop = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,7 +60,7 @@ namespace CreditosGallegos.EqDeportivos
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(422, 53);
+            this.label9.Location = new System.Drawing.Point(406, 59);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 13);
             this.label9.TabIndex = 22;
@@ -67,6 +68,7 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.pictureBoxUpdate);
             this.groupBox3.Controls.Add(this.pictureBoxDrop);
             this.groupBox3.Controls.Add(this.label3);
@@ -75,11 +77,21 @@ namespace CreditosGallegos.EqDeportivos
             this.groupBox3.Controls.Add(this.pictureBoxClean);
             this.groupBox3.Location = new System.Drawing.Point(515, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(165, 244);
+            this.groupBox3.Size = new System.Drawing.Size(165, 275);
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 235);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Selecciona Equipos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBoxUpdate
             // 
@@ -89,6 +101,7 @@ namespace CreditosGallegos.EqDeportivos
             this.pictureBoxUpdate.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxUpdate.TabIndex = 8;
             this.pictureBoxUpdate.TabStop = false;
+            this.pictureBoxUpdate.DoubleClick += new System.EventHandler(this.pictureBoxUpdate_DoubleClick);
             // 
             // pictureBoxDrop
             // 
@@ -136,12 +149,13 @@ namespace CreditosGallegos.EqDeportivos
             this.pictureBoxClean.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxClean.TabIndex = 3;
             this.pictureBoxClean.TabStop = false;
+            this.pictureBoxClean.Click += new System.EventHandler(this.pictureBoxClean_Click_1);
             this.pictureBoxClean.DoubleClick += new System.EventHandler(this.pictureBoxClean_DoubleClick);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(426, 15);
+            this.label6.Location = new System.Drawing.Point(421, 15);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 17;
@@ -163,16 +177,17 @@ namespace CreditosGallegos.EqDeportivos
             this.dataGridViewEntrenadores.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";
             this.dataGridViewEntrenadores.Size = new System.Drawing.Size(476, 186);
-            this.dataGridViewEntrenadores.TabIndex = 0;
+            this.dataGridViewEntrenadores.TabIndex = 6;
             this.dataGridViewEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEntrenadores_CellContentClick);
             // 
             // textBoxId_tec
             // 
+            this.textBoxId_tec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxId_tec.Enabled = false;
-            this.textBoxId_tec.Location = new System.Drawing.Point(396, 26);
+            this.textBoxId_tec.Location = new System.Drawing.Point(393, 33);
             this.textBoxId_tec.Name = "textBoxId_tec";
-            this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_tec.TabIndex = 16;
+            this.textBoxId_tec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxId_tec.TabIndex = 3;
             // 
             // groupBox1
             // 
@@ -198,10 +213,11 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // textBoxId_equipo
             // 
-            this.textBoxId_equipo.Location = new System.Drawing.Point(89, 19);
+            this.textBoxId_equipo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxId_equipo.Location = new System.Drawing.Point(81, 26);
             this.textBoxId_equipo.Name = "textBoxId_equipo";
-            this.textBoxId_equipo.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_equipo.TabIndex = 14;
+            this.textBoxId_equipo.Size = new System.Drawing.Size(100, 13);
+            this.textBoxId_equipo.TabIndex = 1;
             // 
             // label5
             // 
@@ -214,17 +230,19 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(89, 45);
+            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombre.Location = new System.Drawing.Point(81, 52);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(229, 20);
-            this.textBoxNombre.TabIndex = 1;
+            this.textBoxNombre.Size = new System.Drawing.Size(229, 13);
+            this.textBoxNombre.TabIndex = 2;
             // 
             // textBoxEntrenadores
             // 
-            this.textBoxEntrenadores.Location = new System.Drawing.Point(392, 77);
+            this.textBoxEntrenadores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEntrenadores.Location = new System.Drawing.Point(389, 84);
             this.textBoxEntrenadores.Name = "textBoxEntrenadores";
-            this.textBoxEntrenadores.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEntrenadores.TabIndex = 23;
+            this.textBoxEntrenadores.Size = new System.Drawing.Size(100, 13);
+            this.textBoxEntrenadores.TabIndex = 4;
             // 
             // MantenimientoEquipos
             // 
@@ -275,5 +293,6 @@ namespace CreditosGallegos.EqDeportivos
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxEntrenadores;
+        private System.Windows.Forms.Button button1;
     }
 }

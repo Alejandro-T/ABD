@@ -80,7 +80,7 @@
             this.textBox1.Location = new System.Drawing.Point(6, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 13);
-            this.textBox1.TabIndex = 13;
+            this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -110,7 +110,7 @@
             this.textBoxSidCarrera.Location = new System.Drawing.Point(14, 26);
             this.textBoxSidCarrera.Name = "textBoxSidCarrera";
             this.textBoxSidCarrera.Size = new System.Drawing.Size(100, 13);
-            this.textBoxSidCarrera.TabIndex = 6;
+            this.textBoxSidCarrera.TabIndex = 3;
             // 
             // label1
             // 
@@ -127,7 +127,7 @@
             this.checkBox2.Location = new System.Drawing.Point(234, 17);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(63, 17);
-            this.checkBox2.TabIndex = 12;
+            this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Nombre";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
@@ -138,17 +138,17 @@
             this.checkBox1.Location = new System.Drawing.Point(49, 17);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(71, 17);
-            this.checkBox1.TabIndex = 11;
+            this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Id carrera";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // buttonCbuscar
             // 
             this.buttonCbuscar.Location = new System.Drawing.Point(234, 271);
             this.buttonCbuscar.Name = "buttonCbuscar";
             this.buttonCbuscar.Size = new System.Drawing.Size(141, 23);
-            this.buttonCbuscar.TabIndex = 10;
+            this.buttonCbuscar.TabIndex = 6;
             this.buttonCbuscar.Text = "Buscar Todos";
             this.buttonCbuscar.UseVisualStyleBackColor = true;
             this.buttonCbuscar.Click += new System.EventHandler(this.buttonCbuscar_Click);
@@ -167,7 +167,7 @@
             this.btncbuscar.Location = new System.Drawing.Point(63, 271);
             this.btncbuscar.Name = "btncbuscar";
             this.btncbuscar.Size = new System.Drawing.Size(75, 23);
-            this.btncbuscar.TabIndex = 8;
+            this.btncbuscar.TabIndex = 5;
             this.btncbuscar.Text = "Buscar";
             this.btncbuscar.UseVisualStyleBackColor = true;
             this.btncbuscar.Click += new System.EventHandler(this.btncbuscar_Click);

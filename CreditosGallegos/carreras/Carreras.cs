@@ -44,5 +44,10 @@ namespace CreditosGallegos.carreras
         {
             AbrirFormEnPanel(new SeleccionaCarreras());
         }
+
+        private void Carreras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

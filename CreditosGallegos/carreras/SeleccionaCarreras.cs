@@ -22,7 +22,7 @@ namespace CreditosGallegos.carreras
             try
             {
                 DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from carreras where id_carrera='" + this.textBoxSidCarrera.Text + "'and id_tec='"+publicas.id_tec.ToString()+"'";
+                string comprobacion = "Select id_carrera,nombre from carreras where id_carrera='" + this.textBoxSidCarrera.Text + "'and id_tec='"+publicas.id_tec.ToString()+"'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -34,7 +34,7 @@ namespace CreditosGallegos.carreras
                 }
                 else
                 {
-                    
+                    dataGridViewCargaCarreras.DataSource = "";
                     MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -42,6 +42,7 @@ namespace CreditosGallegos.carreras
 
             catch (Oracle.DataAccess.Client.OracleException)
             {
+                dataGridViewCargaCarreras.DataSource = "";
                 MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
 
@@ -54,7 +55,7 @@ namespace CreditosGallegos.carreras
             try
             {
                 DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from carreras where id_tec='" + publicas.id_tec.ToString()+ "'and nombre like '"+ Convert.ToString(this.textBox1.Text).ToLower()+"%'";
+                string comprobacion = "Select id_carrera,nombre from carreras where id_tec='" + publicas.id_tec.ToString() + "'and nombre like '" + Convert.ToString(this.textBox1.Text).ToLower() + "%'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -66,7 +67,7 @@ namespace CreditosGallegos.carreras
                 }
                 else
                 {
-                    
+                    dataGridViewCargaCarreras.DataSource = "";
                     MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -74,6 +75,7 @@ namespace CreditosGallegos.carreras
 
             catch (Oracle.DataAccess.Client.OracleException)
             {
+                dataGridViewCargaCarreras.DataSource = "";
                 MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
 
@@ -87,20 +89,20 @@ namespace CreditosGallegos.carreras
         {
             try
             {
-                DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from carreras where ID_tec='"+publicas.id_tec.ToString()+"'";
+                DataTable dtscarreras = new DataTable();
+                string comprobacion = "Select id_carrera,nombre from carreras where ID_tec='" + publicas.id_tec.ToString()+"'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
                 OracleDataReader dr = cp.ExecuteReader();
                 if (dr.Read())
                 {
-                    da.Fill(dtsgenero);
-                    dvg.DataSource = dtsgenero;
+                    da.Fill(dtscarreras);
+                    dvg.DataSource = dtscarreras;
                 }
                 else
                 {
-                    
+                    dataGridViewCargaCarreras.DataSource = "";
                     MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -108,6 +110,7 @@ namespace CreditosGallegos.carreras
 
             catch (Oracle.DataAccess.Client.OracleException)
             {
+                dataGridViewCargaCarreras.DataSource = "";
                 MessageBox.Show("Formato invalido", "Aviso", MessageBoxButtons.OK);
             }
 
@@ -130,7 +133,8 @@ namespace CreditosGallegos.carreras
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dataGridViewCargaCarreras.Rows[e.RowIndex];
-                this.textBoxSidCarrera.Text = row.Cells["id_tec"].Value.ToString();
+                this.textBoxSidCarrera.Text = row.Cells["id_carrera"].Value.ToString();
+                this.textBox1.Text = row.Cells["nombre"].Value.ToString();
                 
             }
         }
@@ -146,7 +150,7 @@ namespace CreditosGallegos.carreras
             
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
             {

@@ -24,11 +24,6 @@ namespace CreditosGallegos.Entrenadores
             textBoxTec.Text = publicas.id_tec.ToString();
             seleccionacomboDepto();
             seleccionacomboGenero();
-           
-                       //
-
-           
-
         }
         public void actualizasecuencia()
         {
@@ -41,79 +36,55 @@ namespace CreditosGallegos.Entrenadores
         public void seleccionacomboGenero()
         {
             DataTable dt = new DataTable();
-            
+            DataSet ds = new DataSet();
             string depto = "SELECT id_genero,descripcion FROM generos";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
+            da.Fill(ds);
+
             if (dr.Read())
             {
-                if (dr.HasRows)
-                {
-                    comboBoxGenero.Items.Clear();
-                    while (dr.Read())
-                    {
-                        comboBoxGenero.DataSource = dt;
-                        comboBoxGenero.DisplayMember = dt.Columns[1].ColumnName;
-                        comboBoxGenero.ValueMember = dt.Columns[0].ColumnName;
-                    }
-                    comboBoxGenero.SelectedIndex = 1;
-                    Conexion.cerrar();
-                }
+                comboBoxGenero.DataSource = ds.Tables[0];
+                comboBoxGenero.DisplayMember = "descripcion";
+                comboBoxGenero.ValueMember = "id_genero";
             }
             else
             {
-                comboBoxGenero.Items.Add("Ningun valor");
-                comboBoxGenero.SelectedIndex = 0;
-                Conexion.cerrar();
+                MessageBox.Show("no hay generos existentes");
             }
         }
 
 
         public void seleccionacomboDepto()
         {
-            
-
             DataTable dt = new DataTable();
-           
+            DataSet ds = new DataSet();
             string depto = "SELECT id_departamento,id_tec,descripcion FROM departamentos where ID_TEC ='" + this.textBoxTec.Text + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
+            da.Fill(ds);
             if (dr.Read())
             {
-
-                
-                comboBoxDepartamento.Items.Clear();
-                while (dr.Read())
-                {
-                    comboBoxDepartamento.DataSource = dt;
-                    comboBoxDepartamento.DisplayMember = dt.Columns[2].ColumnName;
-                    comboBoxDepartamento.ValueMember = dt.Columns[0].ColumnName;
-                }
-                
-                //comboBoxDepartamento.SelectedIndex = 0;
-                Conexion.cerrar();
-                
+                comboBoxDepartamento.DataSource = ds.Tables[0];
+                comboBoxDepartamento.DisplayMember = "descripcion";
+                comboBoxDepartamento.ValueMember = "ID_DEPARTAMENTO";
             }
             else
             {
-                comboBoxDepartamento.Items.Add("Ningun valor");
-                comboBoxDepartamento.SelectedIndex = 0;
-                Conexion.cerrar();
+                MessageBox.Show("No hay Departamentos existentes");
             }
-            
+
         }
         public void cargarEntrena(DataGridView dvg)
         {
             DataTable dtEntrena = new DataTable();
-            string comprobacion = "Select * from entrenadores where ID_ENTRENADOR ='" + publicas.id_entrenador.ToString() + "'";
+            string comprobacion = "Select E.ID_ENTRENADOR,E.NOMBRE,E.PATERNO,E.MATERNO,G.DESCRIPCION AS GENERO ,D.DESCRIPCION AS DEPARTAMENTO,G.ID_GENERO,D.ID_DEPARTAMENTO from entrenadores E JOIN GENEROS G ON E.ID_GENERO = G.ID_GENERO JOIN DEPARTAMENTOS D ON E.ID_DEPARTAMENTO = D.ID_DEPARTAMENTO where ID_ENTRENADOR ='" + publicas.id_entrenador.ToString() + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
             OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -163,6 +134,7 @@ namespace CreditosGallegos.Entrenadores
 
 
                     this.cargarEntrena(this.dataGridViewEntrenadores);
+                    limpiar();
                     //actualizasecuencia();
                 }
                 else
@@ -185,23 +157,28 @@ namespace CreditosGallegos.Entrenadores
                         break;
                 }
             }
-
-
         }
 
-        private void comboBoxGenero_SelectedIndexChanged(object sender, EventArgs e)
+        private void dataGridViewEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-        }
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewEntrenadores.Rows[e.RowIndex];
+                this.textBoxName.Text = row.Cells["nombre"].Value.ToString();
+                this.textBoxPaterno.Text = row.Cells["paterno"].Value.ToString();
+                this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
+                // this.textBoxIdDepto.Text = row.Cells["id_departamento"].Value.ToString();
 
-        private void comboBoxDepartamento_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
+                
+                this.comboBoxGenero.SelectedValue = row.Cells["id_genero"].Value.ToString();
+                this.comboBoxDepartamento.SelectedValue = row.Cells["id_departamento"].Value.ToString();
+            }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        public void limpiar()
         {
-           
+            this.textBoxName.Clear();
+            this.textBoxPaterno.Clear();
+            this.textBoxMaterno.Clear();
         }
     }
 }

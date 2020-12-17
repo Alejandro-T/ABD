@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBoxUpdate = new System.Windows.Forms.PictureBox();
             this.pictureBoxDrop = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.comboBoxGeneros = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxDpto = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDrop)).BeginInit();
@@ -77,6 +77,16 @@
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 231);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Selecciona Entrenador";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBoxUpdate
             // 
@@ -152,7 +162,7 @@
             this.dataGridViewEntrenadores.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";
             this.dataGridViewEntrenadores.Size = new System.Drawing.Size(476, 186);
-            this.dataGridViewEntrenadores.TabIndex = 0;
+            this.dataGridViewEntrenadores.TabIndex = 9;
             this.dataGridViewEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEntrenadores_CellContentClick);
             // 
             // groupBox1
@@ -183,10 +193,11 @@
             // 
             // textBoxId_entrena
             // 
-            this.textBoxId_entrena.Location = new System.Drawing.Point(89, 19);
+            this.textBoxId_entrena.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxId_entrena.Location = new System.Drawing.Point(84, 26);
             this.textBoxId_entrena.Name = "textBoxId_entrena";
-            this.textBoxId_entrena.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_entrena.TabIndex = 14;
+            this.textBoxId_entrena.Size = new System.Drawing.Size(100, 13);
+            this.textBoxId_entrena.TabIndex = 1;
             // 
             // label8
             // 
@@ -199,10 +210,11 @@
             // 
             // textBoxMaterno
             // 
-            this.textBoxMaterno.Location = new System.Drawing.Point(89, 99);
+            this.textBoxMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMaterno.Location = new System.Drawing.Point(84, 106);
             this.textBoxMaterno.Name = "textBoxMaterno";
-            this.textBoxMaterno.Size = new System.Drawing.Size(229, 20);
-            this.textBoxMaterno.TabIndex = 12;
+            this.textBoxMaterno.Size = new System.Drawing.Size(229, 13);
+            this.textBoxMaterno.TabIndex = 4;
             // 
             // label7
             // 
@@ -215,10 +227,11 @@
             // 
             // textBoxPaterno
             // 
-            this.textBoxPaterno.Location = new System.Drawing.Point(89, 73);
+            this.textBoxPaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPaterno.Location = new System.Drawing.Point(84, 80);
             this.textBoxPaterno.Name = "textBoxPaterno";
-            this.textBoxPaterno.Size = new System.Drawing.Size(229, 20);
-            this.textBoxPaterno.TabIndex = 6;
+            this.textBoxPaterno.Size = new System.Drawing.Size(229, 13);
+            this.textBoxPaterno.TabIndex = 3;
             // 
             // label5
             // 
@@ -231,10 +244,11 @@
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(89, 45);
+            this.textBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombre.Location = new System.Drawing.Point(84, 52);
             this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(229, 20);
-            this.textBoxNombre.TabIndex = 1;
+            this.textBoxNombre.Size = new System.Drawing.Size(229, 13);
+            this.textBoxNombre.TabIndex = 2;
             // 
             // label6
             // 
@@ -247,11 +261,12 @@
             // 
             // textBoxId_tec
             // 
+            this.textBoxId_tec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxId_tec.Enabled = false;
-            this.textBoxId_tec.Location = new System.Drawing.Point(392, 33);
+            this.textBoxId_tec.Location = new System.Drawing.Point(387, 40);
             this.textBoxId_tec.Name = "textBoxId_tec";
-            this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_tec.TabIndex = 4;
+            this.textBoxId_tec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxId_tec.TabIndex = 5;
             // 
             // label4
             // 
@@ -264,11 +279,12 @@
             // 
             // comboBoxGeneros
             // 
+            this.comboBoxGeneros.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxGeneros.FormattingEnabled = true;
             this.comboBoxGeneros.Location = new System.Drawing.Point(379, 76);
             this.comboBoxGeneros.Name = "comboBoxGeneros";
             this.comboBoxGeneros.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxGeneros.TabIndex = 12;
+            this.comboBoxGeneros.TabIndex = 6;
             // 
             // label9
             // 
@@ -281,21 +297,12 @@
             // 
             // comboBoxDpto
             // 
+            this.comboBoxDpto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxDpto.FormattingEnabled = true;
             this.comboBoxDpto.Location = new System.Drawing.Point(379, 123);
             this.comboBoxDpto.Name = "comboBoxDpto";
             this.comboBoxDpto.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxDpto.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Selecciona Entrenador";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.comboBoxDpto.TabIndex = 7;
             // 
             // MantenimientoEntrena
             // 

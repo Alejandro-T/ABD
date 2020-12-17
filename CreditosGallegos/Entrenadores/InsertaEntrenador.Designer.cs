@@ -78,10 +78,11 @@
             // 
             // textBoxMaterno
             // 
-            this.textBoxMaterno.Location = new System.Drawing.Point(6, 112);
+            this.textBoxMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMaterno.Location = new System.Drawing.Point(22, 118);
             this.textBoxMaterno.Name = "textBoxMaterno";
-            this.textBoxMaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaterno.TabIndex = 11;
+            this.textBoxMaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxMaterno.TabIndex = 5;
             // 
             // label6
             // 
@@ -94,10 +95,11 @@
             // 
             // textBoxPaterno
             // 
-            this.textBoxPaterno.Location = new System.Drawing.Point(6, 75);
+            this.textBoxPaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPaterno.Location = new System.Drawing.Point(22, 81);
             this.textBoxPaterno.Name = "textBoxPaterno";
-            this.textBoxPaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPaterno.TabIndex = 9;
+            this.textBoxPaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxPaterno.TabIndex = 4;
             // 
             // label5
             // 
@@ -111,34 +113,35 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(146, 160);
+            this.label2.Location = new System.Drawing.Point(146, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 19;
             this.label2.Text = "Id_Genero";
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(6, 35);
+            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxName.Location = new System.Drawing.Point(22, 41);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxName.TabIndex = 7;
+            this.textBoxName.Size = new System.Drawing.Size(100, 13);
+            this.textBoxName.TabIndex = 3;
             // 
             // comboBoxGenero
             // 
+            this.comboBoxGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxGenero.FormattingEnabled = true;
             this.comboBoxGenero.Location = new System.Drawing.Point(6, 152);
             this.comboBoxGenero.Name = "comboBoxGenero";
             this.comboBoxGenero.Size = new System.Drawing.Size(134, 21);
-            this.comboBoxGenero.TabIndex = 1;
-            this.comboBoxGenero.SelectedIndexChanged += new System.EventHandler(this.comboBoxGenero_SelectedIndexChanged);
+            this.comboBoxGenero.TabIndex = 6;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(325, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 8;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -152,17 +155,17 @@
             this.groupBox2.Location = new System.Drawing.Point(357, 45);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(236, 140);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(157, 88);
+            this.label4.Location = new System.Drawing.Point(157, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 13);
-            this.label4.TabIndex = 10;
+            this.label4.TabIndex = 18;
             this.label4.Text = "Departamento";
             // 
             // label3
@@ -171,25 +174,26 @@
             this.label3.Location = new System.Drawing.Point(157, 43);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 9;
+            this.label3.TabIndex = 41;
             this.label3.Text = "Id_Tec";
             // 
             // comboBoxDepartamento
             // 
+            this.comboBoxDepartamento.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxDepartamento.FormattingEnabled = true;
-            this.comboBoxDepartamento.Location = new System.Drawing.Point(17, 80);
+            this.comboBoxDepartamento.Location = new System.Drawing.Point(24, 80);
             this.comboBoxDepartamento.Name = "comboBoxDepartamento";
             this.comboBoxDepartamento.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxDepartamento.TabIndex = 8;
-            this.comboBoxDepartamento.SelectedIndexChanged += new System.EventHandler(this.comboBoxDepartamento_SelectedIndexChanged);
+            this.comboBoxDepartamento.TabIndex = 7;
             // 
             // textBoxTec
             // 
+            this.textBoxTec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTec.Enabled = false;
-            this.textBoxTec.Location = new System.Drawing.Point(17, 36);
+            this.textBoxTec.Location = new System.Drawing.Point(33, 42);
             this.textBoxTec.Name = "textBoxTec";
-            this.textBoxTec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTec.TabIndex = 7;
+            this.textBoxTec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxTec.TabIndex = 21;
             // 
             // dataGridViewEntrenadores
             // 
@@ -197,7 +201,9 @@
             this.dataGridViewEntrenadores.Location = new System.Drawing.Point(78, 216);
             this.dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";
             this.dataGridViewEntrenadores.Size = new System.Drawing.Size(551, 130);
-            this.dataGridViewEntrenadores.TabIndex = 9;
+            this.dataGridViewEntrenadores.TabIndex = 20;
+            this.dataGridViewEntrenadores.TabStop = false;
+            this.dataGridViewEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEntrenadores_CellContentClick);
             // 
             // label1
             // 

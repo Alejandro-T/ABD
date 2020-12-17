@@ -67,6 +67,7 @@ namespace CreditosGallegos.Alumnos
             this.dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";
             this.dataGridViewEntrenadores.Size = new System.Drawing.Size(551, 130);
             this.dataGridViewEntrenadores.TabIndex = 14;
+            this.dataGridViewEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewEntrenadores_CellContentClick);
             // 
             // groupBox2
             // 
@@ -101,29 +102,31 @@ namespace CreditosGallegos.Alumnos
             // 
             // comboBoxCarreras
             // 
+            this.comboBoxCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxCarreras.FormattingEnabled = true;
             this.comboBoxCarreras.Location = new System.Drawing.Point(17, 80);
             this.comboBoxCarreras.Name = "comboBoxCarreras";
             this.comboBoxCarreras.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCarreras.TabIndex = 8;
+            this.comboBoxCarreras.TabIndex = 6;
             // 
             // textBoxTec
             // 
+            this.textBoxTec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTec.Enabled = false;
-            this.textBoxTec.Location = new System.Drawing.Point(17, 36);
+            this.textBoxTec.Location = new System.Drawing.Point(31, 44);
             this.textBoxTec.Name = "textBoxTec";
-            this.textBoxTec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTec.TabIndex = 7;
+            this.textBoxTec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxTec.TabIndex = 12;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(325, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // groupBox1
             // 
@@ -153,10 +156,11 @@ namespace CreditosGallegos.Alumnos
             // 
             // textBoxMaterno
             // 
-            this.textBoxMaterno.Location = new System.Drawing.Point(6, 112);
+            this.textBoxMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMaterno.Location = new System.Drawing.Point(20, 120);
             this.textBoxMaterno.Name = "textBoxMaterno";
-            this.textBoxMaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaterno.TabIndex = 11;
+            this.textBoxMaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxMaterno.TabIndex = 3;
             // 
             // label6
             // 
@@ -169,10 +173,11 @@ namespace CreditosGallegos.Alumnos
             // 
             // textBoxPaterno
             // 
-            this.textBoxPaterno.Location = new System.Drawing.Point(6, 75);
+            this.textBoxPaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPaterno.Location = new System.Drawing.Point(20, 83);
             this.textBoxPaterno.Name = "textBoxPaterno";
-            this.textBoxPaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPaterno.TabIndex = 9;
+            this.textBoxPaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxPaterno.TabIndex = 2;
             // 
             // label5
             // 
@@ -194,18 +199,20 @@ namespace CreditosGallegos.Alumnos
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(6, 35);
+            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxName.Location = new System.Drawing.Point(20, 43);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxName.TabIndex = 7;
+            this.textBoxName.Size = new System.Drawing.Size(100, 13);
+            this.textBoxName.TabIndex = 1;
             // 
             // comboBoxGenero
             // 
+            this.comboBoxGenero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBoxGenero.FormattingEnabled = true;
             this.comboBoxGenero.Location = new System.Drawing.Point(6, 152);
             this.comboBoxGenero.Name = "comboBoxGenero";
             this.comboBoxGenero.Size = new System.Drawing.Size(134, 21);
-            this.comboBoxGenero.TabIndex = 1;
+            this.comboBoxGenero.TabIndex = 4;
             // 
             // InsertaAlumno
             // 

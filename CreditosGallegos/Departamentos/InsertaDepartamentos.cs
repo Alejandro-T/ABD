@@ -17,11 +17,11 @@ namespace CreditosGallegos.Departamentos
         {
             InitializeComponent();
         }
-        OracleDataReader dr;
+        
         public void cargardepto(DataGridView dvg)
         {
             DataTable dtDepto = new DataTable();
-            string comprobacion = "select * from departamentos where ID_DEPARTAMENTO ='" + publicas.id_departamento.ToString() + "'";
+            string comprobacion = "select ID_DEPARTAMENTO,descripcion from departamentos where ID_DEPARTAMENTO ='" + publicas.id_departamento.ToString() + "'";
             
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
@@ -60,6 +60,7 @@ namespace CreditosGallegos.Departamentos
 
                     comando.ExecuteNonQuery();
                     MessageBox.Show("insertado", "aviso", MessageBoxButtons.OK);
+                    limpiar();
                     //Select para saber el numero actual.
                     this.cargardepto(this.dataGridView1);
                     Conexion.cerrar();
@@ -89,6 +90,20 @@ namespace CreditosGallegos.Departamentos
         private void InsertaDepartamentos_Load(object sender, EventArgs e)
         {
             textBoxIdtec.Text = publicas.id_tec.ToString(); 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                this.textBoxdescDpto.Text = row.Cells["descripcion"].Value.ToString();
+                
+            }
+        }
+        public void limpiar()
+        {
+            this.textBoxdescDpto.Clear();
         }
     }
 }

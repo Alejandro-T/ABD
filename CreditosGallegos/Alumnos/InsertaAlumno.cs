@@ -21,8 +21,8 @@ namespace CreditosGallegos.Alumnos
         private void InsertaAlumno_Load(object sender, EventArgs e)
         {
             textBoxTec.Text = publicas.id_tec.ToString();
-            seleccionacomboGenero();
-            seleccionacomboCarreras();
+            SeleccionacomboGenero();
+            SeleccionacomboCarreras();
         }
         public void actualizasecuencia()
         {
@@ -32,82 +32,60 @@ namespace CreditosGallegos.Alumnos
             // long lnNextVal = Convert.ToInt64(loCmd.ExecuteScalar());
             // textBox1.Text = lnNextVal.ToString();
         }
-        public void seleccionacomboGenero()
+        public void SeleccionacomboGenero()
         {
             DataTable dt = new DataTable();
-
+            DataSet ds = new DataSet();
             string depto = "SELECT id_genero,descripcion FROM generos";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
-            if (dr.Read())
-            {
-                if (dr.HasRows)
-                {
-                    comboBoxGenero.Items.Clear();
-                    while (dr.Read())
-                    {
-                        comboBoxGenero.DataSource = dt;
-                        comboBoxGenero.DisplayMember = dt.Columns[1].ColumnName;
-                        comboBoxGenero.ValueMember = dt.Columns[0].ColumnName;
-                    }
-                    comboBoxGenero.SelectedIndex = 1;
-                    Conexion.cerrar();
-                }
+            da.Fill(ds);
+
+            if(dr.Read()){
+                comboBoxGenero.DataSource = ds.Tables[0];
+                comboBoxGenero.DisplayMember = "descripcion";
+                comboBoxGenero.ValueMember = "id_genero";
             }
             else
             {
-                comboBoxGenero.Items.Add("Ningun valor");
-                comboBoxGenero.SelectedIndex = 0;
-                Conexion.cerrar();
+                MessageBox.Show("no hay generos existentes");
             }
         }
 
 
-        public void seleccionacomboCarreras()
+        public void SeleccionacomboCarreras()
         {
-
-
             DataTable dt = new DataTable();
-
+            DataSet ds = new DataSet();
             string depto = "SELECT id_carrera,id_tec,nombre FROM carreras where ID_TEC ='" + this.textBoxTec.Text + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
+            da.Fill(ds);
             if (dr.Read())
             {
 
 
-                comboBoxCarreras.Items.Clear();
-                while (dr.Read())
-                {
-                    comboBoxCarreras.DataSource = dt;
-                    comboBoxCarreras.DisplayMember = dt.Columns[2].ColumnName;
-                    comboBoxCarreras.ValueMember = dt.Columns[0].ColumnName;
-                }
-
-                //comboBoxDepartamento.SelectedIndex = 0;
-                Conexion.cerrar();
+                comboBoxCarreras.DataSource = ds.Tables[0];
+                comboBoxCarreras.DisplayMember = "nombre";
+                comboBoxCarreras.ValueMember = "id_carrera";
 
             }
             else
             {
-                comboBoxCarreras.Items.Add("Ningun valor");
-                comboBoxCarreras.SelectedIndex = 0;
+                MessageBox.Show("no hay Carreras existentes");
                 Conexion.cerrar();
             }
-
         }
-        public void cargarAlumno(DataGridView dvg)
+        public void CargarAlumno(DataGridView dvg)
         {
             DataTable dtsgenero = new DataTable();
-            string comprobacion = "Select * from alumnos where NO_CONTROL='" + publicas.id_alumno.ToString() + "'";
+            string comprobacion = "Select A.NO_CONTROL,A.NOMBRE,A.PATERNO,A.MATERNO,G.DESCRIPCION AS SEXO ,C.NOMBRE AS CARRERA from alumnos A JOIN GENEROS G ON A.ID_GENERO=G.ID_GENERO JOIN CARRERAS C ON A.ID_CARRERA = C.ID_CARRERA where NO_CONTROL='" + publicas.id_alumno.ToString() + "' order by no_control";
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
             OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -123,7 +101,7 @@ namespace CreditosGallegos.Alumnos
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             try
             {           
@@ -156,8 +134,9 @@ namespace CreditosGallegos.Alumnos
                     //Select para saber el numero actual.
 
 
-                    this.cargarAlumno(this.dataGridViewEntrenadores);
+                    this.CargarAlumno(this.dataGridViewEntrenadores);
                     //actualizasecuencia();
+                    Limpiar();
                 }
                 else
                 {
@@ -198,6 +177,25 @@ namespace CreditosGallegos.Alumnos
             }
             else
                 return 0;     
+        }
+        public void Limpiar()
+        {
+            this.textBoxName.Clear();
+            this.textBoxMaterno.Clear();
+            this.textBoxPaterno.Clear();
+            
+        }
+
+        private void DataGridViewEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewEntrenadores.Rows[e.RowIndex];
+                this.textBoxName.Text = row.Cells["nombre"].Value.ToString();
+                this.textBoxPaterno.Text = row.Cells["paterno"].Value.ToString();
+                this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
+
+            }
         }
     }
 }

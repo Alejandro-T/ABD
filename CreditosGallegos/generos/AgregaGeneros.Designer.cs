@@ -42,7 +42,7 @@
             this.textBoxdescrpcGenero.Location = new System.Drawing.Point(164, 73);
             this.textBoxdescrpcGenero.Name = "textBoxdescrpcGenero";
             this.textBoxdescrpcGenero.Size = new System.Drawing.Size(100, 13);
-            this.textBoxdescrpcGenero.TabIndex = 6;
+            this.textBoxdescrpcGenero.TabIndex = 1;
             this.textBoxdescrpcGenero.TextChanged += new System.EventHandler(this.textBoxdescrpcGenero_TextChanged);
             // 
             // btnAgreagrGenero
@@ -50,7 +50,7 @@
             this.btnAgreagrGenero.Location = new System.Drawing.Point(175, 117);
             this.btnAgreagrGenero.Name = "btnAgreagrGenero";
             this.btnAgreagrGenero.Size = new System.Drawing.Size(75, 23);
-            this.btnAgreagrGenero.TabIndex = 7;
+            this.btnAgreagrGenero.TabIndex = 2;
             this.btnAgreagrGenero.Text = "Agregar";
             this.btnAgreagrGenero.UseVisualStyleBackColor = true;
             this.btnAgreagrGenero.Click += new System.EventHandler(this.btnAgreagrGenero_Click);
@@ -71,7 +71,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(70, 160);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(357, 151);
-            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // AgregaGeneros

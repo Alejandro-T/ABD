@@ -21,33 +21,24 @@ namespace CreditosGallegos.Entrenadores
         public void seleccionacomboGenero()
         {
             DataTable dt = new DataTable();
-
+            DataSet ds = new DataSet();
             string depto = "SELECT id_genero,descripcion FROM generos";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
+            da.Fill(ds);
+
             if (dr.Read())
             {
-                if (dr.HasRows)
-                {
-                    comboBoxGeneros.Items.Clear();
-                    while (dr.Read())
-                    {
-                        comboBoxGeneros.DataSource = dt;
-                        comboBoxGeneros.DisplayMember = dt.Columns[1].ColumnName;
-                        comboBoxGeneros.ValueMember = dt.Columns[0].ColumnName;
-                    }
-                }   
+                comboBoxGeneros.DataSource = ds.Tables[0];
+                comboBoxGeneros.DisplayMember = "descripcion";
+                comboBoxGeneros.ValueMember = "id_genero";
             }
             else
             {
-                comboBoxGeneros.Items.Add("Ningun valor");
-                comboBoxGeneros.SelectedIndex = 0;
-                Conexion.cerrar();
-
+                MessageBox.Show("no hay generos existentes");
             }
         }
 
@@ -55,33 +46,25 @@ namespace CreditosGallegos.Entrenadores
         public void seleccionacomboDepto()
         {
             DataTable dt = new DataTable();
-
-            string depto = "SELECT id_departamento,id_tec,descripcion FROM departamentos where ID_TEC = '" + this.textBoxId_tec.Text + "'";
+            DataSet ds = new DataSet();
+            string depto = "SELECT id_departamento,id_tec,descripcion FROM departamentos where ID_TEC ='" + this.textBoxId_tec.Text + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (depto, Conexion.conectar());
             OracleCommand cmd = new OracleCommand(depto, Conexion.conectar());
 
             OracleDataReader dr = cmd.ExecuteReader();
-            da.Fill(dt);
-            if(dr.Read()){
-                if (dr.HasRows)
-                {
-                    comboBoxDpto.Items.Clear();
-                    while (dr.Read())
-                    {
-                        comboBoxDpto.DataSource = dt;
-                        comboBoxDpto.DisplayMember = dt.Columns[2].ColumnName;
-                        comboBoxDpto.ValueMember = dt.Columns[0].ColumnName;
-                    }
-                }
-                
+            da.Fill(ds);
+            if (dr.Read())
+            {
+                comboBoxDpto.DataSource = ds.Tables[0];
+                comboBoxDpto.DisplayMember = "descripcion";
+                comboBoxDpto.ValueMember = "ID_DEPARTAMENTO";
             }
             else
             {
-                comboBoxDpto.Items.Add("Ningun valor");
-                comboBoxDpto.SelectedIndex = 0;
-                Conexion.cerrar();
+                MessageBox.Show("No hay Departamentos existentes");
             }
+
         }
 
 
@@ -93,7 +76,7 @@ namespace CreditosGallegos.Entrenadores
             try
             {
                 DataTable dtentrenadores = new DataTable();
-                string comprobacion = "select * from entrenadores where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+                string comprobacion = "select E.ID_ENTRENADOR,E.NOMBRE,E.PATERNO,E.MATERNO,G.DESCRIPCION AS GENERO,D.DESCRIPCION AS DEPARTAMENTO,G.ID_GENERO,D.ID_DEPARTAMENTO from entrenadores E JOIN DEPARTAMENTOS D ON D.ID_DEPARTAMENTO = E.ID_DEPARTAMENTO JOIN GENEROS G ON E.ID_GENERO = G.ID_GENERO where E.ID_TEC ='" + this.textBoxId_tec.Text + "'";
                 
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
@@ -135,7 +118,7 @@ namespace CreditosGallegos.Entrenadores
                 this.textBoxPaterno.Text = row.Cells["paterno"].Value.ToString();
                 this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
                 // this.textBoxIdDepto.Text = row.Cells["id_departamento"].Value.ToString();
-                this.textBoxId_tec.Text = row.Cells["id_tec"].Value.ToString();
+                
                 this.textBoxId_entrena.Text = row.Cells["id_entrenador"].Value.ToString();
                 this.comboBoxGeneros.SelectedValue = row.Cells["id_genero"].Value.ToString();
                 this.comboBoxDpto.SelectedValue = row.Cells["id_departamento"].Value.ToString();
@@ -148,13 +131,12 @@ namespace CreditosGallegos.Entrenadores
         }
         public void limpiar()
         {
-            this.textBoxId_tec.Clear();
+            
             this.textBoxMaterno.Clear();
             this.textBoxNombre.Clear();
             this.textBoxPaterno.Clear();
             this.textBoxId_entrena.Clear();
-            //this.comboBoxDpto.Items.Clear();
-            //this.comboBoxGeneros.Items.Clear();
+         
         }
 
         private void pictureBoxDrop_DoubleClick(object sender, EventArgs e)

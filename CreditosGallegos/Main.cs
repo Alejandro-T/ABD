@@ -132,5 +132,15 @@ namespace CreditosGallegos
         {
             AbrirFormEnPanel(new EqDeportivos.Equipos());
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new ArEq.ArmarEquipo());
+        }
+
+        private void buttonParticipa_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Participaciones.Parti());
+        }
     }
 }

@@ -54,7 +54,7 @@
             this.textBoxIdtec.Location = new System.Drawing.Point(186, 69);
             this.textBoxIdtec.Name = "textBoxIdtec";
             this.textBoxIdtec.Size = new System.Drawing.Size(100, 13);
-            this.textBoxIdtec.TabIndex = 20;
+            this.textBoxIdtec.TabIndex = 1;
             // 
             // dataGridView1
             // 
@@ -62,7 +62,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(86, 191);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(357, 151);
-            this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -78,7 +79,7 @@
             this.btnAgreagrDept.Location = new System.Drawing.Point(199, 131);
             this.btnAgreagrDept.Name = "btnAgreagrDept";
             this.btnAgreagrDept.Size = new System.Drawing.Size(75, 23);
-            this.btnAgreagrDept.TabIndex = 17;
+            this.btnAgreagrDept.TabIndex = 3;
             this.btnAgreagrDept.Text = "Agregar";
             this.btnAgreagrDept.UseVisualStyleBackColor = true;
             this.btnAgreagrDept.Click += new System.EventHandler(this.btnAgreagrDept_Click);
@@ -90,7 +91,7 @@
             this.textBoxdescDpto.Location = new System.Drawing.Point(186, 98);
             this.textBoxdescDpto.Name = "textBoxdescDpto";
             this.textBoxdescDpto.Size = new System.Drawing.Size(100, 13);
-            this.textBoxdescDpto.TabIndex = 16;
+            this.textBoxdescDpto.TabIndex = 2;
             // 
             // InsertaDepartamentos
             // 

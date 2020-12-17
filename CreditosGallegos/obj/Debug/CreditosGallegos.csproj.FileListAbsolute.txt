@@ -1,7 +1,6 @@
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\bin\Debug\CreditosGallegos.exe.config
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\bin\Debug\CreditosGallegos.exe
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\bin\Debug\CreditosGallegos.pdb
-C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.csprojAssemblyReference.cache
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Form1.resources
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Properties.Resources.resources
 C:\Users\90474\source\repos\CreditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.csproj.GenerateResource.cache
@@ -38,5 +37,15 @@ C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\Creditos
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.Equipos.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.MantenimientoEquipos.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.AgregaEq.resources
-C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.SeleccionAlumnos.resources
 C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Entrenadores.SeleccionaEntrena.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.EqDeportivos.SeleccionaEquipos.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Alumnos.SeleccionAlumno.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.ArEq.InsertArmEq.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.ArEq.ArmarEquipo.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.ArEq.MantenimientoArmEq.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.ArEq.SelectArmEq.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Participaciones.InsertaParticipaciones.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Participaciones.Parti.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Participaciones.MantenimientoParticipaciones.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.Participaciones.SeleccionaParti.resources
+C:\Users\90474\source\repos\creditosGallegos\CreditosGallegos\obj\Debug\CreditosGallegos.csprojAssemblyReference.cache

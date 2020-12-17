@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridViewCarreras = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarreras)).BeginInit();
@@ -66,13 +66,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ver Datos";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Location = new System.Drawing.Point(137, 189);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(168, 48);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            // 
             // dataGridViewCarreras
             // 
             this.dataGridViewCarreras.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCarreras.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewCarreras.Name = "dataGridViewCarreras";
             this.dataGridViewCarreras.Size = new System.Drawing.Size(476, 164);
-            this.dataGridViewCarreras.TabIndex = 0;
+            this.dataGridViewCarreras.TabIndex = 5;
             this.dataGridViewCarreras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCarreras_CellContentClick);
             // 
             // groupBox1
@@ -101,11 +109,12 @@
             // 
             // textBoxId_tec
             // 
+            this.textBoxId_tec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxId_tec.Enabled = false;
-            this.textBoxId_tec.Location = new System.Drawing.Point(84, 66);
+            this.textBoxId_tec.Location = new System.Drawing.Point(75, 69);
             this.textBoxId_tec.Name = "textBoxId_tec";
-            this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_tec.TabIndex = 4;
+            this.textBoxId_tec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxId_tec.TabIndex = 2;
             // 
             // label5
             // 
@@ -127,17 +136,19 @@
             // 
             // textBoxDescripcion
             // 
-            this.textBoxDescripcion.Location = new System.Drawing.Point(84, 99);
+            this.textBoxDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDescripcion.Location = new System.Drawing.Point(75, 102);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
-            this.textBoxDescripcion.Size = new System.Drawing.Size(229, 20);
-            this.textBoxDescripcion.TabIndex = 1;
+            this.textBoxDescripcion.Size = new System.Drawing.Size(229, 13);
+            this.textBoxDescripcion.TabIndex = 3;
             // 
             // textBoxIdCarrera
             // 
-            this.textBoxIdCarrera.Location = new System.Drawing.Point(84, 33);
+            this.textBoxIdCarrera.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIdCarrera.Location = new System.Drawing.Point(75, 36);
             this.textBoxIdCarrera.Name = "textBoxIdCarrera";
-            this.textBoxIdCarrera.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIdCarrera.TabIndex = 0;
+            this.textBoxIdCarrera.Size = new System.Drawing.Size(100, 13);
+            this.textBoxIdCarrera.TabIndex = 1;
             // 
             // pictureBox3
             // 
@@ -157,6 +168,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             this.pictureBox2.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
             // 
             // label3
@@ -213,20 +225,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Location = new System.Drawing.Point(137, 189);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(168, 48);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(28, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Buscar Carreras";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);

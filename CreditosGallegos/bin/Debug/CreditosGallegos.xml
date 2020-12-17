@@ -55,18 +55,86 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:CreditosGallegos.Alumnos.SeleccionAlumnos.components">
+        <member name="F:CreditosGallegos.Alumnos.SeleccionAlumno.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumnos.Dispose(System.Boolean)">
+        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumno.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumnos.InitializeComponent">
+        <member name="M:CreditosGallegos.Alumnos.SeleccionAlumno.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.ArEq.ArmarEquipo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.ArmarEquipo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.ArmarEquipo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.ArEq.InsertArmEq.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.InsertArmEq.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.InsertArmEq.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.ArEq.MantenimientoArmEq.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.MantenimientoArmEq.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.MantenimientoArmEq.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.ArEq.SelectArmEq.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.SelectArmEq.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.ArEq.SelectArmEq.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
@@ -344,6 +412,23 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="F:CreditosGallegos.EqDeportivos.SeleccionaEquipos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.SeleccionaEquipos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.EqDeportivos.SeleccionaEquipos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:CreditosGallegos.AgregaGeneros.components">
             <summary>
             Required designer variable.
@@ -463,6 +548,74 @@
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:CreditosGallegos.InsertarCarreras.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Participaciones.InsertaParticipaciones.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.InsertaParticipaciones.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.InsertaParticipaciones.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Participaciones.MantenimientoParticipaciones.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.MantenimientoParticipaciones.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.MantenimientoParticipaciones.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Participaciones.Parti.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.Parti.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.Parti.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:CreditosGallegos.Participaciones.SeleccionaParti.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.SeleccionaParti.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:CreditosGallegos.Participaciones.SeleccionaParti.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

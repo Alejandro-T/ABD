@@ -32,6 +32,10 @@ namespace CreditosGallegos.Entrenadores
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxMaterno = new System.Windows.Forms.TextBox();
+            this.textBoxPaterno = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -42,10 +46,6 @@ namespace CreditosGallegos.Entrenadores
             this.buttonCbuscar = new System.Windows.Forms.Button();
             this.dataGridViewCargaEntrena = new System.Windows.Forms.DataGridView();
             this.btncbuscar = new System.Windows.Forms.Button();
-            this.textBoxPaterno = new System.Windows.Forms.TextBox();
-            this.textBoxMaterno = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -90,6 +90,42 @@ namespace CreditosGallegos.Entrenadores
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(115, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Materno";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(115, 52);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Paterno";
+            // 
+            // textBoxMaterno
+            // 
+            this.textBoxMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxMaterno.Location = new System.Drawing.Point(6, 79);
+            this.textBoxMaterno.Name = "textBoxMaterno";
+            this.textBoxMaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxMaterno.TabIndex = 6;
+            this.textBoxMaterno.TextChanged += new System.EventHandler(this.textBoxMaterno_TextChanged);
+            // 
+            // textBoxPaterno
+            // 
+            this.textBoxPaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPaterno.Location = new System.Drawing.Point(6, 53);
+            this.textBoxPaterno.Name = "textBoxPaterno";
+            this.textBoxPaterno.Size = new System.Drawing.Size(100, 13);
+            this.textBoxPaterno.TabIndex = 5;
+            this.textBoxPaterno.TextChanged += new System.EventHandler(this.textBoxPaterno_TextChanged);
+            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
@@ -97,7 +133,7 @@ namespace CreditosGallegos.Entrenadores
             this.textBox1.Location = new System.Drawing.Point(6, 26);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 13);
-            this.textBox1.TabIndex = 13;
+            this.textBox1.TabIndex = 4;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
@@ -127,7 +163,7 @@ namespace CreditosGallegos.Entrenadores
             this.textBoxSidEntrena.Location = new System.Drawing.Point(14, 26);
             this.textBoxSidEntrena.Name = "textBoxSidEntrena";
             this.textBoxSidEntrena.Size = new System.Drawing.Size(100, 13);
-            this.textBoxSidEntrena.TabIndex = 6;
+            this.textBoxSidEntrena.TabIndex = 3;
             // 
             // label1
             // 
@@ -144,7 +180,7 @@ namespace CreditosGallegos.Entrenadores
             this.checkBox2.Location = new System.Drawing.Point(375, 9);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(63, 17);
-            this.checkBox2.TabIndex = 18;
+            this.checkBox2.TabIndex = 2;
             this.checkBox2.Text = "Nombre";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged_1);
@@ -155,7 +191,7 @@ namespace CreditosGallegos.Entrenadores
             this.checkBox1.Location = new System.Drawing.Point(59, 9);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(90, 17);
-            this.checkBox1.TabIndex = 17;
+            this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Id Entrenador";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -165,7 +201,7 @@ namespace CreditosGallegos.Entrenadores
             this.buttonCbuscar.Location = new System.Drawing.Point(404, 322);
             this.buttonCbuscar.Name = "buttonCbuscar";
             this.buttonCbuscar.Size = new System.Drawing.Size(141, 23);
-            this.buttonCbuscar.TabIndex = 10;
+            this.buttonCbuscar.TabIndex = 8;
             this.buttonCbuscar.Text = "Buscar Todos";
             this.buttonCbuscar.UseVisualStyleBackColor = true;
             this.buttonCbuscar.Click += new System.EventHandler(this.buttonCbuscar_Click_1);
@@ -176,7 +212,7 @@ namespace CreditosGallegos.Entrenadores
             this.dataGridViewCargaEntrena.Location = new System.Drawing.Point(20, 134);
             this.dataGridViewCargaEntrena.Name = "dataGridViewCargaEntrena";
             this.dataGridViewCargaEntrena.Size = new System.Drawing.Size(545, 150);
-            this.dataGridViewCargaEntrena.TabIndex = 7;
+            this.dataGridViewCargaEntrena.TabIndex = 9;
             this.dataGridViewCargaEntrena.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCargaDepto_CellContentClick_1);
             // 
             // btncbuscar
@@ -184,44 +220,10 @@ namespace CreditosGallegos.Entrenadores
             this.btncbuscar.Location = new System.Drawing.Point(78, 322);
             this.btncbuscar.Name = "btncbuscar";
             this.btncbuscar.Size = new System.Drawing.Size(75, 23);
-            this.btncbuscar.TabIndex = 8;
+            this.btncbuscar.TabIndex = 7;
             this.btncbuscar.Text = "Buscar";
             this.btncbuscar.UseVisualStyleBackColor = true;
             this.btncbuscar.Click += new System.EventHandler(this.btncbuscar_Click);
-            // 
-            // textBoxPaterno
-            // 
-            this.textBoxPaterno.Location = new System.Drawing.Point(6, 45);
-            this.textBoxPaterno.Name = "textBoxPaterno";
-            this.textBoxPaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPaterno.TabIndex = 15;
-            this.textBoxPaterno.TextChanged += new System.EventHandler(this.textBoxPaterno_TextChanged);
-            // 
-            // textBoxMaterno
-            // 
-            this.textBoxMaterno.Location = new System.Drawing.Point(6, 71);
-            this.textBoxMaterno.Name = "textBoxMaterno";
-            this.textBoxMaterno.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMaterno.TabIndex = 16;
-            this.textBoxMaterno.TextChanged += new System.EventHandler(this.textBoxMaterno_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 52);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Paterno";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(115, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Materno";
             // 
             // SeleccionaEntrena
             // 

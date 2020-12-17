@@ -23,7 +23,7 @@ namespace CreditosGallegos.Entrenadores
             try
             {
                 DataTable dtEntrena = new DataTable();
-                string comprobacion = "Select * from entrenadores where ID_ENTRENADOR='" + this.textBoxSidEntrena.Text + "'and id_tec='" + publicas.id_tec.ToString() + "'";
+                string comprobacion = "select E.ID_ENTRENADOR,E.NOMBRE,E.PATERNO,E.MATERNO,G.DESCRIPCION AS GENERO,D.DESCRIPCION AS DEPARTAMENTO,G.ID_GENERO,D.ID_DEPARTAMENTO from entrenadores E JOIN DEPARTAMENTOS D ON D.ID_DEPARTAMENTO = E.ID_DEPARTAMENTO JOIN GENEROS G ON E.ID_GENERO = G.ID_GENERO where E.ID_ENTRENADOR='" + this.textBoxSidEntrena.Text + "'and E.id_tec='" + publicas.id_tec.ToString() + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -35,7 +35,7 @@ namespace CreditosGallegos.Entrenadores
                 }
                 else
                 {
-
+                    dataGridViewCargaEntrena.DataSource = "";
                     MessageBox.Show("El Entrenador no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -55,7 +55,7 @@ namespace CreditosGallegos.Entrenadores
             try
             {
                 DataTable dtsEntrena = new DataTable();
-                string comprobacion = "Select * from entrenadores where id_tec='" + publicas.id_tec.ToString() + "'and NOMBRE like '" + Convert.ToString(this.textBox1.Text).ToLower() + "%'and PATERNO like'" + Convert.ToString(this.textBoxPaterno.Text).ToLower() + "%' and MATERNO like'" + Convert.ToString(this.textBoxMaterno.Text).ToLower() + "%'";
+                string comprobacion = "select E.ID_ENTRENADOR,E.NOMBRE,E.PATERNO,E.MATERNO,G.DESCRIPCION AS GENERO,D.DESCRIPCION AS DEPARTAMENTO,G.ID_GENERO,D.ID_DEPARTAMENTO from entrenadores E JOIN DEPARTAMENTOS D ON D.ID_DEPARTAMENTO = E.ID_DEPARTAMENTO JOIN GENEROS G ON E.ID_GENERO = G.ID_GENERO where E.id_tec='" + publicas.id_tec.ToString() + "'and E.NOMBRE like '" + Convert.ToString(this.textBox1.Text).ToLower() + "%'and E.PATERNO like'" + Convert.ToString(this.textBoxPaterno.Text).ToLower() + "%' and E.MATERNO like'" + Convert.ToString(this.textBoxMaterno.Text).ToLower() + "%'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -67,7 +67,7 @@ namespace CreditosGallegos.Entrenadores
                 }
                 else
                 {
-
+                    dataGridViewCargaEntrena.DataSource = "";
                     MessageBox.Show("El entrenador no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -89,7 +89,7 @@ namespace CreditosGallegos.Entrenadores
             try
             {
                 DataTable dtsEntrena = new DataTable();
-                string comprobacion = "Select * from entrenadores where ID_tec='" + publicas.id_tec.ToString() + "'";
+                string comprobacion = "select E.ID_ENTRENADOR,E.NOMBRE,E.PATERNO,E.MATERNO,G.DESCRIPCION AS GENERO,D.DESCRIPCION AS DEPARTAMENTO,G.ID_GENERO,D.ID_DEPARTAMENTO from entrenadores E JOIN DEPARTAMENTOS D ON D.ID_DEPARTAMENTO = E.ID_DEPARTAMENTO JOIN GENEROS G ON E.ID_GENERO = G.ID_GENERO where E.ID_tec='" + publicas.id_tec.ToString() + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -101,7 +101,7 @@ namespace CreditosGallegos.Entrenadores
                 }
                 else
                 {
-
+                    dataGridViewCargaEntrena.DataSource = "";
                     MessageBox.Show("El Entrenador no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -178,11 +178,17 @@ namespace CreditosGallegos.Entrenadores
 
         private void dataGridViewCargaDepto_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            if (checkBox2.Checked == true)
             {
-                DataGridViewRow row = this.dataGridViewCargaEntrena.Rows[e.RowIndex];
-                this.textBoxSidEntrena.Text = row.Cells["id_entrenador"].Value.ToString();
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.dataGridViewCargaEntrena.Rows[e.RowIndex];
+                    this.textBoxSidEntrena.Text = row.Cells["id_entrenador"].Value.ToString();
+                    //this.textBox1.Text = row.Cells["materno"].Value.ToString();
+                    
+                    //this.textBoxMaterno.Text = row.Cells["materno"].Value.ToString();
 
+                }
             }
         }
 

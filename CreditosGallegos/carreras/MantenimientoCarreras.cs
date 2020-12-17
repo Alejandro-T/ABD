@@ -17,13 +17,13 @@ namespace CreditosGallegos.carreras
         {
             InitializeComponent();
         }
-        OracleDataReader dr;
+        
         public void cargarCarreras(DataGridView dvg)
         {
             try
             {
                 DataTable dtcarreras = new DataTable();
-                string comprobacion = "select * from carreras where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+                string comprobacion = "select id_carrera,nombre from carreras where ID_TEC ='" + this.textBoxId_tec.Text + "' order by id_carrera";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -129,7 +129,7 @@ namespace CreditosGallegos.carreras
                 DataGridViewRow row = this.dataGridViewCarreras.Rows[e.RowIndex];
                 this.textBoxDescripcion.Text = row.Cells["nombre"].Value.ToString();
                 this.textBoxIdCarrera.Text = row.Cells["id_carrera"].Value.ToString();
-                this.textBoxId_tec.Text = row.Cells["id_tec"].Value.ToString();
+                
             }
         }
 
@@ -189,6 +189,11 @@ namespace CreditosGallegos.carreras
         {
             SeleccionaCarreras se = new SeleccionaCarreras();
             se.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,7 +22,7 @@ namespace CreditosGallegos.Departamentos
             try
             {
                 DataTable dtDepto = new DataTable();
-                string comprobacion = "Select * from departamentos where id_departamento='" + this.textBoxSidDepto.Text + "'and id_tec='" + publicas.id_tec.ToString() + "'";
+                string comprobacion = "Select ID_DEPARTAMENTO,DESCRIPCION from departamentos where id_departamento='" + this.textBoxSidDepto.Text + "'and id_tec='" + publicas.id_tec.ToString() + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -34,7 +34,7 @@ namespace CreditosGallegos.Departamentos
                 }
                 else
                 {
-
+                    dataGridViewCargaDepto.DataSource = "";
                     MessageBox.Show("El departamento no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -47,14 +47,13 @@ namespace CreditosGallegos.Departamentos
 
 
         }
-
 
         public void cargarDeptoName(DataGridView dvg)
         {
             try
             {
                 DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from departamentos where id_tec='" + publicas.id_tec.ToString() + "'and DESCRIPCION like '" + Convert.ToString(this.textBox1.Text).ToLower() + "%'";
+                string comprobacion = "Select ID_DEPARTAMENTO,DESCRIPCION from departamentos where id_tec='" + publicas.id_tec.ToString() + "'and DESCRIPCION like '" + Convert.ToString(this.textBox1.Text).ToLower() + "%'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -66,9 +65,10 @@ namespace CreditosGallegos.Departamentos
                 }
                 else
                 {
-
+                    dataGridViewCargaDepto.DataSource = "";
                     MessageBox.Show("El departamento no existe", "aviso", MessageBoxButtons.OK);
                 }
+                
             }
 
 
@@ -80,15 +80,12 @@ namespace CreditosGallegos.Departamentos
 
         }
 
-
-
-
         public void cargarDeptoTodos(DataGridView dvg)
         {
             try
             {
                 DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from departamentos where ID_tec='" + publicas.id_tec.ToString() + "'";
+                string comprobacion = "Select ID_DEPARTAMENTO,DESCRIPCION from departamentos where ID_tec='" + publicas.id_tec.ToString() + "'";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -100,7 +97,7 @@ namespace CreditosGallegos.Departamentos
                 }
                 else
                 {
-
+                    dataGridViewCargaDepto.DataSource = "";
                     MessageBox.Show("El departamento no existe", "aviso", MessageBoxButtons.OK);
                 }
             }
@@ -124,15 +121,6 @@ namespace CreditosGallegos.Departamentos
         {
             this.cargarDeptoTodos(this.dataGridViewCargaDepto);
         }
-
-        
-
-       
-        
-
-        
-
-       
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
@@ -190,7 +178,7 @@ namespace CreditosGallegos.Departamentos
             {
                 DataGridViewRow row = this.dataGridViewCargaDepto.Rows[e.RowIndex];
                 this.textBoxSidDepto.Text = row.Cells["id_departamento"].Value.ToString();
-
+                this.textBox1.Text = row.Cells["DESCRIPCION"].Value.ToString();
             }
         }
     }

@@ -66,7 +66,7 @@
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.buttonAgregar.Size = new System.Drawing.Size(129, 48);
-            this.buttonAgregar.TabIndex = 4;
+            this.buttonAgregar.TabIndex = 2;
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.UseVisualStyleBackColor = true;
             this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);

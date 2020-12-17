@@ -71,11 +71,35 @@
     <Compile Include="Alumnos\MantenimientoAlumnos.Designer.cs">
       <DependentUpon>MantenimientoAlumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Alumnos\SeleccionAlumnos.cs">
+    <Compile Include="Alumnos\SeleccionAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Alumnos\SeleccionAlumnos.Designer.cs">
-      <DependentUpon>SeleccionAlumnos.cs</DependentUpon>
+    <Compile Include="Alumnos\SeleccionAlumno.Designer.cs">
+      <DependentUpon>SeleccionAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArEq\ArmarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArEq\ArmarEquipo.Designer.cs">
+      <DependentUpon>ArmarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArEq\InsertArmEq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArEq\InsertArmEq.Designer.cs">
+      <DependentUpon>InsertArmEq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArEq\MantenimientoArmEq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArEq\MantenimientoArmEq.Designer.cs">
+      <DependentUpon>MantenimientoArmEq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArEq\SelectArmEq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArEq\SelectArmEq.Designer.cs">
+      <DependentUpon>SelectArmEq.cs</DependentUpon>
     </Compile>
     <Compile Include="Backup.cs">
       <SubType>Form</SubType>
@@ -173,6 +197,12 @@
     <Compile Include="EqDeportivos\MantenimientoEquipos.Designer.cs">
       <DependentUpon>MantenimientoEquipos.cs</DependentUpon>
     </Compile>
+    <Compile Include="EqDeportivos\SeleccionaEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EqDeportivos\SeleccionaEquipos.Designer.cs">
+      <DependentUpon>SeleccionaEquipos.cs</DependentUpon>
+    </Compile>
     <Compile Include="generos\AgregaGeneros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +246,30 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Participaciones\InsertaParticipaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participaciones\InsertaParticipaciones.Designer.cs">
+      <DependentUpon>InsertaParticipaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participaciones\MantenimientoParticipaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participaciones\MantenimientoParticipaciones.Designer.cs">
+      <DependentUpon>MantenimientoParticipaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participaciones\Parti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participaciones\Parti.Designer.cs">
+      <DependentUpon>Parti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Participaciones\SeleccionaParti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Participaciones\SeleccionaParti.Designer.cs">
+      <DependentUpon>SeleccionaParti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="generos\SeleccionaGeneros.cs">
@@ -234,8 +288,20 @@
     <EmbeddedResource Include="Alumnos\MantenimientoAlumnos.resx">
       <DependentUpon>MantenimientoAlumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Alumnos\SeleccionAlumnos.resx">
-      <DependentUpon>SeleccionAlumnos.cs</DependentUpon>
+    <EmbeddedResource Include="Alumnos\SeleccionAlumno.resx">
+      <DependentUpon>SeleccionAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArEq\ArmarEquipo.resx">
+      <DependentUpon>ArmarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArEq\InsertArmEq.resx">
+      <DependentUpon>InsertArmEq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArEq\MantenimientoArmEq.resx">
+      <DependentUpon>MantenimientoArmEq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArEq\SelectArmEq.resx">
+      <DependentUpon>SelectArmEq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
@@ -285,6 +351,9 @@
     <EmbeddedResource Include="EqDeportivos\MantenimientoEquipos.resx">
       <DependentUpon>MantenimientoEquipos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EqDeportivos\SeleccionaEquipos.resx">
+      <DependentUpon>SeleccionaEquipos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="generos\AgregaGeneros.resx">
       <DependentUpon>AgregaGeneros.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +375,18 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Participaciones\InsertaParticipaciones.resx">
+      <DependentUpon>InsertaParticipaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participaciones\MantenimientoParticipaciones.resx">
+      <DependentUpon>MantenimientoParticipaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participaciones\Parti.resx">
+      <DependentUpon>Parti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Participaciones\SeleccionaParti.resx">
+      <DependentUpon>SeleccionaParti.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -319,6 +400,8 @@
     <EmbeddedResource Include="generos\SeleccionaGeneros.resx">
       <DependentUpon>SeleccionaGeneros.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\CreditosGallegos.generos.ActualizaGeneros.datasource" />
+    <None Include="Properties\DataSources\CreditosGallegos.generos.MantenimientoGeneros.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

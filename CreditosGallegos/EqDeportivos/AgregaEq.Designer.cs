@@ -48,7 +48,8 @@ namespace CreditosGallegos.EqDeportivos
             this.dataGridViewEntrenadores.Location = new System.Drawing.Point(45, 169);
             this.dataGridViewEntrenadores.Name = "dataGridViewEntrenadores";
             this.dataGridViewEntrenadores.Size = new System.Drawing.Size(551, 130);
-            this.dataGridViewEntrenadores.TabIndex = 14;
+            this.dataGridViewEntrenadores.TabIndex = 5;
+            this.dataGridViewEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEntrenadores_CellContentClick);
             // 
             // label3
             // 
@@ -61,18 +62,19 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // textBoxTec
             // 
+            this.textBoxTec.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTec.Enabled = false;
-            this.textBoxTec.Location = new System.Drawing.Point(6, 117);
+            this.textBoxTec.Location = new System.Drawing.Point(24, 123);
             this.textBoxTec.Name = "textBoxTec";
-            this.textBoxTec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTec.TabIndex = 7;
+            this.textBoxTec.Size = new System.Drawing.Size(100, 13);
+            this.textBoxTec.TabIndex = 3;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(337, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 4;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -103,10 +105,11 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // textBoxEntrenador
             // 
-            this.textBoxEntrenador.Location = new System.Drawing.Point(6, 75);
+            this.textBoxEntrenador.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEntrenador.Location = new System.Drawing.Point(24, 81);
             this.textBoxEntrenador.Name = "textBoxEntrenador";
-            this.textBoxEntrenador.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEntrenador.TabIndex = 9;
+            this.textBoxEntrenador.Size = new System.Drawing.Size(100, 13);
+            this.textBoxEntrenador.TabIndex = 2;
             // 
             // label5
             // 
@@ -119,10 +122,11 @@ namespace CreditosGallegos.EqDeportivos
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(6, 35);
+            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxName.Location = new System.Drawing.Point(24, 41);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(100, 20);
-            this.textBoxName.TabIndex = 7;
+            this.textBoxName.Size = new System.Drawing.Size(100, 13);
+            this.textBoxName.TabIndex = 1;
             // 
             // AgregaEq
             // 

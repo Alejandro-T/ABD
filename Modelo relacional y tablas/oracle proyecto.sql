@@ -68,17 +68,20 @@ CREATE TABLE EquiposDeportivos (
 CREATE TABLE Alumnos_has_EquiposDeportivos (
   Alumnos_no_control INTEGER,
   EquiposDeportivos_id_equipo NUMERIC(5),
+  id_tec numeric(5),
   constraint pk_AEAlumnos primary key(Alumnos_no_control,EquiposDeportivos_id_equipo),
   constraint fk_AEDeportivos foreign key(EquiposDeportivos_id_equipo)references EquiposDeportivos(id_equipo),
-  constraint fk_AEAlumnos foreign key(Alumnos_no_control)references Alumnos(no_control)
+  constraint fk_AEAlumnos foreign key(Alumnos_no_control)references Alumnos(no_control),
+  constraint fk_AETEC foreign key(id_tec) references Tecsnm(id_tec)
 );
 
 CREATE TABLE Participaciones (
   id_equipo NUMERIC(5),
+  id_tec numeric(5),
   fecha_participa DATE,
-  EquiposDeportivos_id_equipo NUMERIC(5),
   constraint pk_PParticipantes primary key(id_equipo,fecha_participa),
-  constraint fk_PEDeportivos foreign key(EquiposDeportivos_id_equipo)references EquiposDeportivos(id_equipo)
+  constraint fk_PEDeportivos foreign key(id_equipo)references EquiposDeportivos(id_equipo),
+  constraint fk_PEIDTEC foreign key(id_tec)references tecsnm(id_Tec)
 );
 
 CREATE SEQUENCE seq_genero_id_genero
@@ -154,6 +157,18 @@ begin
 end insertar_carreras;
 /
 
+create or replace procedure insertar_PARTICIPACIONES
+(PARTICIPACIONES_ID_EQUIPO numeric,PARTICIPACIONES_id_tec numeric,PARTICIPACIONES_FECHA_PARTICIPA DATE)
+as
+begin
+      insert into PARTICIPACIONES(ID_EQUIPO,id_tec,FECHA_PARTICIPA) 
+      values(PARTICIPACIONES_ID_EQUIPO,PARTICIPACIONES_id_tec,PARTICIPACIONES_FECHA_PARTICIPA);
+end insertar_PARTICIPACIONES;
+/
+
+
+
+
 create or replace procedure insertar_entrena
 (entrena_id numeric,entrena_id_genero numeric,entrena_id_tec numeric,entrena_id_depto numeric,entrena_nombre varchar2,entrena_paterno varchar2,entrena_materno varchar2)
 as
@@ -162,6 +177,30 @@ begin
       values(entrena_id,entrena_id_genero,entrena_id_tec,entrena_id_depto,lower(entrena_nombre),lower(entrena_paterno),lower(entrena_materno));
 end insertar_entrena;
 /	
+
+
+
+create or replace procedure insertar_Arm_Eq
+(ALUMNOS_NO_CONTROL_IN numeric,EQUIPOSDEPORTIVOS_ID_EQUIPO_IN numeric,ID_TEC_IN numeric)
+as
+begin
+      insert into ALUMNOS_HAS_EQUIPOSDEPORTIVOS(ALUMNOS_NO_CONTROL,EQUIPOSDEPORTIVOS_ID_EQUIPO,ID_TEC) 
+      values(ALUMNOS_NO_CONTROL_IN,EQUIPOSDEPORTIVOS_ID_EQUIPO_IN,ID_TEC_IN);
+end insertar_Arm_Eq;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 create or replace procedure insertar_alumno
 (id_control numeric,alumno_id_genero numeric,entrena_id_carrera numeric,alumno_id_tec numeric,alumno_nombre varchar2,alumno_paterno varchar2,alumno_materno varchar2)
@@ -185,7 +224,7 @@ end ACTUALIZACARRERAS;
 CREATE OR REPLACE PROCEDURE  ACTUALIZADEPTO (id_deptoin numeric,nombrein varchar2)
 as
 begin
-update departamentos set descripcion = nombrein,id_departamento=id_deptoin
+update departamentos set descripcion = lower(nombrein),id_departamento=id_deptoin
 where(id_departamento)=id_deptoin;
 end ACTUALIZADEPTO;
 /
@@ -194,7 +233,7 @@ end ACTUALIZADEPTO;
 CREATE OR REPLACE PROCEDURE  ACTUALIZAENTRENA (ID_ENTRENADORIN numeric,ID_GENEROIN numeric,ID_TECIN numeric,ID_DEPARTAMENTOIN numeric,NOMBREIN varchar2,PATERNOIN varchar2,MATERNOIN varchar2)
 as
 begin
-update ENTRENADORES set id_genero = ID_GENEROIN,id_departamento=ID_DEPARTAMENTOIN,nombre = nombrein,paterno=PATERNOIN,MATERNO=MATERNOIN
+update ENTRENADORES set id_genero = ID_GENEROIN,id_departamento=ID_DEPARTAMENTOIN,nombre = lower(nombrein),paterno=lower(PATERNOIN),MATERNO=lower(MATERNOIN)
 where(id_ENTRENADOR)=ID_ENTRENADORIN;
 end ACTUALIZAENTRENA;
 /
@@ -203,8 +242,61 @@ end ACTUALIZAENTRENA;
 CREATE OR REPLACE PROCEDURE  ACTUALIZALUMNOS (NO_CONTROLIN numeric,ID_GENEROIN numeric,ID_TECIN numeric,ID_CARRERAIN numeric,NOMBREIN varchar2,PATERNOIN varchar2,MATERNOIN varchar2)
 as
 begin
-update ALUMNOS set id_genero = ID_GENEROIN,id_CARRERA=ID_CARRERAIN,nombre = nombrein,paterno=PATERNOIN,MATERNO=MATERNOIN
+update ALUMNOS set id_genero = ID_GENEROIN,id_CARRERA=ID_CARRERAIN,nombre = lower(nombrein),paterno=lower(PATERNOIN),MATERNO=lower(MATERNOIN)
 where(NO_CONTROL)=NO_CONTROLIN;
 end ACTUALIZALUMNOS;
 /
 
+
+
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZEQDEP (ID_EQUIPOIN numeric,ENTRENADORES_ID_ENTRENADORIN numeric,NOMBREIN VARCHAR2)
+as
+begin
+update equiposdeportivos set ENTRENADORES_ID_ENTRENADOR = ENTRENADORES_ID_ENTRENADORIN, NOMBRE=NOMBREIN
+where(ID_EQUIPO)=ID_EQUIPOIN;
+end ACTUALIZEQDEP;
+/
+
+
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZEQAGRE (ALUMNOS_NO_CONTROLIN numeric,EQUIPOSDEPORTIVOS_ID_EQUIPOIN numeric,ID_TECIN numeric)
+as
+begin
+update ALUMNOS_HAS_EQUIPOSDEPORTIVOS set ALUMNOS_NO_CONTROL = ALUMNOS_NO_CONTROLIN, EQUIPOSDEPORTIVOS_ID_EQUIPO=EQUIPOSDEPORTIVOS_ID_EQUIPOIN
+where(ALUMNOS_NO_CONTROL)=ALUMNOS_NO_CONTROLIN;
+end ACTUALIZEQAGRE;
+/
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZEQAGRE (ALUMNOS_NO_CONTROLIN numeric,EQUIPOSDEPORTIVOS_ID_EQUIPOIN numeric, EQUIPOSDEPORTIVOS_NUEVO numeric)
+as
+begin
+update ALUMNOS_HAS_EQUIPOSDEPORTIVOS set 
+EQUIPOSDEPORTIVOS_ID_EQUIPO = EQUIPOSDEPORTIVOS_NUEVO
+where (ALUMNOS_NO_CONTROL, EQUIPOSDEPORTIVOS_ID_EQUIPO) 
+IN  (SELECT ALUMNOS_NO_CONTROL, EQUIPOSDEPORTIVOS_ID_EQUIPO 
+FROM ALUMNOS_HAS_EQUIPOSDEPORTIVOS 
+WHERE ALUMNOS_NO_CONTROL = ALUMNOS_NO_CONTROLIN 
+AND EQUIPOSDEPORTIVOS_ID_EQUIPO = EQUIPOSDEPORTIVOS_ID_EQUIPOIN);
+end ACTUALIZEQAGRE;
+/
+
+
+
+CREATE OR REPLACE PROCEDURE  ACTUALIZPARTI (PARTI_ID_EQUIPOIN numeric,PARTI_FECHAIN DATE, FECHA_PARTICIPA_NUEVO DATE)
+as
+begin
+update PARTICIPACIONES set 
+FECHA_PARTICIPA = FECHA_PARTICIPA_NUEVO
+where (ID_EQUIPO, FECHA_PARTICIPA) 
+IN  (SELECT ID_EQUIPO, FECHA_PARTICIPA 
+FROM PARTICIPACIONES 
+WHERE ID_EQUIPO = PARTI_ID_EQUIPOIN
+AND FECHA_PARTICIPA = PARTI_FECHAIN);
+end ACTUALIZPARTI;
+/

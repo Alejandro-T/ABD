@@ -17,7 +17,7 @@ namespace CreditosGallegos
         {
             InitializeComponent();
         }
-        OracleDataReader dr;
+        
         public void cargarGeneros(DataGridView dvg)
         {
             DataTable dtsgenero = new DataTable();
@@ -79,7 +79,7 @@ namespace CreditosGallegos
 
         private void AgregaGeneros_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

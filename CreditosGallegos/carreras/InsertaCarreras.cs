@@ -19,10 +19,10 @@ namespace CreditosGallegos.carreras
             InitializeComponent();
         }
         
-        public void cargarCarreras(DataGridView dvg)
+        public void CargarCarreras(DataGridView dvg)
         {
             DataTable dtsgenero = new DataTable();
-            string comprobacion = "Select * from carreras where  ID_CARRERA='" + publicas.id_carrera.ToString() + "'";
+            string comprobacion = "Select ID_CARRERA,nombre from carreras where  ID_CARRERA='" + publicas.id_carrera.ToString() + "'";
             OracleDataAdapter da = new OracleDataAdapter
                 (comprobacion, Conexion.conectar());
             OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -37,7 +37,7 @@ namespace CreditosGallegos.carreras
                 MessageBox.Show("La carrera no existe", "aviso", MessageBoxButtons.OK);
             }
         }
-        private void btnAgreagrCarrera_Click(object sender, EventArgs e)
+        private void BtnAgreagrCarrera_Click(object sender, EventArgs e)
         {
             try
             {
@@ -61,7 +61,8 @@ namespace CreditosGallegos.carreras
                     comando.ExecuteNonQuery();
                     MessageBox.Show("insertado", "aviso", MessageBoxButtons.OK);
                     //Select para saber el numero actual.
-                    this.cargarCarreras(this.dataGridView1);
+                    this.CargarCarreras(this.dataGridView1);
+                    this.textBoxdescCarrera.Clear();
                 }
                 else
                 {
@@ -90,6 +91,17 @@ namespace CreditosGallegos.carreras
         private void InsertaCarreras_Load(object sender, EventArgs e)
         {
             textBoxIdtec.Text = publicas.id_tec.ToString();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
+                this.textBoxdescCarrera.Text = row.Cells["nombre"].Value.ToString();
+                
+
+            }
         }
     }
 }

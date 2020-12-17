@@ -22,7 +22,7 @@ namespace CreditosGallegos.Departamentos
             try
             {
                 DataTable dtDepto = new DataTable();
-                string comprobacion = "select * from departamentos where ID_TEC ='" + this.textBoxId_tec.Text + "'";
+                string comprobacion = "select id_departamento,descripcion from departamentos where ID_TEC ='" + this.textBoxId_tec.Text + "' order by id_departamento";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
@@ -106,12 +106,6 @@ namespace CreditosGallegos.Departamentos
             }
            
         }
-
-        private bool FormatException(Exception ex)
-        {
-            throw new NotImplementedException();
-        }
-
         private void dataGridViewDepto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -119,7 +113,6 @@ namespace CreditosGallegos.Departamentos
                 DataGridViewRow row = this.dataGridViewDepto.Rows[e.RowIndex];
                 this.textBoxDescripcion.Text = row.Cells["descripcion"].Value.ToString();
                 this.textBoxIdDepto.Text = row.Cells["id_departamento"].Value.ToString();
-                this.textBoxId_tec.Text = row.Cells["id_tec"].Value.ToString();
             }
         }
 

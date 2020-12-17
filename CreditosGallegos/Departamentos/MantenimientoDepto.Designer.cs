@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxIdDepto = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,6 +69,16 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Procesos";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 231);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Buscar Departamentos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
@@ -144,7 +154,7 @@
             this.dataGridViewDepto.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewDepto.Name = "dataGridViewDepto";
             this.dataGridViewDepto.Size = new System.Drawing.Size(476, 186);
-            this.dataGridViewDepto.TabIndex = 0;
+            this.dataGridViewDepto.TabIndex = 5;
             this.dataGridViewDepto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDepto_CellContentClick);
             // 
             // groupBox1
@@ -177,7 +187,7 @@
             this.textBoxId_tec.Location = new System.Drawing.Point(84, 45);
             this.textBoxId_tec.Name = "textBoxId_tec";
             this.textBoxId_tec.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId_tec.TabIndex = 4;
+            this.textBoxId_tec.TabIndex = 2;
             // 
             // label5
             // 
@@ -202,24 +212,14 @@
             this.textBoxDescripcion.Location = new System.Drawing.Point(84, 71);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
             this.textBoxDescripcion.Size = new System.Drawing.Size(229, 20);
-            this.textBoxDescripcion.TabIndex = 1;
+            this.textBoxDescripcion.TabIndex = 3;
             // 
             // textBoxIdDepto
             // 
             this.textBoxIdDepto.Location = new System.Drawing.Point(84, 19);
             this.textBoxIdDepto.Name = "textBoxIdDepto";
             this.textBoxIdDepto.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIdDepto.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Buscar Departamentos";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.textBoxIdDepto.TabIndex = 1;
             // 
             // MantenimientoDepto
             // 

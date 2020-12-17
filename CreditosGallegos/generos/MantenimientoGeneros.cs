@@ -22,7 +22,7 @@ namespace CreditosGallegos.generos
             try
             {
                 DataTable dtsgenero = new DataTable();
-                string comprobacion = "Select * from generos";
+                string comprobacion = "Select * from generos order by id_genero";
                 OracleDataAdapter da = new OracleDataAdapter
                     (comprobacion, Conexion.conectar());
                 OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());

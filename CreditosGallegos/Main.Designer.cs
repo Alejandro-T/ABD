@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buttonParticipa = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(30)))), ((int)(((byte)(52)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.buttonParticipa);
@@ -67,8 +69,23 @@
             this.panel1.Controls.Add(this.buttonGeneros);
             this.panel1.Location = new System.Drawing.Point(0, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 581);
+            this.panel1.Size = new System.Drawing.Size(196, 634);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 441);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 60);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Armar Equipo";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // pictureBox3
             // 
@@ -81,7 +98,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CreditosGallegos.Properties.Resources.icons8_data_backup_80px_8;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 513);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 582);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,21 +110,22 @@
             // 
             this.buttonParticipa.BackColor = System.Drawing.Color.Transparent;
             this.buttonParticipa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonParticipa.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonParticipa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonParticipa.ForeColor = System.Drawing.Color.White;
-            this.buttonParticipa.Location = new System.Drawing.Point(0, 443);
+            this.buttonParticipa.Location = new System.Drawing.Point(0, 501);
             this.buttonParticipa.Margin = new System.Windows.Forms.Padding(0);
             this.buttonParticipa.Name = "buttonParticipa";
             this.buttonParticipa.Size = new System.Drawing.Size(196, 60);
             this.buttonParticipa.TabIndex = 7;
             this.buttonParticipa.Text = "Participaciones";
             this.buttonParticipa.UseVisualStyleBackColor = false;
+            this.buttonParticipa.Click += new System.EventHandler(this.buttonParticipa_Click);
             // 
             // buttonEqDepor
             // 
             this.buttonEqDepor.BackColor = System.Drawing.Color.Transparent;
             this.buttonEqDepor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEqDepor.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEqDepor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEqDepor.ForeColor = System.Drawing.Color.White;
             this.buttonEqDepor.Location = new System.Drawing.Point(0, 382);
             this.buttonEqDepor.Margin = new System.Windows.Forms.Padding(0);
@@ -122,7 +140,7 @@
             // 
             this.buttonDepartamentos.BackColor = System.Drawing.Color.Transparent;
             this.buttonDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDepartamentos.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDepartamentos.ForeColor = System.Drawing.Color.White;
             this.buttonDepartamentos.Location = new System.Drawing.Point(0, 321);
             this.buttonDepartamentos.Margin = new System.Windows.Forms.Padding(0);
@@ -137,7 +155,7 @@
             // 
             this.buttonEntrenador.BackColor = System.Drawing.Color.Transparent;
             this.buttonEntrenador.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonEntrenador.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEntrenador.ForeColor = System.Drawing.Color.White;
             this.buttonEntrenador.Location = new System.Drawing.Point(0, 260);
             this.buttonEntrenador.Margin = new System.Windows.Forms.Padding(0);
@@ -152,7 +170,7 @@
             // 
             this.buttonAlumnos.BackColor = System.Drawing.Color.Transparent;
             this.buttonAlumnos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAlumnos.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAlumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAlumnos.ForeColor = System.Drawing.Color.White;
             this.buttonAlumnos.Location = new System.Drawing.Point(0, 200);
             this.buttonAlumnos.Margin = new System.Windows.Forms.Padding(0);
@@ -167,7 +185,7 @@
             // 
             this.buttonCarreras.BackColor = System.Drawing.Color.Transparent;
             this.buttonCarreras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCarreras.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCarreras.ForeColor = System.Drawing.Color.White;
             this.buttonCarreras.Location = new System.Drawing.Point(0, 139);
             this.buttonCarreras.Margin = new System.Windows.Forms.Padding(0);
@@ -182,7 +200,7 @@
             // 
             this.buttonGeneros.BackColor = System.Drawing.Color.Transparent;
             this.buttonGeneros.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonGeneros.Font = new System.Drawing.Font("Anton", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGeneros.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGeneros.ForeColor = System.Drawing.Color.White;
             this.buttonGeneros.Location = new System.Drawing.Point(0, 80);
             this.buttonGeneros.Margin = new System.Windows.Forms.Padding(0);
@@ -226,7 +244,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(842, 3);
+            this.panel3.Location = new System.Drawing.Point(844, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(169, 26);
             this.panel3.TabIndex = 3;
@@ -234,7 +252,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CreditosGallegos.Properties.Resources.icons8_close_window_96px_1;
-            this.pictureBox1.Location = new System.Drawing.Point(128, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(138, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -255,7 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 581);
+            this.ClientSize = new System.Drawing.Size(1016, 636);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label2);
@@ -296,5 +314,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
     }
 }

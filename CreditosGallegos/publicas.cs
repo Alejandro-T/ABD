@@ -15,6 +15,9 @@ namespace CreditosGallegos
         public static int _id_departamento;
         public static int _id_entrenador;
         public static int _id_equipo;
+        public static int _id_Ag_equipo;
+        public static int _id_Arm_equipo;
+        public static string _id_Parti;
         public publicas()
         {
             id_tec = 0;
@@ -24,6 +27,9 @@ namespace CreditosGallegos
             id_departamento = 0;
             id_entrenador = 0;
             id_equipo = 0;
+            id_Ag_equipo = 0;
+            id_Arm_equipo = 0;
+            id_Parti = "";
         }
         
         public static int id_tec
@@ -61,5 +67,21 @@ namespace CreditosGallegos
             get => _id_equipo;
             set => _id_equipo = value;
         }
+        public static int id_Ag_equipo
+        {
+            get => _id_Ag_equipo;
+            set => _id_Ag_equipo = value;
+        }
+        public static int id_Arm_equipo
+        {
+            get => _id_Arm_equipo;
+            set => _id_Arm_equipo = value;
+        }
+        public static string id_Parti
+        {
+            get => _id_Parti;
+            set => _id_Parti = value;
+        }
+        
     }
 }

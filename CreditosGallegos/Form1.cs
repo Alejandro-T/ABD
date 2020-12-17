@@ -74,19 +74,14 @@ namespace CreditosGallegos
             {
                 publicas.id_tec = Convert.ToInt32(cpe.ExecuteScalar());
 
+                //Mostar menu      
                 
-                MessageBox.Show("BIENVENIDO "+textBoxUser.Text, "aviso", MessageBoxButtons.OK);
-
-                //Mostar menu
-                    
+                this.Hide();
                 InsertarCarreras m = new InsertarCarreras();
-                m.ShowDialog();
-                this.Close();
-
-
-
-
+                m.Show();
                
+                MessageBox.Show("BIENVENIDO " + textBoxUser.Text, "aviso", MessageBoxButtons.OK);
+                
             }
             else
             {

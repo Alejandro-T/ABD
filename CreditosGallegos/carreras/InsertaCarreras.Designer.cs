@@ -43,7 +43,8 @@
             this.dataGridView1.Location = new System.Drawing.Point(70, 176);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(357, 151);
-            this.dataGridView1.TabIndex = 13;
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -59,10 +60,10 @@
             this.btnAgreagrCarrera.Location = new System.Drawing.Point(183, 116);
             this.btnAgreagrCarrera.Name = "btnAgreagrCarrera";
             this.btnAgreagrCarrera.Size = new System.Drawing.Size(75, 23);
-            this.btnAgreagrCarrera.TabIndex = 11;
+            this.btnAgreagrCarrera.TabIndex = 3;
             this.btnAgreagrCarrera.Text = "Agregar";
             this.btnAgreagrCarrera.UseVisualStyleBackColor = true;
-            this.btnAgreagrCarrera.Click += new System.EventHandler(this.btnAgreagrCarrera_Click);
+            this.btnAgreagrCarrera.Click += new System.EventHandler(this.BtnAgreagrCarrera_Click);
             // 
             // textBoxdescCarrera
             // 
@@ -71,7 +72,7 @@
             this.textBoxdescCarrera.Location = new System.Drawing.Point(170, 83);
             this.textBoxdescCarrera.Name = "textBoxdescCarrera";
             this.textBoxdescCarrera.Size = new System.Drawing.Size(100, 13);
-            this.textBoxdescCarrera.TabIndex = 10;
+            this.textBoxdescCarrera.TabIndex = 2;
             // 
             // textBoxIdtec
             // 
@@ -81,7 +82,7 @@
             this.textBoxIdtec.Location = new System.Drawing.Point(170, 54);
             this.textBoxIdtec.Name = "textBoxIdtec";
             this.textBoxIdtec.Size = new System.Drawing.Size(100, 13);
-            this.textBoxIdtec.TabIndex = 14;
+            this.textBoxIdtec.TabIndex = 1;
             // 
             // label2
             // 

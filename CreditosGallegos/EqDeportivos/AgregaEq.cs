@@ -18,6 +18,26 @@ namespace CreditosGallegos.EqDeportivos
             InitializeComponent();
         }
 
+        public void cargarEquipo(DataGridView dvg)
+        {
+            DataTable dtEntrena = new DataTable();
+            string comprobacion = "Select EQ.id_equipo,EQ.nombre,E.ID_ENTRENADOR,E.NOMBRE AS NOMBRE_ENTRENA,E.PATERNO AS PATERNO_ENTRENA,E.MATERNO AS MATERNO_ENTRENA from equiposdeportivos EQ JOIN ENTRENADORES E ON EQ.ENTRENADORES_ID_ENTRENADOR = E.ID_ENTRENADOR where EQ.ID_EQUIPO ='" + publicas.id_equipo.ToString() + "'";
+            OracleDataAdapter da = new OracleDataAdapter
+                (comprobacion, Conexion.conectar());
+            OracleCommand cp = new OracleCommand(comprobacion, Conexion.conectar());
+            OracleDataReader dr = cp.ExecuteReader();
+            if (dr.Read())
+            {
+                da.Fill(dtEntrena);
+                dvg.DataSource = dtEntrena;
+            }
+            else
+            {
+                MessageBox.Show("El equipo no existe", "aviso", MessageBoxButtons.OK);
+            }
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -50,8 +70,9 @@ namespace CreditosGallegos.EqDeportivos
                         //Select para saber el numero actual.
 
 
-                        // this.cargarEntrena(this.dataGridViewEntrenadores);
+                        this.cargarEquipo(this.dataGridViewEntrenadores);
                         //actualizasecuencia();
+                        limpiar();
                     }
                     else
                     {
@@ -92,6 +113,22 @@ namespace CreditosGallegos.EqDeportivos
         private void AgregaEq_Load(object sender, EventArgs e)
         {
             textBoxTec.Text = publicas.id_tec.ToString();
+        }
+        public void limpiar()
+        {
+            this.textBoxEntrenador.Clear();
+            this.textBoxName.Clear();
+        }
+
+        private void dataGridViewEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dataGridViewEntrenadores.Rows[e.RowIndex];
+                this.textBoxName.Text = row.Cells["nombre"].Value.ToString();
+                this.textBoxEntrenador.Text = row.Cells["ID_ENTRENADOR"].Value.ToString();
+
+            }
         }
     }
 }
